@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window xmlns:x="http://www.w3.org/2001/XMLSchema-instance" x:type="MediaPortalWindow">
+  <IsDefault>false</IsDefault>
+  <Width>1280</Width>
+  <Height>720</Height>
+  <Name>WebBrowser</Name>
+  <Id>20</Id>
+  <BackgroundBrush />
+  <WindowAnimations />
+  <WindowControls>
+    <Control x:type="Group">
+      <Name>Main</Name>
+      <Id>1</Id>
+      <Width>1280</Width>
+      <Height>720</Height>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <GroupStyle StyleId="Empty" />
+      <GroupControls>
+        <Control x:type="Group">
+          <Name>Background</Name>
+          <Id>2</Id>
+          <Width>1280</Width>
+          <Height>720</Height>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <GroupStyle>
+            <BorderThickness>0,0,0,0</BorderThickness>
+            <CornerRadius>0,0,0,0</CornerRadius>
+            <BackgroundBrush />
+            <BorderBrush />
+            <GlossBrush />
+          </GroupStyle>
+          <GroupControls>
+            <Control x:type="Image">
+              <Name>Image</Name>
+              <Id>3</Id>
+              <Width>1280</Width>
+              <Height>720</Height>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <ImageStyle StyleId="Logo_Image" />
+              <Image>\BG\hover_BrowseTheWeb.jpg</Image>
+              <ImageStretch>Fill</ImageStretch>
+              <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+            </Control>
+            <Control x:type="Image">
+              <Name>Overlay</Name>
+              <Id>4</Id>
+              <Width>1280</Width>
+              <Height>720</Height>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <ImageStyle StyleId="FilmStrip Fanart Overlay" />
+              <ImageStretch>Fill</ImageStretch>
+              <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+            </Control>
+            <Control x:type="Image">
+              <Name>MP Image</Name>
+              <Id>7</Id>
+              <Width>78</Width>
+              <Height>57</Height>
+              <PosX>10</PosX>
+              <PosY>10</PosY>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <ImageStyle StyleId="Logo_Image" />
+              <Image>\Styles\White\MP-Logo.png</Image>
+              <ImageStretch>Uniform</ImageStretch>
+              <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+            </Control>
+            <Control x:type="Rectangle">
+              <Name>Devider</Name>
+              <Id>8</Id>
+              <Width>3</Width>
+              <Height>73</Height>
+              <PosX>100</PosX>
+              <PosY>2</PosY>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <BorderThickness>0,0,0,0</BorderThickness>
+              <CornerRadius>0,0,0,0</CornerRadius>
+              <BackgroundBrush x:type="ColorBrush" Color="#FF6AA5CB" />
+            </Control>
+            <Control x:type="Label">
+              <Name>Window</Name>
+              <Id>9</Id>
+              <Width>755</Width>
+              <Height>60</Height>
+              <PosX>109</PosX>
+              <PosY>8</PosY>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <LabelStyle StyleId="Avalon 50 Blue" />
+              <LabelText>#currentmodule</LabelText>
+              <IsScrollingEnabled>false</IsScrollingEnabled>
+              <ScrollSpeed>2</ScrollSpeed>
+              <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+            </Control>
+            <Control x:type="Label">
+              <Name>Time</Name>
+              <Id>10</Id>
+              <Width>408</Width>
+              <Height>95</Height>
+              <PosX>872</PosX>
+              <PosY>-10</PosY>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <LabelStyle StyleId="Avalon 85 Grey" />
+              <LabelText>#time</LabelText>
+              <LabelTextAlignment>Right</LabelTextAlignment>
+              <IsScrollingEnabled>false</IsScrollingEnabled>
+              <ScrollSpeed>2</ScrollSpeed>
+              <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+            </Control>
+            <Control x:type="Image">
+              <Name>Rec Icon</Name>
+              <Id>11</Id>
+              <Width>137</Width>
+              <Height>38</Height>
+              <PosX>629</PosX>
+              <VisibleCondition>IsTvRecording</VisibleCondition>
+              <IsWindowOpenVisible>false</IsWindowOpenVisible>
+              <Animations />
+              <MediaPortalFocusControls />
+              <ImageStyle StyleId="Logo_Image" />
+              <Image>\RecordingIndicator.png</Image>
+              <ImageStretch>Fill</ImageStretch>
+              <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+            </Control>
+          </GroupControls>
+        </Control>
+        <Control x:type="Label">
+          <Name>Title</Name>
+          <Id>14</Id>
+          <Width>1260</Width>
+          <Height>70</Height>
+          <PosX>10</PosX>
+          <PosY>570</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="Avalon 60 White" />
+          <LabelText>#MPD2.BrowseStatus</LabelText>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+        <Control x:type="Label">
+          <Name>Title</Name>
+          <Id>17</Id>
+          <Width>1260</Width>
+          <Height>70</Height>
+          <PosX>10</PosX>
+          <PosY>640</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="Avalon 60 White" />
+          <LabelText>#MPD2.Browseurl</LabelText>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+      </GroupControls>
+    </Control>
+    <Control x:type="Button">
+      <Name>Menu</Name>
+      <Id>18</Id>
+      <Width>1280</Width>
+      <Height>150</Height>
+      <PosY>570</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle StyleId="Clear" />
+      <LabelText>NewButton</LabelText>
+      <Actions>
+        <Action Action="OpenDialog" Param="903" />
+      </Actions>
+    </Control>
+  </WindowControls>
+  <VisibleCondition>IsMediaPortalWindow(16002) || IsMediaPortalWindow(54537689)</VisibleCondition>
+</Window>

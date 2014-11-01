@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window xmlns:x="http://www.w3.org/2001/XMLSchema-instance" x:type="MPDisplayWindow">
+  <IsDefault>true</IsDefault>
+  <Width>1280</Width>
+  <Height>720</Height>
+  <Name>Home</Name>
+  <Id>10000</Id>
+  <BackgroundBrush />
+  <WindowAnimations>
+    <Animation x:type="Zoom" Condition="WindowOpen" Duration="500" Easing="EaseOut" />
+    <Animation x:type="Zoom" Condition="WindowClose" Duration="500" Delay="500" From="100" To="0" />
+  </WindowAnimations>
+  <WindowControls>
+    <Control x:type="Image">
+      <Name>NewImage</Name>
+      <Id>5</Id>
+      <Width>1280</Width>
+      <Height>720</Height>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ImageStyle StyleId="HomeBG" />
+      <ImageStretch>None</ImageStretch>
+      <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+    </Control>
+    <Control x:type="Button">
+      <Name>Exit</Name>
+      <Id>2</Id>
+      <Width>350</Width>
+      <Height>100</Height>
+      <PosX>10</PosX>
+      <PosY>474</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle>
+        <CornerRadius>2,2,2,2</CornerRadius>
+        <NoFocusBrush x:type="GradientBrush">
+          <GradientStops>
+            <GradientStop Color="#6A85CFFE" Offset="0.188" />
+            <GradientStop Color="#1A7EC5F3" Offset="0.726" />
+          </GradientStops>
+          <Angle>Vertical</Angle>
+        </NoFocusBrush>
+        <NoFocusBorderBrush />
+        <FocusBrush x:type="GradientBrush">
+          <GradientStops>
+            <GradientStop Color="#FF74B7E9" Offset="0.302" />
+            <GradientStop Color="#FF3F78A5" Offset="0.827" />
+          </GradientStops>
+          <Angle>Vertical</Angle>
+        </FocusBrush>
+        <FocusBorderBrush />
+        <ShadeBrush />
+        <GlossBrush />
+        <FontType>AvalonType</FontType>
+        <FontSize>25</FontSize>
+        <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+        <NoFocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+      </ButtonStyle>
+      <LabelText>@Exit</LabelText>
+      <Actions>
+        <Action Action="Exit" />
+      </Actions>
+    </Control>
+    <Control x:type="Button">
+      <Name>start MP</Name>
+      <Id>3</Id>
+      <Width>350</Width>
+      <Height>100</Height>
+      <PosX>465</PosX>
+      <PosY>474</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle>
+        <CornerRadius>2,2,2,2</CornerRadius>
+        <NoFocusBrush x:type="GradientBrush">
+          <GradientStops>
+            <GradientStop Color="#6A85CFFE" Offset="0.188" />
+            <GradientStop Color="#1A7EC5F3" Offset="0.726" />
+          </GradientStops>
+          <Angle>Vertical</Angle>
+        </NoFocusBrush>
+        <NoFocusBorderBrush />
+        <FocusBrush x:type="GradientBrush">
+          <GradientStops>
+            <GradientStop Color="#FF74B7E9" Offset="0.302" />
+            <GradientStop Color="#FF3F78A5" Offset="0.827" />
+          </GradientStops>
+          <Angle>Vertical</Angle>
+        </FocusBrush>
+        <FocusBorderBrush />
+        <ShadeBrush />
+        <GlossBrush />
+        <FontType>AvalonType</FontType>
+        <FontSize>25</FontSize>
+        <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+        <NoFocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+      </ButtonStyle>
+      <LabelText>@restart</LabelText>
+      <Actions>
+        <Action Action="RunProgram" Param="C:\Program Files\Team MediaPortal\MediaPortal\MediaPortal.exe" />
+      </Actions>
+    </Control>
+    <Control x:type="Button">
+      <Name>reconnect</Name>
+      <Id>4</Id>
+      <Width>350</Width>
+      <Height>100</Height>
+      <PosX>920</PosX>
+      <PosY>474</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle>
+        <CornerRadius>2,2,2,2</CornerRadius>
+        <NoFocusBrush x:type="GradientBrush">
+          <GradientStops>
+            <GradientStop Color="#6A85CFFE" Offset="0.188" />
+            <GradientStop Color="#1A7EC5F3" Offset="0.726" />
+          </GradientStops>
+          <Angle>Vertical</Angle>
+        </NoFocusBrush>
+        <NoFocusBorderBrush />
+        <FocusBrush x:type="GradientBrush">
+          <GradientStops>
+            <GradientStop Color="#FF74B7E9" Offset="0.302" />
+            <GradientStop Color="#FF3F78A5" Offset="0.827" />
+          </GradientStops>
+          <Angle>Vertical</Angle>
+        </FocusBrush>
+        <FocusBorderBrush />
+        <ShadeBrush />
+        <GlossBrush />
+        <FontType>AvalonType</FontType>
+        <FontSize>25</FontSize>
+        <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+        <NoFocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+      </ButtonStyle>
+      <LabelText>@reconnect</LabelText>
+      <Actions>
+        <Action Action="Connect" />
+      </Actions>
+    </Control>
+  </WindowControls>
+</Window>

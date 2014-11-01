@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Dialog xmlns:x="http://www.w3.org/2001/XMLSchema-instance" x:type="MediaPortalDialog">
+  <Name>TV_Channel</Name>
+  <Id>3009</Id>
+  <Width>1200</Width>
+  <Height>620</Height>
+  <PosX>40</PosX>
+  <PosY>50</PosY>
+  <CornerRadius>10,10,10,10</CornerRadius>
+  <BackgroundBrush />
+  <BorderBrush />
+  <DialogAnimations>
+    <Animation x:type="Slide" Condition="WindowOpen" Duration="500" Easing="EaseOut" StartX="40" StartY="720" EndX="40" EndY="50" />
+    <Animation x:type="Slide" Condition="WindowClose" Duration="500" Easing="EaseIn" StartX="40" StartY="50" EndX="40" EndY="720" />
+  </DialogAnimations>
+  <DialogControls>
+    <Control x:type="Image">
+      <Name>Background</Name>
+      <Id>1</Id>
+      <Width>1200</Width>
+      <Height>620</Height>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ImageStyle StyleId="TV_Channel_BG" />
+      <ImageStretch>Fill</ImageStretch>
+      <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+    </Control>
+    <Control x:type="Button">
+      <Name>Close Button</Name>
+      <Id>2</Id>
+      <Width>77</Width>
+      <Height>77</Height>
+      <PosX>1127</PosX>
+      <PosY>2</PosY>
+      <VisibleCondition />
+      <IsWindowOpenVisible>false</IsWindowOpenVisible>
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle>
+        <NoFocusBrush x:type="ImageBrush" Image="\exit_button_nofocus.png" Stretch="Fill" />
+        <NoFocusBorderBrush />
+        <FocusBrush x:type="ImageBrush" Image="\exit_button_focus.png" Stretch="Fill" />
+        <FocusBorderBrush />
+        <ShadeBrush />
+        <GlossBrush />
+        <EnableLabel>false</EnableLabel>
+        <FontType>AvalonType</FontType>
+        <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+        <NoFocusFontBrush x:type="ColorBrush" Color="#FF6AA3CB" />
+        <EnableImage>true</EnableImage>
+      </ButtonStyle>
+      <LabelText>NewButton</LabelText>
+      <Actions>
+        <Action Action="OpenDialog" Param="3009" />
+      </Actions>
+    </Control>
+    <Control x:type="Label">
+      <Name>Title</Name>
+      <Id>3</Id>
+      <Width>949</Width>
+      <Height>75</Height>
+      <PosX>9</PosX>
+      <PosY>5</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <LabelStyle StyleId="Avalon 50 White" />
+      <LabelText>#Dialog.Label4</LabelText>
+      <IsScrollingEnabled>false</IsScrollingEnabled>
+      <ScrollSpeed>2</ScrollSpeed>
+      <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+    </Control>
+    <Control x:type="List">
+      <Name>List</Name>
+      <Id>4</Id>
+      <Width>1185</Width>
+      <Height>530</Height>
+      <PosX>7</PosX>
+      <PosY>78</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ListControlStyle StyleId="empty" />
+      <ListType>MediaPortalDialogList</ListType>
+      <ListLayout>Auto</ListLayout>
+      <VerticalItemStyle StyleId="TV_Channel_List" />
+      <HorizontalItemStyle>
+        <BorderThickness>1,1,1,1</BorderThickness>
+        <CornerRadius>4,4,4,4</CornerRadius>
+        <NoFocusBrush x:type="ColorBrush" Color="#FF000000" />
+        <NoFocusBorderBrush x:type="ColorBrush" Color="#FF00BFFF" />
+        <FocusBrush x:type="ColorBrush" Color="#FF00BFFF" />
+        <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+        <FontSize>18</FontSize>
+        <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+        <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
+        <LabelMargin>3,3,3,3</LabelMargin>
+        <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
+        <EnableImage>true</EnableImage>
+        <ImageMargin>3,3,3,33</ImageMargin>
+        <ImageVerticalAlignment>Top</ImageVerticalAlignment>
+        <Width>135</Width>
+        <Height>207</Height>
+        <ItemMargin>1,1,1,1</ItemMargin>
+      </HorizontalItemStyle>
+      <CoverFlowItemStyle>
+        <BorderThickness>1,1,1,1</BorderThickness>
+        <CornerRadius>4,4,4,4</CornerRadius>
+        <NoFocusBrush x:type="ColorBrush" Color="#FF000000" />
+        <NoFocusBorderBrush x:type="ColorBrush" Color="#FF00BFFF" />
+        <FocusBrush x:type="ColorBrush" Color="#FF00BFFF" />
+        <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+        <FontSize>18</FontSize>
+        <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+        <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
+        <LabelMargin>3,3,3,3</LabelMargin>
+        <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
+        <EnableImage>true</EnableImage>
+        <ImageMargin>3,3,3,33</ImageMargin>
+        <ImageVerticalAlignment>Top</ImageVerticalAlignment>
+        <Width>135</Width>
+        <Height>207</Height>
+      </CoverFlowItemStyle>
+    </Control>
+    <Control x:type="Label">
+      <Name>Time</Name>
+      <Id>5</Id>
+      <Width>174</Width>
+      <Height>80</Height>
+      <PosX>950</PosX>
+      <PosY>6</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <LabelStyle StyleId="Avalon 60 White" />
+      <LabelText>#time</LabelText>
+      <LabelTextAlignment>Right</LabelTextAlignment>
+      <IsScrollingEnabled>false</IsScrollingEnabled>
+      <ScrollSpeed>2</ScrollSpeed>
+      <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+    </Control>
+  </DialogControls>
+  <VisibleCondition>IsMediaPortalDialog(3009)</VisibleCondition>
+</Dialog>

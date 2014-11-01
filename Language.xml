@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Language xmlns:x="http://www.w3.org/2001/XMLSchema-instance">
+  <LanguageEntries>
+    <LanguageEntry Tag="@recordings">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Aufnahmen" />
+        <LanguageValue Language="English" Value="Recordings" />
+        <LanguageValue Language="Francais" Value="Recordings" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@weather">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Wetter" />
+        <LanguageValue Language="English" Value="Weather" />
+        <LanguageValue Language="Francais" Value="Météorologique" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@reconnect">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Verbindung wiederherstellen" />
+        <LanguageValue Language="English" Value="reconnect" />
+        <LanguageValue Language="Francais" Value="restaurer communication" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@restart">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="MediaPortal starten" />
+        <LanguageValue Language="English" Value="start MediaPortal" />
+        <LanguageValue Language="Francais" Value="lancer MediaPortal" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Company">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Hersteller" />
+        <LanguageValue Language="English" Value="Company" />
+        <LanguageValue Language="Francais" Value="Producteur" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Path">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Dateipfad" />
+        <LanguageValue Language="English" Value="Path" />
+        <LanguageValue Language="Francais" Value="Sentier" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Watched">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Gesehen" />
+        <LanguageValue Language="English" Value="Watched" />
+        <LanguageValue Language="Francais" Value="Vu" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@MediaType">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Medientyp" />
+        <LanguageValue Language="English" Value="Media Type" />
+        <LanguageValue Language="Francais" Value="Type médias" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@AspectRatio">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Seitenverhältnis" />
+        <LanguageValue Language="English" Value="Aspect Ratio" />
+        <LanguageValue Language="Francais" Value="Aspect Ratio" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@current">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Aktuell" />
+        <LanguageValue Language="English" Value="Current" />
+        <LanguageValue Language="Francais" Value="Actuellement" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Preview">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Vorschau" />
+        <LanguageValue Language="English" Value="Preview" />
+        <LanguageValue Language="Francais" Value="Aperçu" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@SkinOption">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Skin Ausführung" />
+        <LanguageValue Language="English" Value="Skin Option" />
+        <LanguageValue Language="Francais" Value="Option Skin" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@ShowUpdates">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Zeige Updates" />
+        <LanguageValue Language="English" Value="Show Updates" />
+        <LanguageValue Language="Francais" Value="Indiquer carpates" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Votes">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Stimmen" />
+        <LanguageValue Language="English" Value="Votes" />
+        <LanguageValue Language="Francais" Value="Voix exprimées" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@back">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Nächster" />
+        <LanguageValue Language="English" Value="Next" />
+        <LanguageValue Language="Francais" Value="Suivant" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Exit">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Ausgang" />
+        <LanguageValue Language="English" Value="Exit" />
+        <LanguageValue Language="Francais" Value="Quitter" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Remote">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Steuerung" />
+        <LanguageValue Language="English" Value="Remote" />
+        <LanguageValue Language="Francais" Value="Telecommande" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Moonphase">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Mondphase" />
+        <LanguageValue Language="English" Value="Moonphase" />
+        <LanguageValue Language="Francais" Value="Plein lune" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Sundial">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Sonnenuhr" />
+        <LanguageValue Language="English" Value="Sundial" />
+        <LanguageValue Language="Francais" Value="Horloge Solaire" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Wind">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Wind" />
+        <LanguageValue Language="English" Value="Wind" />
+        <LanguageValue Language="Francais" Value="Vent" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Condition">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Wetterlage" />
+        <LanguageValue Language="English" Value="Condition" />
+        <LanguageValue Language="Francais" Value="Condition" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Temperature">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Temperatur" />
+        <LanguageValue Language="English" Value="Temperature" />
+        <LanguageValue Language="Francais" Value="Température" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Clean Installation directory">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Lösche Install. Verz." />
+        <LanguageValue Language="English" Value="Clean Installation directory" />
+        <LanguageValue Language="Francais" Value="Supprimer le répertoire d'installation" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Reboot">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Neustart" />
+        <LanguageValue Language="English" Value="Reboot" />
+        <LanguageValue Language="Francais" Value="Redémarrer" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Filter Updates">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Updates filtern" />
+        <LanguageValue Language="English" Value="Filter Updates" />
+        <LanguageValue Language="Francais" Value="Filtrer les MAJ" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Restore Point">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Wiederherstellungspunkt" />
+        <LanguageValue Language="English" Value="Restore Point" />
+        <LanguageValue Language="Francais" Value="Point de restauration" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Installed Updates">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="installierte Updates" />
+        <LanguageValue Language="English" Value="Installed Updates" />
+        <LanguageValue Language="Francais" Value="MAJ installées" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Search for Updates">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Updatesuche" />
+        <LanguageValue Language="English" Value="Search for Updates" />
+        <LanguageValue Language="Francais" Value="Rechercher les MAJ" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Deinstall">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Zeige install. Updates" />
+        <LanguageValue Language="English" Value="Show installed Updates" />
+        <LanguageValue Language="Francais" Value="Afficher les MAJ installées" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Duration">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Spielzeit" />
+        <LanguageValue Language="English" Value="Duration" />
+        <LanguageValue Language="Francais" Value="Durée" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Filesize">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Dateigröße" />
+        <LanguageValue Language="English" Value="Filesize" />
+        <LanguageValue Language="Francais" Value="Taille" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Audio Bitrate">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Audio Bitrate" />
+        <LanguageValue Language="English" Value="Audio Bitrate" />
+        <LanguageValue Language="Francais" Value="Bitrate Audio" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Video Bitrate">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Video Bitrate" />
+        <LanguageValue Language="English" Value="Video Bitrate" />
+        <LanguageValue Language="Francais" Value="Bitrate Video" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Date">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Datum" />
+        <LanguageValue Language="English" Value="Date" />
+        <LanguageValue Language="Francais" Value="Date" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Producer">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Produzent" />
+        <LanguageValue Language="English" Value="Producer" />
+        <LanguageValue Language="Francais" Value="Producteur" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Country">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Land" />
+        <LanguageValue Language="English" Value="Country" />
+        <LanguageValue Language="Francais" Value="Pays" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Options">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Optionen" />
+        <LanguageValue Language="English" Value="Options" />
+        <LanguageValue Language="Francais" Value="Options" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Technical Details">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Technische Details" />
+        <LanguageValue Language="English" Value="Technical Details" />
+        <LanguageValue Language="Francais" Value="Détails Techniques" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Comments">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Kommentare" />
+        <LanguageValue Language="English" Value="Comments" />
+        <LanguageValue Language="Francais" Value="Commentaire" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Overview">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Übersicht" />
+        <LanguageValue Language="English" Value="Overview" />
+        <LanguageValue Language="Francais" Value="Aperçu" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Last Played">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="zuletzt gespielt" />
+        <LanguageValue Language="English" Value="Last Played" />
+        <LanguageValue Language="Francais" Value="Dernier lu" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Genre">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Genre" />
+        <LanguageValue Language="English" Value="Genre" />
+        <LanguageValue Language="Francais" Value="Genre" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Next">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Nächste" />
+        <LanguageValue Language="English" Value="Next" />
+        <LanguageValue Language="Francais" Value="Suivant" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@FPS">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="BPS" />
+        <LanguageValue Language="English" Value="FPS" />
+        <LanguageValue Language="Francais" Value="FPS" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Info URL">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Info Adresse" />
+        <LanguageValue Language="English" Value="Info URL" />
+        <LanguageValue Language="Francais" Value="Info URL" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Date added">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Hinzugefügt am" />
+        <LanguageValue Language="English" Value="Date added" />
+        <LanguageValue Language="Francais" Value="Date d'ajout" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Audio Channels">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Audio Kanäle" />
+        <LanguageValue Language="English" Value="Audio Channels" />
+        <LanguageValue Language="Francais" Value="Channel Audio" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Audio Format">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Audio Format" />
+        <LanguageValue Language="English" Value="Audio Format" />
+        <LanguageValue Language="Francais" Value="Format Audio" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Resolution">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Auflösung" />
+        <LanguageValue Language="English" Value="Resolution" />
+        <LanguageValue Language="Francais" Value="Définition" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Video Framerate">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Bildwiederholrate" />
+        <LanguageValue Language="English" Value="Video Framerate" />
+        <LanguageValue Language="Francais" Value="Fréquence Vidéo" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Video Format">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Video Format" />
+        <LanguageValue Language="English" Value="Video Format" />
+        <LanguageValue Language="Francais" Value="Format Vidéo" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Description">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Beschreibung" />
+        <LanguageValue Language="English" Value="Description" />
+        <LanguageValue Language="Francais" Value="Description" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Runtime">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Laufzeit" />
+        <LanguageValue Language="English" Value="Runtime" />
+        <LanguageValue Language="Francais" Value="Durée" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Year">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Jahr" />
+        <LanguageValue Language="English" Value="Year" />
+        <LanguageValue Language="Francais" Value="Année" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Actors">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Darsteller" />
+        <LanguageValue Language="English" Value="Actors" />
+        <LanguageValue Language="Francais" Value="Acteurs" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Writer">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Autor" />
+        <LanguageValue Language="English" Value="Writer" />
+        <LanguageValue Language="Francais" Value="Ecrivain" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Director">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Regisseur" />
+        <LanguageValue Language="English" Value="Director" />
+        <LanguageValue Language="Francais" Value="Directeur" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@ID">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="ID" />
+        <LanguageValue Language="English" Value="ID" />
+        <LanguageValue Language="Francais" Value="ID" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Release Date">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Veröffentlichung" />
+        <LanguageValue Language="English" Value="Release Date" />
+        <LanguageValue Language="Francais" Value="Date de Sortie" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Author">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Autor" />
+        <LanguageValue Language="English" Value="Author" />
+        <LanguageValue Language="Francais" Value="Autheurs" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Version">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Version" />
+        <LanguageValue Language="English" Value="Version" />
+        <LanguageValue Language="Francais" Value="Version" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Screenshots">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Schnappschuss" />
+        <LanguageValue Language="English" Value="Screenshots" />
+        <LanguageValue Language="Francais" Value="Capture d'écran" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Changes">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Änderungen" />
+        <LanguageValue Language="English" Value="Changes" />
+        <LanguageValue Language="Francais" Value="Changes ???" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Deinstall Extension">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Deinstallieren" />
+        <LanguageValue Language="English" Value="Deinstall Extension" />
+        <LanguageValue Language="Francais" Value="Désinstaller l'Extension" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@EPG Info">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="EPG folgt in einer späteren Version" />
+        <LanguageValue Language="English" Value="Display of EPG will follow in later Versions" />
+        <LanguageValue Language="Francais" Value="EPG indisponible dans cette version" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@notavailable">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Diese Funktion gibt es leider nicht..." />
+        <LanguageValue Language="English" Value="This function is not available..." />
+        <LanguageValue Language="Francais" Value="Cette fonction n'est pas disponible" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Extensions">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Erweiterungen" />
+        <LanguageValue Language="English" Value="Extensions" />
+        <LanguageValue Language="Francais" Value="Extensions" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Plugins">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Module" />
+        <LanguageValue Language="English" Value="Plugins" />
+        <LanguageValue Language="Francais" Value="Plugins" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@OnlineVideos">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="OnlineVideos" />
+        <LanguageValue Language="English" Value="OnlineVideos" />
+        <LanguageValue Language="Francais" Value="OnlineVidéos" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@InfoService">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="InfoService" />
+        <LanguageValue Language="English" Value="InfoService" />
+        <LanguageValue Language="Francais" Value="InfoService" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Settings">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Einstellungen" />
+        <LanguageValue Language="English" Value="Settings" />
+        <LanguageValue Language="Francais" Value="Configurations" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Series">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Serien" />
+        <LanguageValue Language="English" Value="Series" />
+        <LanguageValue Language="Francais" Value="Series" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Pictures">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Bilder" />
+        <LanguageValue Language="English" Value="Pictures" />
+        <LanguageValue Language="Francais" Value="Photos" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Radio">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Radio" />
+        <LanguageValue Language="English" Value="Radio" />
+        <LanguageValue Language="Francais" Value="Radio" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Movies">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Filme" />
+        <LanguageValue Language="English" Value="Movies" />
+        <LanguageValue Language="Francais" Value="Films" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@TV">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Fernsehen" />
+        <LanguageValue Language="English" Value="TV" />
+        <LanguageValue Language="Francais" Value="TV" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Music">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Musik" />
+        <LanguageValue Language="English" Value="Music" />
+        <LanguageValue Language="Francais" Value="Musique" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Language">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Sprache" />
+        <LanguageValue Language="English" Value="Language" />
+        <LanguageValue Language="Francais" Value="Language" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Shutdown">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Herunterfahren" />
+        <LanguageValue Language="English" Value="Shutdown" />
+        <LanguageValue Language="Francais" Value="Eteindre" />
+      </Values>
+    </LanguageEntry>
+  </LanguageEntries>
+</Language>

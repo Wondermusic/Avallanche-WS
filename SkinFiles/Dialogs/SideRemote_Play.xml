@@ -1,0 +1,1033 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Dialog xmlns:x="http://www.w3.org/2001/XMLSchema-instance" x:type="MPDisplayDialog">
+  <Name>SideRemote_Play</Name>
+  <Id>904</Id>
+  <Width>520</Width>
+  <Height>576</Height>
+  <BorderThickness>2</BorderThickness>
+  <CornerRadius>25,25,25,25</CornerRadius>
+  <BackgroundBrush x:type="GradientBrush">
+    <GradientStops>
+      <GradientStop Color="#FF788282" Offset="1" />
+      <GradientStop Color="#FF000000" Offset="0.216" />
+    </GradientStops>
+    <Angle>Vertical</Angle>
+  </BackgroundBrush>
+  <BorderBrush x:type="ColorBrush" Color="#FF494949" />
+  <DialogAnimations>
+    <Animation x:type="Slide" Condition="WindowOpen" Duration="500" Easing="EaseOut" StartX="-400" />
+    <Animation x:type="Slide" Condition="WindowClose" Duration="500" Easing="EaseIn" EndX="-400" />
+  </DialogAnimations>
+  <DialogControls>
+    <Control x:type="Group">
+      <Name>Jog</Name>
+      <Id>1</Id>
+      <Width>303</Width>
+      <Height>303</Height>
+      <PosX>108</PosX>
+      <PosY>29</PosY>
+      <VisibleCondition>!IsControlVisible(23)</VisibleCondition>
+      <Animations />
+      <MediaPortalFocusControls />
+      <GroupStyle>
+        <BorderThickness>0,0,0,0</BorderThickness>
+        <CornerRadius>0,0,0,0</CornerRadius>
+      </GroupStyle>
+      <GroupControls>
+        <Control x:type="Group">
+          <Name>NewGroup</Name>
+          <Id>2</Id>
+          <Width>303</Width>
+          <Height>303</Height>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <GroupStyle>
+            <BorderThickness>0,0,0,0</BorderThickness>
+            <CornerRadius>0,0,0,0</CornerRadius>
+          </GroupStyle>
+          <GroupControls>
+            <Control x:type="Image">
+              <Name>NewImage</Name>
+              <Id>3</Id>
+              <Width>303</Width>
+              <Height>303</Height>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <ImageStyle>
+                <BorderThickness>10,10,10,10</BorderThickness>
+                <CornerRadius>200,200,200,200</CornerRadius>
+                <BackgroundBrush x:type="GradientBrush">
+                  <GradientStops>
+                    <GradientStop Color="#1FF0F8FF" Offset="0" />
+                    <GradientStop Color="#00FFFFFF" Offset="0.583" />
+                    <GradientStop Color="Transparent" Offset="1" />
+                  </GradientStops>
+                  <Angle>Vertical</Angle>
+                </BackgroundBrush>
+                <BorderBrush x:type="ColorBrush" Color="#FF000000" />
+              </ImageStyle>
+              <ImageStretch>None</ImageStretch>
+              <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+            </Control>
+            <Control x:type="Image">
+              <Name>NewImage</Name>
+              <Id>4</Id>
+              <Width>150</Width>
+              <Height>150</Height>
+              <PosX>77</PosX>
+              <PosY>77</PosY>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <ImageStyle>
+                <BorderThickness>5,5,5,5</BorderThickness>
+                <CornerRadius>200,200,200,200</CornerRadius>
+                <BackgroundBrush x:type="GradientBrush">
+                  <GradientStops>
+                    <GradientStop Color="#1FF0F8FF" Offset="0" />
+                    <GradientStop Color="#00FFFFFF" Offset="0.583" />
+                    <GradientStop Color="Transparent" Offset="1" />
+                  </GradientStops>
+                  <Angle>Vertical</Angle>
+                </BackgroundBrush>
+                <BorderBrush x:type="ColorBrush" Color="#FF000000" />
+              </ImageStyle>
+              <ImageStretch>None</ImageStretch>
+              <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+            </Control>
+          </GroupControls>
+        </Control>
+        <Control x:type="Button">
+          <Name>Up</Name>
+          <Id>5</Id>
+          <Width>140</Width>
+          <Height>100</Height>
+          <PosX>85</PosX>
+          <PosY>-2</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ButtonStyle>
+            <NoFocusBrush x:type="ImageBrush" Image="\Settings\up_nf.png" Stretch="Uniform" />
+            <FocusBrush x:type="ImageBrush" Image="\Settings\up_f.png" Stretch="Uniform" />
+            <EnableLabel>false</EnableLabel>
+            <FontType>Titan</FontType>
+            <FocusFontBrush x:type="ColorBrush" Color="#FF00FF00" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+            <EnableImage>true</EnableImage>
+          </ButtonStyle>
+          <LabelText>NewButton</LabelText>
+          <Actions>
+            <Action Action="MediaPortalAction" Param="ACTION_MOVE_UP" />
+          </Actions>
+        </Control>
+        <Control x:type="Button">
+          <Name>Down</Name>
+          <Id>6</Id>
+          <Width>140</Width>
+          <Height>100</Height>
+          <PosX>85</PosX>
+          <PosY>208</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ButtonStyle>
+            <NoFocusBrush x:type="ImageBrush" Image="\Settings\down_nf.png" Stretch="Uniform" />
+            <FocusBrush x:type="ImageBrush" Image="\Settings\down_f.png" Stretch="Uniform" />
+            <EnableLabel>false</EnableLabel>
+            <FontType>Titan</FontType>
+            <FocusFontBrush x:type="ColorBrush" Color="#FF00FF00" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+            <EnableImage>true</EnableImage>
+          </ButtonStyle>
+          <LabelText>NewButton</LabelText>
+          <Actions>
+            <Action Action="MediaPortalAction" Param="ACTION_MOVE_DOWN" />
+          </Actions>
+        </Control>
+        <Control x:type="Button">
+          <Name>Left</Name>
+          <Id>7</Id>
+          <Width>140</Width>
+          <Height>100</Height>
+          <PosX>-25</PosX>
+          <PosY>101</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ButtonStyle>
+            <NoFocusBrush x:type="ImageBrush" Image="\Settings\left_nf.png" Stretch="Uniform" />
+            <FocusBrush x:type="ImageBrush" Image="\Settings\left_f.png" Stretch="Uniform" />
+            <EnableLabel>false</EnableLabel>
+            <FontType>Titan</FontType>
+            <FocusFontBrush x:type="ColorBrush" Color="#FF00FF00" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+            <EnableImage>true</EnableImage>
+          </ButtonStyle>
+          <LabelText>NewButton</LabelText>
+          <Actions>
+            <Action Action="MediaPortalAction" Param="ACTION_MOVE_LEFT" />
+          </Actions>
+        </Control>
+        <Control x:type="Button">
+          <Name>Right</Name>
+          <Id>8</Id>
+          <Width>140</Width>
+          <Height>100</Height>
+          <PosX>189</PosX>
+          <PosY>101</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ButtonStyle>
+            <NoFocusBrush x:type="ImageBrush" Image="\Settings\right_nf.png" Stretch="Uniform" />
+            <FocusBrush x:type="ImageBrush" Image="\Settings\right_f.png" Stretch="Uniform" />
+            <EnableLabel>false</EnableLabel>
+            <FontType>Titan</FontType>
+            <FocusFontBrush x:type="ColorBrush" Color="#FF00FF00" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+            <EnableImage>true</EnableImage>
+          </ButtonStyle>
+          <LabelText>NewButton</LabelText>
+          <Actions>
+            <Action Action="MediaPortalAction" Param="ACTION_MOVE_RIGHT" />
+          </Actions>
+        </Control>
+        <Control x:type="Button">
+          <Name>OK</Name>
+          <Id>9</Id>
+          <Width>120</Width>
+          <Height>120</Height>
+          <PosX>93</PosX>
+          <PosY>93</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ButtonStyle>
+            <FontSize>45</FontSize>
+            <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FF4682B4" />
+          </ButtonStyle>
+          <LabelText>OK</LabelText>
+          <Actions>
+            <Action Action="MediaPortalAction" Param="ACTION_SELECT_ITEM" />
+          </Actions>
+        </Control>
+      </GroupControls>
+    </Control>
+    <Control x:type="Group">
+      <Name>Remotekey BG</Name>
+      <Id>10</Id>
+      <Width>502</Width>
+      <Height>175</Height>
+      <PosX>9</PosX>
+      <PosY>364</PosY>
+      <VisibleCondition>!IsControlVisible(23)</VisibleCondition>
+      <Animations />
+      <MediaPortalFocusControls />
+      <GroupStyle>
+        <BorderThickness>0,0,0,0</BorderThickness>
+        <CornerRadius>12,12,12,12</CornerRadius>
+        <BackgroundBrush x:type="ColorBrush" Color="#FF000000" />
+      </GroupStyle>
+      <GroupControls>
+        <Control x:type="Button">
+          <Name>Skip Back</Name>
+          <Id>12</Id>
+          <Width>120</Width>
+          <Height>80</Height>
+          <PosX>5</PosX>
+          <PosY>5</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ButtonStyle>
+            <CornerRadius>12,0,0,0</CornerRadius>
+            <NoFocusBrush x:type="ColorBrush" Color="#FF272727" />
+            <NoFocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+            <FocusBrush x:type="ColorBrush" Color="#FF272727" />
+            <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+            <ShadeBrush x:type="GradientBrush">
+              <GradientStops>
+                <GradientStop Color="#1FF0F8FF" Offset="0" />
+                <GradientStop Color="#00FFFFFF" Offset="0.59" />
+                <GradientStop Color="#00FFFFFF" Offset="1" />
+              </GradientStops>
+              <Angle>Vertical</Angle>
+            </ShadeBrush>
+            <GlossBrush />
+            <EnableLabel>false</EnableLabel>
+            <FontType>Titan</FontType>
+            <FontSize>40</FontSize>
+            <FocusFontBrush x:type="ColorBrush" Color="#FFAFEEEE" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+            <EnableImage>true</EnableImage>
+            <ImageStretch>None</ImageStretch>
+          </ButtonStyle>
+          <Image>\Settings\topbar_skipback.png</Image>
+          <LabelText>NewButton</LabelText>
+          <Actions>
+            <Action Action="MediaPortalAction" Param="ACTION_PREV_ITEM" />
+          </Actions>
+        </Control>
+        <Control x:type="Button">
+          <Name>Play/Pause</Name>
+          <Id>13</Id>
+          <Width>242</Width>
+          <Height>80</Height>
+          <PosX>130</PosX>
+          <PosY>5</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ButtonStyle>
+            <NoFocusBrush x:type="ColorBrush" Color="#FF272727" />
+            <NoFocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+            <FocusBrush x:type="ColorBrush" Color="#FF272727" />
+            <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+            <ShadeBrush x:type="GradientBrush">
+              <GradientStops>
+                <GradientStop Color="#1FF0F8FF" Offset="0" />
+                <GradientStop Color="#00FFFFFF" Offset="0.59" />
+                <GradientStop Color="#00FFFFFF" Offset="1" />
+              </GradientStops>
+              <Angle>Vertical</Angle>
+            </ShadeBrush>
+            <GlossBrush />
+            <EnableLabel>false</EnableLabel>
+            <FontType>Titan</FontType>
+            <FontSize>40</FontSize>
+            <FocusFontBrush x:type="ColorBrush" Color="#FFAFEEEE" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+            <EnableImage>true</EnableImage>
+            <ImageStretch>None</ImageStretch>
+          </ButtonStyle>
+          <Image>\Settings\topbar_play.png</Image>
+          <LabelText>NewButton</LabelText>
+          <Actions>
+            <Action Action="MediaPortalAction" Param="ACTION_PAUSE" />
+          </Actions>
+        </Control>
+        <Control x:type="Button">
+          <Name>Skip Forward</Name>
+          <Id>14</Id>
+          <Width>120</Width>
+          <Height>80</Height>
+          <PosX>377</PosX>
+          <PosY>5</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ButtonStyle>
+            <CornerRadius>0,12,0,0</CornerRadius>
+            <NoFocusBrush x:type="ColorBrush" Color="#FF272727" />
+            <NoFocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+            <FocusBrush x:type="ColorBrush" Color="#FF272727" />
+            <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+            <ShadeBrush x:type="GradientBrush">
+              <GradientStops>
+                <GradientStop Color="#1FF0F8FF" Offset="0" />
+                <GradientStop Color="#00FFFFFF" Offset="0.59" />
+                <GradientStop Color="#00FFFFFF" Offset="1" />
+              </GradientStops>
+              <Angle>Vertical</Angle>
+            </ShadeBrush>
+            <GlossBrush />
+            <EnableLabel>false</EnableLabel>
+            <FontType>Titan</FontType>
+            <FontSize>40</FontSize>
+            <FocusFontBrush x:type="ColorBrush" Color="#FFAFEEEE" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+            <EnableImage>true</EnableImage>
+            <ImageStretch>None</ImageStretch>
+          </ButtonStyle>
+          <Image>\Settings\topbar_FF.png</Image>
+          <LabelText>NewButton</LabelText>
+          <Actions>
+            <Action Action="MediaPortalAction" Param="ACTION_NEXT_ITEM" />
+          </Actions>
+        </Control>
+        <Control x:type="Button">
+          <Name>Fast Rewind</Name>
+          <Id>15</Id>
+          <Width>120</Width>
+          <Height>80</Height>
+          <PosX>5</PosX>
+          <PosY>90</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ButtonStyle>
+            <CornerRadius>0,0,0,12</CornerRadius>
+            <NoFocusBrush x:type="ColorBrush" Color="#FF272727" />
+            <NoFocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+            <FocusBrush x:type="ColorBrush" Color="#FF272727" />
+            <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+            <ShadeBrush x:type="GradientBrush">
+              <GradientStops>
+                <GradientStop Color="#1FF0F8FF" Offset="0" />
+                <GradientStop Color="Transparent" Offset="0.583" />
+                <GradientStop Color="Transparent" Offset="1" />
+              </GradientStops>
+              <Angle>Vertical</Angle>
+            </ShadeBrush>
+            <EnableLabel>false</EnableLabel>
+            <FontType>Titan</FontType>
+            <FontSize>25</FontSize>
+            <FocusFontBrush x:type="ColorBrush" Color="#FF00FF00" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+            <EnableImage>true</EnableImage>
+            <ImageStretch>None</ImageStretch>
+          </ButtonStyle>
+          <Image>\Settings\topbar_rew.png</Image>
+          <LabelText>NewButton</LabelText>
+          <Actions>
+            <Action Action="MediaPortalAction" Param="ACTION_REWIND" />
+          </Actions>
+        </Control>
+        <Control x:type="Button">
+          <Name>Stop</Name>
+          <Id>16</Id>
+          <Width>120</Width>
+          <Height>80</Height>
+          <PosX>130</PosX>
+          <PosY>90</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ButtonStyle>
+            <NoFocusBrush x:type="ColorBrush" Color="#FF272727" />
+            <NoFocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+            <FocusBrush x:type="ColorBrush" Color="#FF272727" />
+            <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+            <ShadeBrush x:type="GradientBrush">
+              <GradientStops>
+                <GradientStop Color="#1FF0F8FF" Offset="0" />
+                <GradientStop Color="#00FFFFFF" Offset="0.59" />
+                <GradientStop Color="#00FFFFFF" Offset="1" />
+              </GradientStops>
+              <Angle>Vertical</Angle>
+            </ShadeBrush>
+            <GlossBrush />
+            <EnableLabel>false</EnableLabel>
+            <FontType>Titan</FontType>
+            <FontSize>40</FontSize>
+            <FocusFontBrush x:type="ColorBrush" Color="#FFAFEEEE" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+            <EnableImage>true</EnableImage>
+            <ImageStretch>None</ImageStretch>
+          </ButtonStyle>
+          <Image>\Settings\topbar_stop.png</Image>
+          <LabelText>NewButton</LabelText>
+          <Actions>
+            <Action Action="MediaPortalAction" Param="ACTION_STOP" />
+          </Actions>
+        </Control>
+        <Control x:type="Button">
+          <Name>Record</Name>
+          <Id>17</Id>
+          <Width>120</Width>
+          <Height>80</Height>
+          <PosX>253</PosX>
+          <PosY>90</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ButtonStyle>
+            <NoFocusBrush x:type="ColorBrush" Color="#FF272727" />
+            <NoFocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+            <FocusBrush x:type="ColorBrush" Color="#FF272727" />
+            <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+            <ShadeBrush x:type="GradientBrush">
+              <GradientStops>
+                <GradientStop Color="#1FF0F8FF" Offset="0" />
+                <GradientStop Color="#00FFFFFF" Offset="0.59" />
+                <GradientStop Color="#00FFFFFF" Offset="1" />
+              </GradientStops>
+              <Angle>Vertical</Angle>
+            </ShadeBrush>
+            <GlossBrush />
+            <EnableLabel>false</EnableLabel>
+            <FontType>Titan</FontType>
+            <FontSize>40</FontSize>
+            <FocusFontBrush x:type="ColorBrush" Color="#FFAFEEEE" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+            <EnableImage>true</EnableImage>
+            <ImageStretch>None</ImageStretch>
+          </ButtonStyle>
+          <Image>\Settings\osd_is_recording2.png</Image>
+          <LabelText>NewButton</LabelText>
+          <Actions>
+            <Action Action="MediaPortalAction" Param="ACTION_RECORD" />
+          </Actions>
+        </Control>
+        <Control x:type="Button">
+          <Name>Fast Forward</Name>
+          <Id>18</Id>
+          <Width>120</Width>
+          <Height>80</Height>
+          <PosX>377</PosX>
+          <PosY>90</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ButtonStyle>
+            <CornerRadius>0,0,12,0</CornerRadius>
+            <NoFocusBrush x:type="ColorBrush" Color="#FF272727" />
+            <NoFocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+            <FocusBrush x:type="ColorBrush" Color="#FF272727" />
+            <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+            <ShadeBrush x:type="GradientBrush">
+              <GradientStops>
+                <GradientStop Color="#1FF0F8FF" Offset="0" />
+                <GradientStop Color="Transparent" Offset="0.583" />
+                <GradientStop Color="Transparent" Offset="1" />
+              </GradientStops>
+              <Angle>Vertical</Angle>
+            </ShadeBrush>
+            <EnableLabel>false</EnableLabel>
+            <FontType>Titan</FontType>
+            <FontSize>25</FontSize>
+            <FocusFontBrush x:type="ColorBrush" Color="#FF00FF00" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+            <EnableImage>true</EnableImage>
+            <ImageStretch>None</ImageStretch>
+          </ButtonStyle>
+          <Image>\Settings\topbar_FF.png</Image>
+          <LabelText>NewButton</LabelText>
+          <Actions>
+            <Action Action="MediaPortalAction" Param="ACTION_FORWARD" />
+          </Actions>
+        </Control>
+      </GroupControls>
+    </Control>
+    <Control x:type="Button">
+      <Name>Back</Name>
+      <Id>19</Id>
+      <Width>100</Width>
+      <Height>100</Height>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle>
+        <EnableLabel>false</EnableLabel>
+        <EnableImage>true</EnableImage>
+      </ButtonStyle>
+      <Image>\Settings\left_f.png</Image>
+      <LabelText>NewButton</LabelText>
+      <Actions>
+        <Action Action="MediaPortalAction" Param="ACTION_PREVIOUS_MENU" />
+      </Actions>
+    </Control>
+    <Control x:type="Button">
+      <Name>Close Dialog</Name>
+      <Id>20</Id>
+      <Width>100</Width>
+      <Height>100</Height>
+      <PosX>412</PosX>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle>
+        <EnableLabel>false</EnableLabel>
+        <EnableImage>true</EnableImage>
+      </ButtonStyle>
+      <Image>\top_exit_disabled.png</Image>
+      <LabelText>NewButton</LabelText>
+      <Actions>
+        <Action Action="OpenDialog" Param="904" />
+      </Actions>
+    </Control>
+    <Control x:type="Button">
+      <Name>CH. up</Name>
+      <Id>21</Id>
+      <Width>120</Width>
+      <Height>80</Height>
+      <PosX>14</PosX>
+      <PosY>280</PosY>
+      <VisibleCondition>IsPlayer(IsTV) ++ !IsControlVisible(23)</VisibleCondition>
+      <IsWindowOpenVisible>false</IsWindowOpenVisible>
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle>
+        <CornerRadius>10,10,10,10</CornerRadius>
+        <NoFocusBrush x:type="ColorBrush" Color="#FF272727" />
+        <NoFocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+        <FocusBrush x:type="ColorBrush" Color="#FF272727" />
+        <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+        <ShadeBrush x:type="GradientBrush">
+          <GradientStops>
+            <GradientStop Color="#1FF0F8FF" Offset="0" />
+            <GradientStop Color="#00FFFFFF" Offset="0.59" />
+            <GradientStop Color="#00FFFFFF" Offset="1" />
+          </GradientStops>
+          <Angle>Vertical</Angle>
+        </ShadeBrush>
+        <GlossBrush />
+        <FontType>Titan</FontType>
+        <FontSize>25</FontSize>
+        <FocusFontBrush x:type="ColorBrush" Color="#FFAFEEEE" />
+        <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+        <ImageStretch>None</ImageStretch>
+      </ButtonStyle>
+      <Image>\Settings\topbar_stop.png</Image>
+      <LabelText>Ch. UP</LabelText>
+      <Actions>
+        <Action Action="MediaPortalAction" Param="ACTION_NEXT_CHANNEL" />
+      </Actions>
+    </Control>
+    <Control x:type="Button">
+      <Name>CH. down</Name>
+      <Id>22</Id>
+      <Width>120</Width>
+      <Height>80</Height>
+      <PosX>385</PosX>
+      <PosY>280</PosY>
+      <VisibleCondition>IsPlayer(IsTV) ++ !IsControlVisible(23)</VisibleCondition>
+      <IsWindowOpenVisible>false</IsWindowOpenVisible>
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle>
+        <CornerRadius>10,10,10,10</CornerRadius>
+        <NoFocusBrush x:type="ColorBrush" Color="#FF272727" />
+        <NoFocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+        <FocusBrush x:type="ColorBrush" Color="#FF272727" />
+        <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+        <ShadeBrush x:type="GradientBrush">
+          <GradientStops>
+            <GradientStop Color="#1FF0F8FF" Offset="0" />
+            <GradientStop Color="#00FFFFFF" Offset="0.59" />
+            <GradientStop Color="#00FFFFFF" Offset="1" />
+          </GradientStops>
+          <Angle>Vertical</Angle>
+        </ShadeBrush>
+        <GlossBrush />
+        <FontType>Titan</FontType>
+        <FontSize>25</FontSize>
+        <FocusFontBrush x:type="ColorBrush" Color="#FFAFEEEE" />
+        <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+        <ImageStretch>None</ImageStretch>
+      </ButtonStyle>
+      <Image>\Settings\topbar_stop.png</Image>
+      <LabelText>Ch. DOWN</LabelText>
+      <Actions>
+        <Action Action="MediaPortalAction" Param="ACTION_PREV_CHANNEL" />
+      </Actions>
+    </Control>
+    <Control x:type="Button">
+      <Name>Open Keyboard</Name>
+      <Id>35</Id>
+      <Width>100</Width>
+      <Height>100</Height>
+      <PosX>416</PosX>
+      <PosY>136</PosY>
+      <VisibleCondition>!IsControlVisible(23)</VisibleCondition>
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle>
+        <EnableLabel>false</EnableLabel>
+        <EnableImage>true</EnableImage>
+      </ButtonStyle>
+      <Image>\Settings\CoolClips_busi0286.jpg</Image>
+      <LabelText>NewButton</LabelText>
+      <Actions>
+        <Action Action="ControlVisible" Param="23" />
+      </Actions>
+    </Control>
+    <Control x:type="Group">
+      <Name>Number Keys</Name>
+      <Id>23</Id>
+      <Width>520</Width>
+      <Height>576</Height>
+      <VisibleCondition />
+      <IsWindowOpenVisible>false</IsWindowOpenVisible>
+      <Animations>
+        <Animation x:type="Slide" Condition="VisibleTrue" Duration="500" Easing="EaseOut" StartX="-520" />
+        <Animation x:type="Slide" Condition="VisibleFalse" Duration="500" Easing="EaseIn" EndX="-520" />
+      </Animations>
+      <MediaPortalFocusControls />
+      <GroupStyle>
+        <BorderThickness>2,2,2,2</BorderThickness>
+        <CornerRadius>25,25,25,25</CornerRadius>
+        <BackgroundBrush x:type="GradientBrush">
+          <GradientStops>
+            <GradientStop Color="#FF788282" Offset="1" />
+            <GradientStop Color="#FF000000" Offset="0.216" />
+          </GradientStops>
+          <Angle>Vertical</Angle>
+        </BackgroundBrush>
+        <BorderBrush />
+        <GlossBrush />
+      </GroupStyle>
+      <GroupControls>
+        <Control x:type="Rectangle">
+          <Name>Background</Name>
+          <Id>24</Id>
+          <Width>502</Width>
+          <Height>387</Height>
+          <PosX>2</PosX>
+          <PosY>118</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <BorderThickness>0,0,0,0</BorderThickness>
+          <CornerRadius>12,12,12,12</CornerRadius>
+          <BackgroundBrush x:type="GradientBrush">
+            <GradientStops>
+              <GradientStop Color="#FF000000" Offset="1" />
+              <GradientStop Color="#FF808080" Offset="0" />
+            </GradientStops>
+            <Angle>Vertical</Angle>
+          </BackgroundBrush>
+        </Control>
+        <Control x:type="Button">
+          <Name>1</Name>
+          <Id>25</Id>
+          <Width>160</Width>
+          <Height>110</Height>
+          <PosX>8</PosX>
+          <PosY>140</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ButtonStyle>
+            <CornerRadius>12,0,0,0</CornerRadius>
+            <NoFocusBrush x:type="ColorBrush" Color="#FF272727" />
+            <NoFocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+            <FocusBrush x:type="ColorBrush" Color="#FF272727" />
+            <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+            <ShadeBrush x:type="GradientBrush">
+              <GradientStops>
+                <GradientStop Color="#1FF0F8FF" Offset="0" />
+                <GradientStop Color="#00FFFFFF" Offset="0.59" />
+                <GradientStop Color="#00FFFFFF" Offset="1" />
+              </GradientStops>
+              <Angle>Vertical</Angle>
+            </ShadeBrush>
+            <GlossBrush />
+            <FontType>Titan</FontType>
+            <FontSize>50</FontSize>
+            <FocusFontBrush x:type="ColorBrush" Color="#FFAFEEEE" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+            <ImageStretch>None</ImageStretch>
+          </ButtonStyle>
+          <Image>\Settings\topbar_skipback.png</Image>
+          <LabelText>1</LabelText>
+          <Actions>
+            <Action Action="MediaPortalAction" Param="REMOTE_1" />
+          </Actions>
+        </Control>
+        <Control x:type="Button">
+          <Name>2</Name>
+          <Id>26</Id>
+          <Width>160</Width>
+          <Height>110</Height>
+          <PosX>173</PosX>
+          <PosY>140</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ButtonStyle>
+            <NoFocusBrush x:type="ColorBrush" Color="#FF272727" />
+            <NoFocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+            <FocusBrush x:type="ColorBrush" Color="#FF272727" />
+            <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+            <ShadeBrush x:type="GradientBrush">
+              <GradientStops>
+                <GradientStop Color="#1FF0F8FF" Offset="0" />
+                <GradientStop Color="#00FFFFFF" Offset="0.59" />
+                <GradientStop Color="#00FFFFFF" Offset="1" />
+              </GradientStops>
+              <Angle>Vertical</Angle>
+            </ShadeBrush>
+            <GlossBrush />
+            <FontType>Titan</FontType>
+            <FontSize>50</FontSize>
+            <FocusFontBrush x:type="ColorBrush" Color="#FFAFEEEE" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+            <ImageStretch>None</ImageStretch>
+          </ButtonStyle>
+          <Image>\Settings\topbar_stop.png</Image>
+          <LabelText>2</LabelText>
+          <Actions>
+            <Action Action="MediaPortalAction" Param="REMOTE_2" />
+          </Actions>
+        </Control>
+        <Control x:type="Button">
+          <Name>3</Name>
+          <Id>27</Id>
+          <Width>160</Width>
+          <Height>110</Height>
+          <PosX>338</PosX>
+          <PosY>140</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ButtonStyle>
+            <CornerRadius>0,12,0,0</CornerRadius>
+            <NoFocusBrush x:type="ColorBrush" Color="#FF272727" />
+            <NoFocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+            <FocusBrush x:type="ColorBrush" Color="#FF272727" />
+            <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+            <ShadeBrush x:type="GradientBrush">
+              <GradientStops>
+                <GradientStop Color="#1FF0F8FF" Offset="0" />
+                <GradientStop Color="#00FFFFFF" Offset="0.59" />
+                <GradientStop Color="#00FFFFFF" Offset="1" />
+              </GradientStops>
+              <Angle>Vertical</Angle>
+            </ShadeBrush>
+            <GlossBrush />
+            <FontType>Titan</FontType>
+            <FontSize>50</FontSize>
+            <FocusFontBrush x:type="ColorBrush" Color="#FFAFEEEE" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+            <ImageStretch>None</ImageStretch>
+          </ButtonStyle>
+          <Image>\Settings\topbar_FF.png</Image>
+          <LabelText>3</LabelText>
+          <Actions>
+            <Action Action="MediaPortalAction" Param="REMOTE_3" />
+          </Actions>
+        </Control>
+        <Control x:type="Button">
+          <Name>9</Name>
+          <Id>28</Id>
+          <Width>160</Width>
+          <Height>110</Height>
+          <PosX>338</PosX>
+          <PosY>370</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ButtonStyle>
+            <CornerRadius>0,0,12,0</CornerRadius>
+            <NoFocusBrush x:type="ColorBrush" Color="#FF272727" />
+            <NoFocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+            <FocusBrush x:type="ColorBrush" Color="#FF272727" />
+            <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+            <ShadeBrush x:type="GradientBrush">
+              <GradientStops>
+                <GradientStop Color="#1FF0F8FF" Offset="0" />
+                <GradientStop Color="Transparent" Offset="0.583" />
+                <GradientStop Color="Transparent" Offset="1" />
+              </GradientStops>
+              <Angle>Vertical</Angle>
+            </ShadeBrush>
+            <FontType>Titan</FontType>
+            <FontSize>50</FontSize>
+            <FocusFontBrush x:type="ColorBrush" Color="#FFAFEEEE" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+            <ImageStretch>None</ImageStretch>
+          </ButtonStyle>
+          <Image>\Settings\topbar_FF.png</Image>
+          <LabelText>9</LabelText>
+          <Actions>
+            <Action Action="MediaPortalAction" Param="REMOTE_9" />
+          </Actions>
+        </Control>
+        <Control x:type="Button">
+          <Name>7</Name>
+          <Id>29</Id>
+          <Width>160</Width>
+          <Height>110</Height>
+          <PosX>8</PosX>
+          <PosY>370</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ButtonStyle>
+            <CornerRadius>0,0,0,12</CornerRadius>
+            <NoFocusBrush x:type="ColorBrush" Color="#FF272727" />
+            <NoFocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+            <FocusBrush x:type="ColorBrush" Color="#FF272727" />
+            <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+            <ShadeBrush x:type="GradientBrush">
+              <GradientStops>
+                <GradientStop Color="#1FF0F8FF" Offset="0" />
+                <GradientStop Color="Transparent" Offset="0.583" />
+                <GradientStop Color="Transparent" Offset="1" />
+              </GradientStops>
+              <Angle>Vertical</Angle>
+            </ShadeBrush>
+            <FontType>Titan</FontType>
+            <FontSize>50</FontSize>
+            <FocusFontBrush x:type="ColorBrush" Color="#FFAFEEEE" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+            <ImageStretch>None</ImageStretch>
+          </ButtonStyle>
+          <Image>\Settings\topbar_rew.png</Image>
+          <LabelText>7</LabelText>
+          <Actions>
+            <Action Action="MediaPortalAction" Param="REMOTE_7" />
+          </Actions>
+        </Control>
+        <Control x:type="Button">
+          <Name>4</Name>
+          <Id>30</Id>
+          <Width>160</Width>
+          <Height>110</Height>
+          <PosX>8</PosX>
+          <PosY>255</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ButtonStyle>
+            <NoFocusBrush x:type="ColorBrush" Color="#FF272727" />
+            <NoFocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+            <FocusBrush x:type="ColorBrush" Color="#FF272727" />
+            <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+            <ShadeBrush x:type="GradientBrush">
+              <GradientStops>
+                <GradientStop Color="#1FF0F8FF" Offset="0" />
+                <GradientStop Color="#00FFFFFF" Offset="0.59" />
+                <GradientStop Color="#00FFFFFF" Offset="1" />
+              </GradientStops>
+              <Angle>Vertical</Angle>
+            </ShadeBrush>
+            <GlossBrush />
+            <FontType>Titan</FontType>
+            <FontSize>50</FontSize>
+            <FocusFontBrush x:type="ColorBrush" Color="#FFAFEEEE" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+            <ImageStretch>None</ImageStretch>
+          </ButtonStyle>
+          <Image>\Settings\topbar_stop.png</Image>
+          <LabelText>4</LabelText>
+          <Actions>
+            <Action Action="MediaPortalAction" Param="REMOTE_4" />
+          </Actions>
+        </Control>
+        <Control x:type="Button">
+          <Name>5</Name>
+          <Id>31</Id>
+          <Width>160</Width>
+          <Height>110</Height>
+          <PosX>173</PosX>
+          <PosY>255</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ButtonStyle>
+            <NoFocusBrush x:type="ColorBrush" Color="#FF272727" />
+            <NoFocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+            <FocusBrush x:type="ColorBrush" Color="#FF272727" />
+            <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+            <ShadeBrush x:type="GradientBrush">
+              <GradientStops>
+                <GradientStop Color="#1FF0F8FF" Offset="0" />
+                <GradientStop Color="#00FFFFFF" Offset="0.59" />
+                <GradientStop Color="#00FFFFFF" Offset="1" />
+              </GradientStops>
+              <Angle>Vertical</Angle>
+            </ShadeBrush>
+            <GlossBrush />
+            <FontType>Titan</FontType>
+            <FontSize>50</FontSize>
+            <FocusFontBrush x:type="ColorBrush" Color="#FFAFEEEE" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+            <ImageStretch>None</ImageStretch>
+          </ButtonStyle>
+          <Image>\Settings\topbar_stop.png</Image>
+          <LabelText>5</LabelText>
+          <Actions>
+            <Action Action="MediaPortalAction" Param="REMOTE_5" />
+          </Actions>
+        </Control>
+        <Control x:type="Button">
+          <Name>6</Name>
+          <Id>32</Id>
+          <Width>160</Width>
+          <Height>110</Height>
+          <PosX>338</PosX>
+          <PosY>255</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ButtonStyle>
+            <NoFocusBrush x:type="ColorBrush" Color="#FF272727" />
+            <NoFocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+            <FocusBrush x:type="ColorBrush" Color="#FF272727" />
+            <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+            <ShadeBrush x:type="GradientBrush">
+              <GradientStops>
+                <GradientStop Color="#1FF0F8FF" Offset="0" />
+                <GradientStop Color="#00FFFFFF" Offset="0.59" />
+                <GradientStop Color="#00FFFFFF" Offset="1" />
+              </GradientStops>
+              <Angle>Vertical</Angle>
+            </ShadeBrush>
+            <GlossBrush />
+            <FontType>Titan</FontType>
+            <FontSize>50</FontSize>
+            <FocusFontBrush x:type="ColorBrush" Color="#FFAFEEEE" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+            <ImageStretch>None</ImageStretch>
+          </ButtonStyle>
+          <Image>\Settings\topbar_stop.png</Image>
+          <LabelText>6</LabelText>
+          <Actions>
+            <Action Action="MediaPortalAction" Param="REMOTE_6" />
+          </Actions>
+        </Control>
+        <Control x:type="Button">
+          <Name>8</Name>
+          <Id>33</Id>
+          <Width>160</Width>
+          <Height>110</Height>
+          <PosX>173</PosX>
+          <PosY>370</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ButtonStyle>
+            <NoFocusBrush x:type="ColorBrush" Color="#FF272727" />
+            <NoFocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+            <FocusBrush x:type="ColorBrush" Color="#FF272727" />
+            <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+            <ShadeBrush x:type="GradientBrush">
+              <GradientStops>
+                <GradientStop Color="#1FF0F8FF" Offset="0" />
+                <GradientStop Color="#00FFFFFF" Offset="0.59" />
+                <GradientStop Color="#00FFFFFF" Offset="1" />
+              </GradientStops>
+              <Angle>Vertical</Angle>
+            </ShadeBrush>
+            <GlossBrush />
+            <FontType>Titan</FontType>
+            <FontSize>50</FontSize>
+            <FocusFontBrush x:type="ColorBrush" Color="#FFAFEEEE" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+            <ImageStretch>None</ImageStretch>
+          </ButtonStyle>
+          <Image>\Settings\topbar_stop.png</Image>
+          <LabelText>8</LabelText>
+          <Actions>
+            <Action Action="MediaPortalAction" Param="REMOTE_8" />
+          </Actions>
+        </Control>
+        <Control x:type="Button">
+          <Name>Close Dialog</Name>
+          <Id>34</Id>
+          <Width>100</Width>
+          <Height>100</Height>
+          <PosX>412</PosX>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ButtonStyle>
+            <EnableLabel>false</EnableLabel>
+            <EnableImage>true</EnableImage>
+          </ButtonStyle>
+          <Image>\top_exit_disabled.png</Image>
+          <LabelText>NewButton</LabelText>
+          <Actions>
+            <Action Action="ControlVisible" Param="23" />
+          </Actions>
+        </Control>
+      </GroupControls>
+    </Control>
+  </DialogControls>
+</Dialog>

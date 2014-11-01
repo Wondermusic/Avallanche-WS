@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Dialog xmlns:x="http://www.w3.org/2001/XMLSchema-instance" x:type="MPDisplayDialog">
+  <Name>SideRemote</Name>
+  <Id>903</Id>
+  <Width>364</Width>
+  <Height>366</Height>
+  <BorderThickness>2</BorderThickness>
+  <CornerRadius>25,25,25,25</CornerRadius>
+  <BackgroundBrush x:type="GradientBrush">
+    <GradientStops>
+      <GradientStop Color="#FF788282" Offset="1" />
+      <GradientStop Color="#FF000000" Offset="0.216" />
+    </GradientStops>
+    <Angle>Vertical</Angle>
+  </BackgroundBrush>
+  <BorderBrush x:type="ColorBrush" Color="#FF494949" />
+  <DialogAnimations>
+    <Animation x:type="Slide" Condition="WindowOpen" Duration="500" Easing="EaseOut" StartX="-400" />
+    <Animation x:type="Slide" Condition="WindowClose" Duration="500" Easing="EaseIn" EndX="-400" />
+  </DialogAnimations>
+  <DialogControls>
+    <Control x:type="Group">
+      <Name>Jog</Name>
+      <Id>1</Id>
+      <Width>303</Width>
+      <Height>303</Height>
+      <PosX>26</PosX>
+      <PosY>29</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <GroupStyle>
+        <BorderThickness>0,0,0,0</BorderThickness>
+        <CornerRadius>0,0,0,0</CornerRadius>
+      </GroupStyle>
+      <GroupControls>
+        <Control x:type="Group">
+          <Name>NewGroup</Name>
+          <Id>2</Id>
+          <Width>303</Width>
+          <Height>303</Height>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <GroupStyle>
+            <BorderThickness>0,0,0,0</BorderThickness>
+            <CornerRadius>0,0,0,0</CornerRadius>
+          </GroupStyle>
+          <GroupControls>
+            <Control x:type="Image">
+              <Name>NewImage</Name>
+              <Id>3</Id>
+              <Width>303</Width>
+              <Height>303</Height>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <ImageStyle>
+                <BorderThickness>10,10,10,10</BorderThickness>
+                <CornerRadius>200,200,200,200</CornerRadius>
+                <BackgroundBrush x:type="GradientBrush">
+                  <GradientStops>
+                    <GradientStop Color="#1FF0F8FF" Offset="0" />
+                    <GradientStop Color="#00FFFFFF" Offset="0.583" />
+                    <GradientStop Color="Transparent" Offset="1" />
+                  </GradientStops>
+                  <Angle>Vertical</Angle>
+                </BackgroundBrush>
+                <BorderBrush x:type="ColorBrush" Color="#FF000000" />
+              </ImageStyle>
+              <ImageStretch>None</ImageStretch>
+              <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+            </Control>
+            <Control x:type="Image">
+              <Name>NewImage</Name>
+              <Id>4</Id>
+              <Width>150</Width>
+              <Height>150</Height>
+              <PosX>77</PosX>
+              <PosY>77</PosY>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <ImageStyle>
+                <BorderThickness>5,5,5,5</BorderThickness>
+                <CornerRadius>200,200,200,200</CornerRadius>
+                <BackgroundBrush x:type="GradientBrush">
+                  <GradientStops>
+                    <GradientStop Color="#1FF0F8FF" Offset="0" />
+                    <GradientStop Color="#00FFFFFF" Offset="0.583" />
+                    <GradientStop Color="Transparent" Offset="1" />
+                  </GradientStops>
+                  <Angle>Vertical</Angle>
+                </BackgroundBrush>
+                <BorderBrush x:type="ColorBrush" Color="#FF000000" />
+              </ImageStyle>
+              <ImageStretch>None</ImageStretch>
+              <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+            </Control>
+          </GroupControls>
+        </Control>
+        <Control x:type="Button">
+          <Name>Up</Name>
+          <Id>5</Id>
+          <Width>140</Width>
+          <Height>100</Height>
+          <PosX>85</PosX>
+          <PosY>-2</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ButtonStyle>
+            <NoFocusBrush x:type="ImageBrush" Image="\Settings\up_nf.png" Stretch="Uniform" />
+            <FocusBrush x:type="ImageBrush" Image="\Settings\up_f.png" Stretch="Uniform" />
+            <EnableLabel>false</EnableLabel>
+            <FontType>Titan</FontType>
+            <FocusFontBrush x:type="ColorBrush" Color="#FF00FF00" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+            <EnableImage>true</EnableImage>
+          </ButtonStyle>
+          <LabelText>NewButton</LabelText>
+          <Actions>
+            <Action Action="MediaPortalAction" Param="ACTION_MOVE_UP" />
+          </Actions>
+        </Control>
+        <Control x:type="Button">
+          <Name>Down</Name>
+          <Id>6</Id>
+          <Width>140</Width>
+          <Height>100</Height>
+          <PosX>85</PosX>
+          <PosY>208</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ButtonStyle>
+            <NoFocusBrush x:type="ImageBrush" Image="\Settings\down_nf.png" Stretch="Uniform" />
+            <FocusBrush x:type="ImageBrush" Image="\Settings\down_f.png" Stretch="Uniform" />
+            <EnableLabel>false</EnableLabel>
+            <FontType>Titan</FontType>
+            <FocusFontBrush x:type="ColorBrush" Color="#FF00FF00" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+            <EnableImage>true</EnableImage>
+          </ButtonStyle>
+          <LabelText>NewButton</LabelText>
+          <Actions>
+            <Action Action="MediaPortalAction" Param="ACTION_MOVE_DOWN" />
+          </Actions>
+        </Control>
+        <Control x:type="Button">
+          <Name>Left</Name>
+          <Id>7</Id>
+          <Width>140</Width>
+          <Height>100</Height>
+          <PosX>-25</PosX>
+          <PosY>101</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ButtonStyle>
+            <NoFocusBrush x:type="ImageBrush" Image="\Settings\left_nf.png" Stretch="Uniform" />
+            <FocusBrush x:type="ImageBrush" Image="\Settings\left_f.png" Stretch="Uniform" />
+            <EnableLabel>false</EnableLabel>
+            <FontType>Titan</FontType>
+            <FocusFontBrush x:type="ColorBrush" Color="#FF00FF00" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+            <EnableImage>true</EnableImage>
+          </ButtonStyle>
+          <LabelText>NewButton</LabelText>
+          <Actions>
+            <Action Action="MediaPortalAction" Param="ACTION_MOVE_LEFT" />
+          </Actions>
+        </Control>
+        <Control x:type="Button">
+          <Name>Right</Name>
+          <Id>8</Id>
+          <Width>140</Width>
+          <Height>100</Height>
+          <PosX>189</PosX>
+          <PosY>101</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ButtonStyle>
+            <NoFocusBrush x:type="ImageBrush" Image="\Settings\right_nf.png" Stretch="Uniform" />
+            <FocusBrush x:type="ImageBrush" Image="\Settings\right_f.png" Stretch="Uniform" />
+            <EnableLabel>false</EnableLabel>
+            <FontType>Titan</FontType>
+            <FocusFontBrush x:type="ColorBrush" Color="#FF00FF00" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+            <EnableImage>true</EnableImage>
+          </ButtonStyle>
+          <LabelText>NewButton</LabelText>
+          <Actions>
+            <Action Action="MediaPortalAction" Param="ACTION_MOVE_RIGHT" />
+          </Actions>
+        </Control>
+        <Control x:type="Button">
+          <Name>OK</Name>
+          <Id>9</Id>
+          <Width>120</Width>
+          <Height>120</Height>
+          <PosX>93</PosX>
+          <PosY>93</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ButtonStyle>
+            <FontSize>45</FontSize>
+            <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+            <NoFocusFontBrush x:type="ColorBrush" Color="#FF4682B4" />
+          </ButtonStyle>
+          <LabelText>OK</LabelText>
+          <Actions>
+            <Action Action="MediaPortalAction" Param="ACTION_SELECT_ITEM" />
+          </Actions>
+        </Control>
+      </GroupControls>
+    </Control>
+    <Control x:type="Button">
+      <Name>Back</Name>
+      <Id>10</Id>
+      <Width>100</Width>
+      <Height>100</Height>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle>
+        <EnableLabel>false</EnableLabel>
+        <EnableImage>true</EnableImage>
+      </ButtonStyle>
+      <Image>\Settings\left_f.png</Image>
+      <LabelText>NewButton</LabelText>
+      <Actions>
+        <Action Action="MediaPortalAction" Param="ACTION_PREVIOUS_MENU" />
+      </Actions>
+    </Control>
+    <Control x:type="Button">
+      <Name>Close Dialog</Name>
+      <Id>11</Id>
+      <Width>100</Width>
+      <Height>100</Height>
+      <PosX>264</PosX>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle>
+        <EnableLabel>false</EnableLabel>
+        <EnableImage>true</EnableImage>
+      </ButtonStyle>
+      <Image>\top_exit_disabled.png</Image>
+      <LabelText>NewButton</LabelText>
+      <Actions>
+        <Action Action="OpenDialog" Param="903" />
+      </Actions>
+    </Control>
+  </DialogControls>
+</Dialog>

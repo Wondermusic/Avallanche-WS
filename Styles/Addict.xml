@@ -1,0 +1,955 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StyleCollection xmlns:x="http://www.w3.org/2001/XMLSchema-instance">
+  <BrushStyles />
+  <ControlStyles>
+    <ControlStyle x:type="LabelStyle" StyleId="Avalon 26 Blue">
+      <FontType>AvalonType</FontType>
+      <FontSize>26</FontSize>
+      <FontBrush x:type="ColorBrush" Color="#FF6AA3CB" />
+    </ControlStyle>
+    <ControlStyle x:type="LabelStyle" StyleId="Avalon 26 White">
+      <FontType>AvalonType</FontType>
+      <FontSize>26</FontSize>
+      <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+    </ControlStyle>
+    <ControlStyle x:type="LabelStyle" StyleId="Avalon 33 Blue">
+      <FontType>AvalonType</FontType>
+      <FontSize>33</FontSize>
+      <FontBrush x:type="ColorBrush" Color="#FF6AA3CB" />
+    </ControlStyle>
+    <ControlStyle x:type="LabelStyle" StyleId="Avalon 33 White">
+      <FontType>AvalonType</FontType>
+      <FontSize>33</FontSize>
+      <FontBrush x:type="ColorBrush" Color="#FF6AA3CB" />
+    </ControlStyle>
+    <ControlStyle x:type="ImageStyle" StyleId="Logo_Image">
+      <BorderThickness>0,0,0,0</BorderThickness>
+      <CornerRadius>0,0,0,0</CornerRadius>
+      <BackgroundBrush />
+      <BorderBrush />
+    </ControlStyle>
+    <ControlStyle x:type="LabelStyle" StyleId="Avalon 42 Blue">
+      <FontType>AvalonType</FontType>
+      <FontSize>42</FontSize>
+      <FontBrush x:type="ColorBrush" Color="#FF6AA3CB" />
+    </ControlStyle>
+    <ControlStyle x:type="LabelStyle" StyleId="Avalon 42 White">
+      <FontType>AvalonType</FontType>
+      <FontSize>42</FontSize>
+      <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+    </ControlStyle>
+    <ControlStyle x:type="LabelStyle" StyleId="Avalon 50 Blue">
+      <FontType>AvalonType</FontType>
+      <FontSize>50</FontSize>
+      <FontBrush x:type="ColorBrush" Color="#FF6AA3CB" />
+    </ControlStyle>
+    <ControlStyle x:type="ImageStyle" StyleId="Music Cover">
+      <BorderThickness>0,0,0,0</BorderThickness>
+      <CornerRadius>10,10,10,10</CornerRadius>
+      <BackgroundBrush x:type="ImageBrush" Image="\audio_nothumb.png" Stretch="Uniform" />
+      <BorderBrush />
+    </ControlStyle>
+    <ControlStyle x:type="LabelStyle" StyleId="Avalon 50 White">
+      <FontType>AvalonType</FontType>
+      <FontSize>50</FontSize>
+      <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+    </ControlStyle>
+    <ControlStyle x:type="LabelStyle" StyleId="Avalon 60 Blue">
+      <FontType>AvalonType</FontType>
+      <FontSize>60</FontSize>
+      <FontBrush x:type="ColorBrush" Color="#FF6AA3CB" />
+    </ControlStyle>
+    <ControlStyle x:type="LabelStyle" StyleId="Avalon 60 White">
+      <FontType>Arial</FontType>
+      <FontSize>60</FontSize>
+      <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+    </ControlStyle>
+    <ControlStyle x:type="ImageStyle" StyleId="VideoCover">
+      <BorderThickness>0,0,0,0</BorderThickness>
+      <CornerRadius>10,10,10,10</CornerRadius>
+      <BackgroundBrush x:type="ImageBrush" Image="\missing_coverart.png" Stretch="Uniform" />
+      <BorderBrush />
+    </ControlStyle>
+    <ControlStyle x:type="LabelStyle" StyleId="Avalon 74 Blue">
+      <FontType>AvalonType</FontType>
+      <FontWeight>Black</FontWeight>
+      <FontSize>74</FontSize>
+      <FontBrush x:type="ColorBrush" Color="#FF6AA3CB" />
+    </ControlStyle>
+    <ControlStyle x:type="GroupStyle" StyleId="Empty">
+      <BorderThickness>0,0,0,0</BorderThickness>
+      <CornerRadius>0,0,0,0</CornerRadius>
+      <BackgroundBrush />
+      <BorderBrush />
+      <GlossBrush />
+    </ControlStyle>
+    <ControlStyle x:type="LabelStyle" StyleId="Avalon 74 White">
+      <FontType>AvalonType</FontType>
+      <FontSize>74</FontSize>
+      <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+    </ControlStyle>
+    <ControlStyle x:type="ImageStyle" StyleId="Radio Cover">
+      <BorderThickness>0,0,0,0</BorderThickness>
+      <CornerRadius>10,10,10,10</CornerRadius>
+      <BackgroundBrush x:type="ImageBrush" Image="\audio_nothumb.png" Stretch="Uniform" />
+      <BorderBrush />
+    </ControlStyle>
+    <ControlStyle x:type="LabelStyle" StyleId="Avalon 85 Grey">
+      <FontType>AvalonType</FontType>
+      <FontSize>85</FontSize>
+      <FontBrush x:type="ColorBrush" Color="#FFC0C0C0" />
+    </ControlStyle>
+    <ControlStyle x:type="LabelStyle" StyleId="Avalon 100 Grey">
+      <FontType>AvalonType</FontType>
+      <FontSize>100</FontSize>
+      <FontBrush x:type="ColorBrush" Color="#FFA9A9A9" />
+    </ControlStyle>
+    <ControlStyle x:type="ButtonStyle" StyleId="Keypad Upper left">
+      <CornerRadius>12,0,0,0</CornerRadius>
+      <NoFocusBrush x:type="ColorBrush" Color="#FF272727" />
+      <NoFocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+      <FocusBrush x:type="ColorBrush" Color="#FF272727" />
+      <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+      <ShadeBrush x:type="GradientBrush">
+        <Angle>Vertical</Angle>
+        <GradientStops>
+          <GradientStop Color="#1FF0F8FF" Offset="0" />
+          <GradientStop Color="#00FFFFFF" Offset="0.59" />
+          <GradientStop Color="#00FFFFFF" Offset="1" />
+        </GradientStops>
+      </ShadeBrush>
+      <GlossBrush />
+      <FontType>Titan</FontType>
+      <FontSize>40</FontSize>
+      <FocusFontBrush x:type="ColorBrush" Color="#FFAFEEEE" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+    </ControlStyle>
+    <ControlStyle x:type="ButtonStyle" StyleId="KeyPad Middle">
+      <NoFocusBrush x:type="ColorBrush" Color="#FF272727" />
+      <NoFocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+      <FocusBrush x:type="ColorBrush" Color="#FF272727" />
+      <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+      <ShadeBrush x:type="GradientBrush">
+        <Angle>Vertical</Angle>
+        <GradientStops>
+          <GradientStop Color="#1FF0F8FF" Offset="0" />
+          <GradientStop Color="#00FFFFFF" Offset="0.59" />
+          <GradientStop Color="#00FFFFFF" Offset="1" />
+        </GradientStops>
+      </ShadeBrush>
+      <GlossBrush />
+      <FontType>Titan</FontType>
+      <FontSize>40</FontSize>
+      <FocusFontBrush x:type="ColorBrush" Color="#FFAFEEEE" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+    </ControlStyle>
+    <ControlStyle x:type="ButtonStyle" StyleId="KeyPad Upper right">
+      <CornerRadius>0,12,0,0</CornerRadius>
+      <NoFocusBrush x:type="ColorBrush" Color="#FF272727" />
+      <NoFocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+      <FocusBrush x:type="ColorBrush" Color="#FF272727" />
+      <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+      <ShadeBrush x:type="GradientBrush">
+        <Angle>Vertical</Angle>
+        <GradientStops>
+          <GradientStop Color="#1FF0F8FF" Offset="0" />
+          <GradientStop Color="#00FFFFFF" Offset="0.59" />
+          <GradientStop Color="#00FFFFFF" Offset="1" />
+        </GradientStops>
+      </ShadeBrush>
+      <GlossBrush />
+      <FontType>Titan</FontType>
+      <FontSize>40</FontSize>
+      <FocusFontBrush x:type="ColorBrush" Color="#FFAFEEEE" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+    </ControlStyle>
+    <ControlStyle x:type="ButtonStyle" StyleId="KeyPad Lower left">
+      <CornerRadius>0,0,0,12</CornerRadius>
+      <NoFocusBrush x:type="ColorBrush" Color="#FF272727" />
+      <NoFocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+      <FocusBrush x:type="ColorBrush" Color="#FF272727" />
+      <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+      <ShadeBrush x:type="GradientBrush">
+        <Angle>Vertical</Angle>
+        <GradientStops>
+          <GradientStop Color="#1FF0F8FF" Offset="0" />
+          <GradientStop Color="Transparent" Offset="0.583" />
+          <GradientStop Color="Transparent" Offset="1" />
+        </GradientStops>
+      </ShadeBrush>
+      <FontType>Titan</FontType>
+      <FontSize>25</FontSize>
+      <FocusFontBrush x:type="ColorBrush" Color="#FF00FF00" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <EnableImage>true</EnableImage>
+    </ControlStyle>
+    <ControlStyle x:type="ButtonStyle" StyleId="KeyPad Lower right">
+      <CornerRadius>0,0,12,0</CornerRadius>
+      <NoFocusBrush x:type="ColorBrush" Color="#FF272727" />
+      <NoFocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+      <FocusBrush x:type="ColorBrush" Color="#FF272727" />
+      <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+      <ShadeBrush x:type="GradientBrush">
+        <Angle>Vertical</Angle>
+        <GradientStops>
+          <GradientStop Color="#1FF0F8FF" Offset="0" />
+          <GradientStop Color="Transparent" Offset="0.583" />
+          <GradientStop Color="Transparent" Offset="1" />
+        </GradientStops>
+      </ShadeBrush>
+      <FontType>Titan</FontType>
+      <FontSize>25</FontSize>
+      <FocusFontBrush x:type="ColorBrush" Color="#FF00FF00" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <EnableImage>true</EnableImage>
+    </ControlStyle>
+    <ControlStyle x:type="ListStyle" StyleId="empty">
+      <BorderThickness>0,0,0,0</BorderThickness>
+      <CornerRadius>0,0,0,0</CornerRadius>
+      <BackgroundBrush />
+      <BorderBrush />
+      <GlossBrush />
+    </ControlStyle>
+    <ControlStyle x:type="ImageStyle" StyleId="Default_BG">
+      <BorderThickness>0,0,0,0</BorderThickness>
+      <CornerRadius>0,0,0,0</CornerRadius>
+      <BackgroundBrush x:type="ImageBrush" Image="\Styles\Blue\splashscreen.png" Stretch="Fill" />
+      <BorderBrush />
+    </ControlStyle>
+    <ControlStyle x:type="ImageStyle" StyleId="Overlay">
+      <BorderThickness>0,0,0,0</BorderThickness>
+      <CornerRadius>0,0,0,0</CornerRadius>
+      <BackgroundBrush x:type="ImageBrush" Image="\Styles\Blue\overlay.png" Stretch="Fill" />
+      <BorderBrush />
+    </ControlStyle>
+    <ControlStyle x:type="ImageStyle" StyleId="ViewPortLong">
+      <BorderThickness>0,0,0,0</BorderThickness>
+      <CornerRadius>0,0,0,0</CornerRadius>
+      <BackgroundBrush x:type="ImageBrush" Image="\Styles\Blue\viewport_thumbs_short.png" Stretch="Fill" />
+      <BorderBrush />
+    </ControlStyle>
+    <ControlStyle x:type="ImageStyle" StyleId="Dialog Background">
+      <BorderThickness>0,0,0,0</BorderThickness>
+      <CornerRadius>0,0,0,0</CornerRadius>
+      <BackgroundBrush x:type="ImageBrush" Image="\Styles\Blue\dialog_background.png" Stretch="Fill" />
+      <BorderBrush />
+    </ControlStyle>
+    <ControlStyle x:type="ButtonStyle" StyleId="Exit Menu Background">
+      <NoFocusBrush x:type="ImageBrush" Image="\Styles\Blue\exitmenu_bg.png" Stretch="Fill" />
+      <NoFocusBorderBrush />
+      <FocusBrush x:type="ImageBrush" Image="\Styles\Blue\exitmenu_bg.png" Stretch="Fill" />
+      <FocusBorderBrush />
+      <ShadeBrush />
+      <GlossBrush />
+      <EnableLabel>false</EnableLabel>
+      <FontType>AvalonType</FontType>
+      <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
+    </ControlStyle>
+    <ControlStyle x:type="ImageStyle" StyleId="OverlayLong">
+      <BorderThickness>0,0,0,0</BorderThickness>
+      <CornerRadius>0,0,0,0</CornerRadius>
+      <BackgroundBrush x:type="ImageBrush" Image="\Styles\Blue\overlay_long.png" Stretch="Fill" />
+      <BorderBrush />
+    </ControlStyle>
+    <ControlStyle x:type="ImageStyle" StyleId="ViewPortThumbsLong">
+      <BorderThickness>0,0,0,0</BorderThickness>
+      <CornerRadius>0,0,0,0</CornerRadius>
+      <BackgroundBrush x:type="ImageBrush" Image="\Styles\Blue\viewport_thumbs_short.png" Stretch="Fill" />
+      <BorderBrush />
+    </ControlStyle>
+    <ControlStyle x:type="ListItemStyle" StyleId="Horizontal Small">
+      <BorderThickness>1,1,1,1</BorderThickness>
+      <CornerRadius>10,10,10,10</CornerRadius>
+      <NoFocusBrush x:type="ColorBrush" Color="#FF000000" />
+      <NoFocusBorderBrush />
+      <FocusBrush x:type="ColorBrush" Color="#FF6AA3CB" />
+      <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+      <FontType>AvalonType</FontType>
+      <FontSize>25</FontSize>
+      <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FF6AA3CB" />
+      <LabelMargin>3,3,3,3</LabelMargin>
+      <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
+      <EnableImage>true</EnableImage>
+      <ImageMargin>3,3,3,33</ImageMargin>
+      <ImageVerticalAlignment>Top</ImageVerticalAlignment>
+      <ImageCornerRadius>10</ImageCornerRadius>
+      <Width>177</Width>
+      <Height>350</Height>
+      <ItemMargin>1,1,1,1</ItemMargin>
+    </ControlStyle>
+    <ControlStyle x:type="ButtonStyle" StyleId="Standard Button">
+      <CornerRadius>2,2,2,2</CornerRadius>
+      <NoFocusBrush x:type="GradientBrush">
+        <Angle>Vertical</Angle>
+        <GradientStops>
+          <GradientStop Color="#6A85CFFE" Offset="0.188" />
+          <GradientStop Color="#1A7EC5F3" Offset="0.726" />
+        </GradientStops>
+      </NoFocusBrush>
+      <NoFocusBorderBrush />
+      <FocusBrush x:type="GradientBrush">
+        <Angle>Vertical</Angle>
+        <GradientStops>
+          <GradientStop Color="#FF74B7E9" Offset="0.302" />
+          <GradientStop Color="#FF3F78A5" Offset="0.827" />
+        </GradientStops>
+      </FocusBrush>
+      <FocusBorderBrush />
+      <ShadeBrush />
+      <GlossBrush />
+      <FontType>AvalonType</FontType>
+      <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FF808080" />
+      <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
+    </ControlStyle>
+    <ControlStyle x:type="ListItemStyle" StyleId="Horizontal small">
+      <BorderThickness>1,1,1,1</BorderThickness>
+      <CornerRadius>10,10,10,10</CornerRadius>
+      <NoFocusBrush x:type="ColorBrush" Color="#FF000000" />
+      <NoFocusBorderBrush />
+      <FocusBrush x:type="ColorBrush" Color="#FF6AA3CB" />
+      <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+      <FontType>AvalonType</FontType>
+      <FontSize>25</FontSize>
+      <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FF6AA3CB" />
+      <LabelMargin>3,3,3,3</LabelMargin>
+      <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
+      <EnableImage>true</EnableImage>
+      <ImageMargin>3,3,3,33</ImageMargin>
+      <ImageVerticalAlignment>Top</ImageVerticalAlignment>
+      <ImageCornerRadius>10</ImageCornerRadius>
+      <Width>231</Width>
+      <Height>350</Height>
+      <ItemMargin>1,1,1,1</ItemMargin>
+    </ControlStyle>
+    <ControlStyle x:type="GroupStyle" StyleId="ActionMenu">
+      <BorderThickness>0,0,0,0</BorderThickness>
+      <CornerRadius>0,0,0,0</CornerRadius>
+      <BackgroundBrush x:type="ImageBrush" Image="\Styles\Blue\menu_bg.png" Stretch="Fill" />
+      <BorderBrush />
+      <GlossBrush />
+    </ControlStyle>
+    <ControlStyle x:type="ImageStyle" StyleId="BasicHome_Top">
+      <BorderThickness>0,0,0,0</BorderThickness>
+      <CornerRadius>0,0,0,0</CornerRadius>
+      <BackgroundBrush x:type="ImageBrush" Image="\Styles\Blue\basichome_top_menu_bg_full.png" Stretch="Fill" />
+      <BorderBrush />
+    </ControlStyle>
+    <ControlStyle x:type="ImageStyle" StyleId="ViewPort_NoPoster">
+      <BorderThickness>0,0,0,0</BorderThickness>
+      <CornerRadius>0,0,0,0</CornerRadius>
+      <BackgroundBrush x:type="ImageBrush" Image="\Styles\Blue\viewport_noposter.png" Stretch="Fill" />
+      <BorderBrush />
+    </ControlStyle>
+    <ControlStyle x:type="ButtonStyle" StyleId="BasicHome Horizontal Button">
+      <NoFocusBrush />
+      <NoFocusBorderBrush />
+      <FocusBrush />
+      <FocusBorderBrush />
+      <ShadeBrush />
+      <GlossBrush />
+      <FontType>AvalonType</FontType>
+      <FontSize>60</FontSize>
+      <FocusFontBrush x:type="ColorBrush" Color="#FF6AA3CB" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+    </ControlStyle>
+    <ControlStyle x:type="ButtonStyle" StyleId="BasicHome Vertical Button">
+      <CornerRadius>2,2,2,2</CornerRadius>
+      <NoFocusBrush />
+      <NoFocusBorderBrush />
+      <FocusBrush />
+      <FocusBorderBrush />
+      <ShadeBrush />
+      <GlossBrush />
+      <FontType>AvalonType</FontType>
+      <FontSize>40</FontSize>
+      <FocusFontBrush x:type="ColorBrush" Color="#FF6AA3CB" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
+    </ControlStyle>
+    <ControlStyle x:type="ListItemStyle" StyleId="Vertical">
+      <NoFocusBrush />
+      <NoFocusBorderBrush />
+      <FocusBrush x:type="GradientBrush">
+        <Angle>Vertical</Angle>
+        <GradientStops>
+          <GradientStop Color="#FF74B7E9" Offset="0" />
+          <GradientStop Color="#FF3F79A5" Offset="0.705" />
+        </GradientStops>
+      </FocusBrush>
+      <FocusBorderBrush />
+      <FontType>AvalonType</FontType>
+      <FontSize>50</FontSize>
+      <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <LabelHorizontalAlignment>Right</LabelHorizontalAlignment>
+      <ImageMargin>3,3,3,3</ImageMargin>
+      <ImageHorizontalAlignment>Left</ImageHorizontalAlignment>
+      <ImageVerticalAlignment>Top</ImageVerticalAlignment>
+      <ImageCornerRadius>4</ImageCornerRadius>
+      <Width>721</Width>
+      <Height>73</Height>
+      <ItemMargin>1,1,1,1</ItemMargin>
+      <HorizontalAlignment>Left</HorizontalAlignment>
+    </ControlStyle>
+    <ControlStyle x:type="ImageStyle" StyleId="InfoBG">
+      <BorderThickness>0,0,0,0</BorderThickness>
+      <CornerRadius>0,0,0,0</CornerRadius>
+      <BackgroundBrush x:type="ImageBrush" Image="\Styles\Blue\info_bg.png" Stretch="Fill" />
+      <BorderBrush />
+    </ControlStyle>
+    <ControlStyle x:type="ButtonStyle" StyleId="Clear">
+      <NoFocusBrush />
+      <NoFocusBorderBrush />
+      <FocusBrush />
+      <FocusBorderBrush />
+      <ShadeBrush />
+      <GlossBrush />
+      <EnableLabel>false</EnableLabel>
+      <FontType>AvalonType</FontType>
+      <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
+      <EnableImage>true</EnableImage>
+    </ControlStyle>
+    <ControlStyle x:type="ListItemStyle" StyleId="Settings Lists">
+      <CornerRadius>10,10,10,10</CornerRadius>
+      <NoFocusBrush />
+      <NoFocusBorderBrush />
+      <FocusBrush x:type="GradientBrush">
+        <Angle>Vertical</Angle>
+        <GradientStops>
+          <GradientStop Color="#FF000000" Offset="0.424" />
+          <GradientStop Color="Transparent" Offset="1" />
+        </GradientStops>
+      </FocusBrush>
+      <FocusBorderBrush />
+      <ShadeBrush />
+      <FontType>Titan</FontType>
+      <FontSize>25</FontSize>
+      <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FF4682B4" />
+      <LabelMargin>10,-5,0,0</LabelMargin>
+      <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
+      <ImageMargin>3,3,3,3</ImageMargin>
+      <ImageHorizontalAlignment>Left</ImageHorizontalAlignment>
+      <ImageVerticalAlignment>Top</ImageVerticalAlignment>
+      <ImageCornerRadius>4</ImageCornerRadius>
+      <Width>280</Width>
+      <Height>50</Height>
+      <ItemMargin>1,1,1,1</ItemMargin>
+    </ControlStyle>
+    <ControlStyle x:type="ImageStyle" StyleId="Music Details BG">
+      <BorderThickness>0,0,0,0</BorderThickness>
+      <CornerRadius>0,0,0,0</CornerRadius>
+      <BackgroundBrush x:type="ImageBrush" Image="\Styles\Blue\music_details_bg.png" Stretch="Fill" />
+      <BorderBrush />
+    </ControlStyle>
+    <ControlStyle x:type="ImageStyle" StyleId="FilmStrip Default">
+      <BorderThickness>0,0,0,0</BorderThickness>
+      <CornerRadius>0,0,0,0</CornerRadius>
+      <BackgroundBrush x:type="ImageBrush" Image="\Styles\Blue\filmstrip_default_overlay.png" Stretch="Fill" />
+      <BorderBrush />
+    </ControlStyle>
+    <ControlStyle x:type="ProgressBarStyle" StyleId="Default">
+      <BorderThickness>2,2,2,2</BorderThickness>
+      <CornerRadius>15,15,15,15</CornerRadius>
+      <BackgroundBrush />
+      <BorderBrush x:type="ColorBrush" Color="#FFC0C0C0" />
+      <ShadeBrush />
+      <BarMargin>2,2,2,2</BarMargin>
+      <BarBorderThickness>0,0,0,0</BarBorderThickness>
+      <BarCornerRadius>12,12,12,12</BarCornerRadius>
+      <BarBorderBrush />
+      <BarBackgroundBrush x:type="GradientBrush">
+        <Angle>Vertical</Angle>
+        <GradientStops>
+          <GradientStop Color="#FF75B7E9" Offset="0.347" />
+          <GradientStop Color="#FF417CA8" Offset="1" />
+        </GradientStops>
+      </BarBackgroundBrush>
+    </ControlStyle>
+    <ControlStyle x:type="ListItemStyle" StyleId="Action Menu">
+      <BorderThickness>1,1,1,1</BorderThickness>
+      <CornerRadius>5,5,5,5</CornerRadius>
+      <NoFocusBrush />
+      <NoFocusBorderBrush />
+      <FocusBrush x:type="GradientBrush">
+        <Angle>Vertical</Angle>
+        <GradientStops>
+          <GradientStop Color="#FF72B5E9" Offset="0.266" />
+          <GradientStop Color="#FF3F77A5" Offset="1" />
+        </GradientStops>
+      </FocusBrush>
+      <FocusBorderBrush />
+      <FontType>AvalonType</FontType>
+      <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FF6AA3CB" />
+      <LabelMargin>5,0,0,0</LabelMargin>
+      <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
+      <ImageMargin>3,3,3,3</ImageMargin>
+      <ImageHorizontalAlignment>Left</ImageHorizontalAlignment>
+      <ImageVerticalAlignment>Top</ImageVerticalAlignment>
+      <ImageCornerRadius>4</ImageCornerRadius>
+      <Width>392</Width>
+      <Height>55</Height>
+      <ItemMargin>1,1,1,1</ItemMargin>
+    </ControlStyle>
+    <ControlStyle x:type="ImageStyle" StyleId="FilmStrip Fanart Overlay">
+      <BorderThickness>0,0,0,0</BorderThickness>
+      <CornerRadius>0,0,0,0</CornerRadius>
+      <BackgroundBrush x:type="ImageBrush" Image="\Styles\Blue\filmstrip_fanart_overlay.png" Stretch="Fill" />
+      <BorderBrush />
+    </ControlStyle>
+    <ControlStyle x:type="LabelStyle" StyleId="Avalon 85 White">
+      <FontType>AvalonType</FontType>
+      <FontSize>85</FontSize>
+      <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+    </ControlStyle>
+    <ControlStyle x:type="ImageStyle" StyleId="ViewPort Thumbs short">
+      <BorderThickness>0,0,0,0</BorderThickness>
+      <CornerRadius>0,0,0,0</CornerRadius>
+      <BackgroundBrush x:type="ImageBrush" Image="\Styles\Blue\viewport_thumbs_short2.png" Stretch="Fill" />
+      <BorderBrush />
+    </ControlStyle>
+    <ControlStyle x:type="ListItemStyle" StyleId="Vertical small">
+      <BorderThickness>2,2,2,2</BorderThickness>
+      <NoFocusBrush />
+      <NoFocusBorderBrush />
+      <FocusBrush x:type="GradientBrush">
+        <Angle>Vertical</Angle>
+        <GradientStops>
+          <GradientStop Color="#FFB1CCE2" Offset="0" />
+          <GradientStop Color="#FF3D75A1" Offset="0.763" />
+        </GradientStops>
+      </FocusBrush>
+      <FocusBorderBrush x:type="GradientBrush">
+        <Angle>Vertical</Angle>
+        <GradientStops>
+          <GradientStop Color="#FF30373F" Offset="0" />
+          <GradientStop Color="#FF233649" Offset="1" />
+        </GradientStops>
+      </FocusBorderBrush>
+      <FontType>AvalonType</FontType>
+      <FontSize>50</FontSize>
+      <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FF6AA3CB" />
+      <LabelMargin>10,0,0,0</LabelMargin>
+      <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
+      <ImageMargin>3,3,3,3</ImageMargin>
+      <ImageHorizontalAlignment>Left</ImageHorizontalAlignment>
+      <ImageVerticalAlignment>Top</ImageVerticalAlignment>
+      <ImageCornerRadius>4</ImageCornerRadius>
+      <Width>457</Width>
+      <Height>118</Height>
+      <ItemMargin>1,1,1,1</ItemMargin>
+      <HorizontalAlignment>Right</HorizontalAlignment>
+    </ControlStyle>
+    <ControlStyle x:type="ListItemStyle" StyleId="Vertical Wide">
+      <NoFocusBrush />
+      <NoFocusBorderBrush />
+      <FocusBrush x:type="GradientBrush">
+        <Angle>Vertical</Angle>
+        <GradientStops>
+          <GradientStop Color="#FF74B7E9" Offset="0" />
+          <GradientStop Color="#FF3F79A5" Offset="0.705" />
+        </GradientStops>
+      </FocusBrush>
+      <FocusBorderBrush />
+      <FontType>AvalonType</FontType>
+      <FontSize>50</FontSize>
+      <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
+      <ImageMargin>3,3,3,3</ImageMargin>
+      <ImageHorizontalAlignment>Left</ImageHorizontalAlignment>
+      <ImageVerticalAlignment>Top</ImageVerticalAlignment>
+      <ImageCornerRadius>4</ImageCornerRadius>
+      <Width>775</Width>
+      <Height>120</Height>
+      <ItemMargin>1,1,1,1</ItemMargin>
+      <HorizontalAlignment>Right</HorizontalAlignment>
+    </ControlStyle>
+    <ControlStyle x:type="ButtonStyle" StyleId="RadioTime Button">
+      <CornerRadius>5,5,5,5</CornerRadius>
+      <NoFocusBrush x:type="GradientBrush">
+        <Angle>Vertical</Angle>
+        <GradientStops>
+          <GradientStop Color="#6A85CFFE" Offset="0.188" />
+          <GradientStop Color="#1A7EC5F3" Offset="0.726" />
+        </GradientStops>
+      </NoFocusBrush>
+      <NoFocusBorderBrush />
+      <FocusBrush x:type="GradientBrush">
+        <Angle>Vertical</Angle>
+        <GradientStops>
+          <GradientStop Color="#FF74B7E9" Offset="0.302" />
+          <GradientStop Color="#FF3F78A5" Offset="0.827" />
+        </GradientStops>
+      </FocusBrush>
+      <FocusBorderBrush />
+      <ShadeBrush />
+      <GlossBrush />
+      <FontType>AvalonType</FontType>
+      <FontSize>35</FontSize>
+      <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FF6AA3CB" />
+    </ControlStyle>
+    <ControlStyle x:type="ImageStyle" StyleId="WeatherBG">
+      <BorderThickness>0,0,0,0</BorderThickness>
+      <CornerRadius>0,0,0,0</CornerRadius>
+      <BackgroundBrush x:type="ImageBrush" Image="\Styles\Blue\weather_bg.png" Stretch="Fill" />
+      <BorderBrush />
+    </ControlStyle>
+    <ControlStyle x:type="ImageStyle" StyleId="WeatherBG Overlay">
+      <BorderThickness>0,0,0,0</BorderThickness>
+      <CornerRadius>0,0,0,0</CornerRadius>
+      <BackgroundBrush x:type="ImageBrush" Image="\Styles\Blue\WeatherBG_Overlay.png" />
+      <BorderBrush />
+    </ControlStyle>
+    <ControlStyle x:type="ButtonStyle" StyleId="MPDHome Button">
+      <BorderThickness>4,4,4,4</BorderThickness>
+      <CornerRadius>0,0,25,25</CornerRadius>
+      <NoFocusBrush x:type="ColorBrush" Color="#FF272727" />
+      <NoFocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+      <FocusBrush x:type="ColorBrush" Color="#FF272727" />
+      <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+      <ShadeBrush x:type="GradientBrush">
+        <Angle>Vertical</Angle>
+        <GradientStops>
+          <GradientStop Color="#1FF0F8FF" Offset="0" />
+          <GradientStop Color="#00FFFFFF" Offset="0.496" />
+          <GradientStop Color="Transparent" Offset="1" />
+        </GradientStops>
+      </ShadeBrush>
+      <FontType>AvalonType</FontType>
+      <FontSize>40</FontSize>
+      <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <LabelVerticalAlignment>Top</LabelVerticalAlignment>
+      <EnableImage>true</EnableImage>
+      <ImageMargin>0,49,0,0</ImageMargin>
+      <ImageVerticalAlignment>Bottom</ImageVerticalAlignment>
+      <ImageStretch>None</ImageStretch>
+    </ControlStyle>
+    <ControlStyle x:type="ImageStyle" StyleId="Homescreen_Weather">
+      <BorderThickness>0,0,0,0</BorderThickness>
+      <CornerRadius>0,0,0,0</CornerRadius>
+      <BackgroundBrush x:type="ImageBrush" Image="\Styles\Blue\basichome_weather-no.recordings.png" Stretch="Fill" />
+    </ControlStyle>
+    <ControlStyle x:type="ListItemStyle" StyleId="MovPic_Vertical">
+      <NoFocusBrush />
+      <NoFocusBorderBrush />
+      <FocusBrush x:type="ImageBrush" Image="\listcontrol_item_selected_big.png" Stretch="Fill" />
+      <FocusBorderBrush />
+      <FontType>AvalonType</FontType>
+      <FontSize>50</FontSize>
+      <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
+      <ImageMargin>3,3,3,3</ImageMargin>
+      <ImageHorizontalAlignment>Left</ImageHorizontalAlignment>
+      <ImageVerticalAlignment>Top</ImageVerticalAlignment>
+      <ImageCornerRadius>4</ImageCornerRadius>
+      <Width>900</Width>
+      <Height>73</Height>
+      <ItemMargin>1,1,1,1</ItemMargin>
+      <HorizontalAlignment>Right</HorizontalAlignment>
+      <EnableLabel2>true</EnableLabel2>
+      <Label2FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <Label2NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <Label2HorizontalAlignment>Right</Label2HorizontalAlignment>
+    </ControlStyle>
+    <ControlStyle x:type="ListItemStyle" StyleId="Horizontal">
+      <BorderThickness>1,1,1,1</BorderThickness>
+      <CornerRadius>10,10,10,10</CornerRadius>
+      <NoFocusBrush />
+      <NoFocusBorderBrush />
+      <FocusBrush />
+      <FocusBorderBrush />
+      <EnableLabel>false</EnableLabel>
+      <FontType>AvalonType</FontType>
+      <FontSize>25</FontSize>
+      <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FF6AA3CB" />
+      <LabelMargin>3,3,3,3</LabelMargin>
+      <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
+      <EnableImage>true</EnableImage>
+      <ImageMargin>3,3,3,33</ImageMargin>
+      <ImageVerticalAlignment>Top</ImageVerticalAlignment>
+      <ImageCornerRadius>10</ImageCornerRadius>
+      <Width>206</Width>
+      <Height>294</Height>
+      <ItemMargin>1,1,1,1</ItemMargin>
+      <SelectionZoomX>135</SelectionZoomX>
+      <SelectionZoomY>135</SelectionZoomY>
+    </ControlStyle>
+    <ControlStyle x:type="GroupStyle" StyleId="TVSeries_Detail">
+      <BorderThickness>0,0,0,0</BorderThickness>
+      <CornerRadius>20,20,20,20</CornerRadius>
+      <BackgroundBrush x:type="ColorBrush" Color="#FF141C21" />
+      <BorderBrush />
+      <ShadeBrush />
+      <GlossBrush />
+    </ControlStyle>
+    <ControlStyle x:type="ListItemStyle" StyleId="Coverflow">
+      <BorderThickness>1,1,1,1</BorderThickness>
+      <CornerRadius>10,10,10,10</CornerRadius>
+      <NoFocusBrush />
+      <NoFocusBorderBrush />
+      <FocusBrush />
+      <FocusBorderBrush />
+      <EnableLabel>false</EnableLabel>
+      <FontType>AvalonType</FontType>
+      <FontWeight>Black</FontWeight>
+      <FontSize>25</FontSize>
+      <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FF6AA3CB" />
+      <LabelMargin>3,3,3,3</LabelMargin>
+      <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
+      <EnableImage>true</EnableImage>
+      <ImageMargin>3,3,3,33</ImageMargin>
+      <ImageVerticalAlignment>Top</ImageVerticalAlignment>
+      <ImageCornerRadius>10</ImageCornerRadius>
+      <Width>257</Width>
+      <Height>306</Height>
+      <SelectionZoomX>135</SelectionZoomX>
+      <SelectionZoomY>135</SelectionZoomY>
+    </ControlStyle>
+    <ControlStyle x:type="LabelStyle" StyleId="Avalon 33 Black">
+      <FontType>AvalonType</FontType>
+      <FontSize>33</FontSize>
+      <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+    </ControlStyle>
+    <ControlStyle x:type="ImageStyle" StyleId="HomeBG">
+      <BorderThickness>0,0,0,0</BorderThickness>
+      <CornerRadius>0,0,0,0</CornerRadius>
+      <BackgroundBrush x:type="ImageBrush" Image="\Styles\Blue\splashscreen.png" Stretch="Fill" />
+    </ControlStyle>
+    <ControlStyle x:type="ImageStyle" StyleId="SerienBG">
+      <BorderThickness>0,0,0,0</BorderThickness>
+      <CornerRadius>0,0,0,0</CornerRadius>
+      <BackgroundBrush x:type="ImageBrush" Image="\Styles\Blue\SeriesBG.png" Stretch="Fill" />
+    </ControlStyle>
+    <ControlStyle x:type="ImageStyle" StyleId="TV_Channel_BG">
+      <BorderThickness>0,0,0,0</BorderThickness>
+      <CornerRadius>15,15,15,15</CornerRadius>
+      <BackgroundBrush x:type="ImageBrush" Image="\Styles\Blue\info_bg.png" Stretch="Fill" />
+      <BorderBrush />
+    </ControlStyle>
+    <ControlStyle x:type="ListItemStyle" StyleId="TV_Channel_List">
+      <BorderThickness>1,1,1,1</BorderThickness>
+      <CornerRadius>5,5,5,5</CornerRadius>
+      <NoFocusBrush />
+      <NoFocusBorderBrush />
+      <FocusBrush x:type="GradientBrush">
+        <Angle>Vertical</Angle>
+        <GradientStops>
+          <GradientStop Color="#FFD3D3D3" Offset="0.266" />
+          <GradientStop Color="#FF4D6275" Offset="1" />
+        </GradientStops>
+      </FocusBrush>
+      <FocusBorderBrush />
+      <FontType>Arial</FontType>
+      <FontSize>25</FontSize>
+      <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <LabelMargin>85,0,0,0</LabelMargin>
+      <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
+      <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
+      <EnableImage>true</EnableImage>
+      <ImageMargin>3,3,3,3</ImageMargin>
+      <ImageHorizontalAlignment>Left</ImageHorizontalAlignment>
+      <ImageVerticalAlignment>Top</ImageVerticalAlignment>
+      <Width>1175</Width>
+      <Height>80</Height>
+      <ItemMargin>1,1,1,1</ItemMargin>
+      <EnableLabel2>true</EnableLabel2>
+      <Label2FontType>Arial</Label2FontType>
+      <Label2FontSize>20</Label2FontSize>
+      <Label2FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <Label2NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <Label2Margin>0,0,10,0</Label2Margin>
+      <Label2HorizontalAlignment>Right</Label2HorizontalAlignment>
+      <EnableLabel3>true</EnableLabel3>
+      <Label3FontType>Arial</Label3FontType>
+      <Label3FontSize>35</Label3FontSize>
+      <Label3FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <Label3NoFocusFontBrush x:type="ColorBrush" Color="#FF808080" />
+      <Label3Margin>85,0,0,0</Label3Margin>
+      <Label3HorizontalAlignment>Left</Label3HorizontalAlignment>
+      <Label3VerticalAlignment>Top</Label3VerticalAlignment>
+    </ControlStyle>
+    <ControlStyle x:type="ListItemStyle" StyleId="Music_Vertical">
+      <NoFocusBrush />
+      <NoFocusBorderBrush />
+      <FocusBrush x:type="ImageBrush" Image="\listcontrol_item_selected_big.png" Stretch="Fill" />
+      <FocusBorderBrush />
+      <FontType>AvalonType</FontType>
+      <FontSize>50</FontSize>
+      <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
+      <ImageMargin>3,3,3,3</ImageMargin>
+      <ImageHorizontalAlignment>Left</ImageHorizontalAlignment>
+      <ImageVerticalAlignment>Top</ImageVerticalAlignment>
+      <ImageCornerRadius>4</ImageCornerRadius>
+      <Width>775</Width>
+      <Height>120</Height>
+      <ItemMargin>1,1,1,1</ItemMargin>
+      <HorizontalAlignment>Right</HorizontalAlignment>
+    </ControlStyle>
+    <ControlStyle x:type="ListItemStyle" StyleId="ClassicHome">
+      <NoFocusBrush />
+      <NoFocusBorderBrush />
+      <FocusBrush x:type="GradientBrush">
+        <Angle>Vertical</Angle>
+        <GradientStops>
+          <GradientStop Color="#FF74B7E9" Offset="0" />
+          <GradientStop Color="#FF3F79A5" Offset="0.705" />
+        </GradientStops>
+      </FocusBrush>
+      <FocusBorderBrush />
+      <FontType>AvalonType</FontType>
+      <FontSize>50</FontSize>
+      <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
+      <ImageMargin>3,3,3,3</ImageMargin>
+      <ImageHorizontalAlignment>Left</ImageHorizontalAlignment>
+      <ImageVerticalAlignment>Top</ImageVerticalAlignment>
+      <ImageCornerRadius>4</ImageCornerRadius>
+      <Width>775</Width>
+      <Height>120</Height>
+      <ItemMargin>1,1,1,1</ItemMargin>
+      <HorizontalAlignment>Right</HorizontalAlignment>
+    </ControlStyle>
+    <ControlStyle x:type="GroupStyle" StyleId="Serien">
+      <BorderThickness>0,0,0,0</BorderThickness>
+      <CornerRadius>0,0,0,0</CornerRadius>
+      <BackgroundBrush x:type="ImageBrush" Image="\Styles\Blue\SeriesBG.png" Stretch="Fill" />
+      <BorderBrush />
+      <GlossBrush />
+    </ControlStyle>
+    <ControlStyle x:type="ListItemStyle" StyleId="MovPic_Vertical2">
+      <NoFocusBrush />
+      <NoFocusBorderBrush />
+      <FocusBrush x:type="ImageBrush" Image="\listcontrol_item_selected_big.png" Stretch="Fill" />
+      <FocusBorderBrush />
+      <FontType>AvalonType</FontType>
+      <FontSize>50</FontSize>
+      <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
+      <ImageMargin>3,3,3,3</ImageMargin>
+      <ImageHorizontalAlignment>Left</ImageHorizontalAlignment>
+      <ImageVerticalAlignment>Top</ImageVerticalAlignment>
+      <ImageCornerRadius>4</ImageCornerRadius>
+      <Width>750</Width>
+      <Height>73</Height>
+      <ItemMargin>1,1,1,1</ItemMargin>
+      <HorizontalAlignment>Right</HorizontalAlignment>
+    </ControlStyle>
+    <ControlStyle x:type="EqualizerStyle" StyleId="Equalizer">
+      <BorderThickness>1,1,1,1</BorderThickness>
+      <CornerRadius>5,5,5,5</CornerRadius>
+      <BackgroundBrush />
+      <BorderBrush />
+      <LowRangeColor x:type="GradientBrush">
+        <Angle>Vertical</Angle>
+        <GradientStops>
+          <GradientStop Color="#FF000000" Offset="1" />
+          <GradientStop Color="#FF7DFF00" Offset="0.237" />
+          <GradientStop Color="#FFFFFF00" Offset="0" />
+        </GradientStops>
+      </LowRangeColor>
+      <MedRangeColor x:type="GradientBrush">
+        <Angle>Vertical</Angle>
+        <GradientStops>
+          <GradientStop Color="#FFFFFF00" Offset="0.468" />
+          <GradientStop Color="#FFFF0004" Offset="0" />
+        </GradientStops>
+      </MedRangeColor>
+      <MaxRangeColor x:type="ColorBrush" Color="#FFFF0004" />
+      <BandBorderColor />
+      <FallOffColor x:type="ColorBrush" Color="#FF00BFFF" />
+    </ControlStyle>
+    <ControlStyle x:type="GroupStyle" StyleId="TV_Infoscreen">
+      <BorderThickness>0,0,0,0</BorderThickness>
+      <CornerRadius>0,0,0,0</CornerRadius>
+      <BackgroundBrush x:type="ImageBrush" Image="\Styles\Blue\music_details_bg.png" Stretch="Fill" />
+      <BorderBrush />
+      <GlossBrush />
+    </ControlStyle>
+    <ControlStyle x:type="ListItemStyle" StyleId="Music_Vertical2">
+      <NoFocusBrush />
+      <NoFocusBorderBrush />
+      <FocusBrush x:type="ImageBrush" Image="\listcontrol_item_selected_big.png" Stretch="Fill" />
+      <FocusBorderBrush />
+      <FontType>AvalonType</FontType>
+      <FontSize>50</FontSize>
+      <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
+      <ImageMargin>3,3,3,3</ImageMargin>
+      <ImageHorizontalAlignment>Left</ImageHorizontalAlignment>
+      <ImageVerticalAlignment>Top</ImageVerticalAlignment>
+      <ImageCornerRadius>4</ImageCornerRadius>
+      <Width>680</Width>
+      <Height>120</Height>
+      <ItemMargin>1,1,1,1</ItemMargin>
+      <HorizontalAlignment>Right</HorizontalAlignment>
+    </ControlStyle>
+    <ControlStyle x:type="ListItemStyle" StyleId="OnVid_Vertical">
+      <NoFocusBrush />
+      <NoFocusBorderBrush />
+      <FocusBrush x:type="ImageBrush" Image="\listcontrol_item_selected_big.png" Stretch="Fill" />
+      <FocusBorderBrush />
+      <FontType>AvalonType</FontType>
+      <FontSize>50</FontSize>
+      <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
+      <ImageMargin>3,3,3,3</ImageMargin>
+      <ImageHorizontalAlignment>Left</ImageHorizontalAlignment>
+      <ImageVerticalAlignment>Top</ImageVerticalAlignment>
+      <ImageCornerRadius>4</ImageCornerRadius>
+      <Width>900</Width>
+      <Height>73</Height>
+      <ItemMargin>1,1,1,1</ItemMargin>
+      <HorizontalAlignment>Right</HorizontalAlignment>
+      <Label2FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <Label2NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <Label2HorizontalAlignment>Right</Label2HorizontalAlignment>
+    </ControlStyle>
+    <ControlStyle x:type="ListItemStyle" StyleId="Dialog vertical">
+      <BorderThickness>1,1,1,1</BorderThickness>
+      <CornerRadius>10,10,10,10</CornerRadius>
+      <NoFocusBrush />
+      <NoFocusBorderBrush />
+      <FocusBrush x:type="GradientBrush">
+        <Angle>Vertical</Angle>
+        <GradientStops>
+          <GradientStop Color="#FF72B5E9" Offset="0.266" />
+          <GradientStop Color="#FF3F77A5" Offset="1" />
+        </GradientStops>
+      </FocusBrush>
+      <FocusBorderBrush />
+      <FontType>AvalonType</FontType>
+      <FontSize>50</FontSize>
+      <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FF565656" />
+      <LabelMargin>5,0,0,0</LabelMargin>
+      <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
+      <ImageMargin>3,3,3,3</ImageMargin>
+      <ImageHorizontalAlignment>Left</ImageHorizontalAlignment>
+      <ImageVerticalAlignment>Top</ImageVerticalAlignment>
+      <ImageCornerRadius>4</ImageCornerRadius>
+      <Width>1100</Width>
+      <Height>70</Height>
+      <ItemMargin>1,1,1,1</ItemMargin>
+    </ControlStyle>
+  </ControlStyles>
+</StyleCollection>

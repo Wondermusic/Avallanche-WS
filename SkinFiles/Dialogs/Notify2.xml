@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Dialog xmlns:x="http://www.w3.org/2001/XMLSchema-instance" x:type="MediaPortalDialog">
+  <Name>Notify2</Name>
+  <Id>101</Id>
+  <Width>1280</Width>
+  <Height>720</Height>
+  <BackgroundBrush />
+  <BorderBrush />
+  <DialogAnimations>
+    <Animation x:type="Zoom" Condition="WindowOpen" Duration="400" Easing="EaseOut" />
+    <Animation x:type="Zoom" Condition="WindowClose" Duration="400" Easing="EaseIn" From="100" To="0" />
+  </DialogAnimations>
+  <DialogControls>
+    <Control x:type="Image">
+      <Name>Background</Name>
+      <Id>5</Id>
+      <Width>1280</Width>
+      <Height>720</Height>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ImageStyle StyleId="Dialog Background" />
+      <ImageStretch>None</ImageStretch>
+      <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+    </Control>
+    <Control x:type="Button">
+      <Name>Close Button</Name>
+      <Id>1</Id>
+      <Width>77</Width>
+      <Height>77</Height>
+      <PosX>1128</PosX>
+      <PosY>57</PosY>
+      <VisibleCondition />
+      <IsWindowOpenVisible>false</IsWindowOpenVisible>
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle>
+        <NoFocusBrush x:type="ImageBrush" Image="\exit_button_nofocus.png" Stretch="Fill" />
+        <NoFocusBorderBrush />
+        <FocusBrush x:type="ImageBrush" Image="\exit_button_focus.png" Stretch="Fill" />
+        <FocusBorderBrush />
+        <ShadeBrush />
+        <GlossBrush />
+        <EnableLabel>false</EnableLabel>
+        <FontType>AvalonType</FontType>
+        <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+        <NoFocusFontBrush x:type="ColorBrush" Color="#FF6AA3CB" />
+        <EnableImage>true</EnableImage>
+      </ButtonStyle>
+      <LabelText>NewButton</LabelText>
+      <Actions>
+        <Action Action="OpenDialog" Param="101" />
+      </Actions>
+    </Control>
+    <Control x:type="Label">
+      <Name>Title</Name>
+      <Id>2</Id>
+      <Width>1039</Width>
+      <Height>70</Height>
+      <PosX>86</PosX>
+      <PosY>66</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <LabelStyle StyleId="Avalon 60 White" />
+      <LabelText>#Dialog.Label1</LabelText>
+      <IsScrollingEnabled>false</IsScrollingEnabled>
+      <ScrollSpeed>2</ScrollSpeed>
+      <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+    </Control>
+    <Control x:type="Label">
+      <Name>TextArea1</Name>
+      <Id>3</Id>
+      <Width>1095</Width>
+      <Height>60</Height>
+      <PosX>90</PosX>
+      <PosY>153</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <LabelStyle StyleId="Avalon 50 White" />
+      <LabelText>#Dialog.Label2</LabelText>
+      <ScrollDelay>2</ScrollDelay>
+      <ScrollSpeed>5</ScrollSpeed>
+      <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+      <ScrollSeperator>-----------------------------------</ScrollSeperator>
+    </Control>
+    <Control x:type="Label">
+      <Name>TextArea2</Name>
+      <Id>4</Id>
+      <Width>1100</Width>
+      <Height>60</Height>
+      <PosX>90</PosX>
+      <PosY>221</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <LabelStyle StyleId="Avalon 50 White" />
+      <LabelText>#Dialog.Label3</LabelText>
+      <ScrollDelay>2</ScrollDelay>
+      <ScrollSpeed>5</ScrollSpeed>
+      <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+      <ScrollSeperator>-----------------------------------</ScrollSeperator>
+    </Control>
+  </DialogControls>
+  <VisibleCondition>IsMediaPortalDialog(101)</VisibleCondition>
+</Dialog>
