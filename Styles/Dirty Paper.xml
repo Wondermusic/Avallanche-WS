@@ -3,22 +3,22 @@
   <BrushStyles />
   <ControlStyles>
     <ControlStyle x:type="LabelStyle" StyleId="Avalon 26 Blue">
-      <FontType>AvalonType</FontType>
+      <FontType>PanicStricken</FontType>
       <FontSize>26</FontSize>
       <FontBrush x:type="ColorBrush" Color="#FF6AA3CB" />
     </ControlStyle>
     <ControlStyle x:type="LabelStyle" StyleId="Avalon 26 White">
-      <FontType>AvalonType</FontType>
+      <FontType>PanicStricken</FontType>
       <FontSize>26</FontSize>
       <FontBrush x:type="ColorBrush" Color="#FF000000" />
     </ControlStyle>
     <ControlStyle x:type="LabelStyle" StyleId="Avalon 33 Blue">
-      <FontType>Roboto</FontType>
+      <FontType>PanicStricken</FontType>
       <FontSize>33</FontSize>
       <FontBrush x:type="ColorBrush" Color="#FF6AA3CB" />
     </ControlStyle>
     <ControlStyle x:type="LabelStyle" StyleId="Avalon 33 White">
-      <FontType>AvalonType</FontType>
+      <FontType>PanicStricken</FontType>
       <FontSize>33</FontSize>
       <FontBrush x:type="ColorBrush" Color="#FF000000" />
     </ControlStyle>
@@ -29,17 +29,17 @@
       <BorderBrush />
     </ControlStyle>
     <ControlStyle x:type="LabelStyle" StyleId="Avalon 42 Blue">
-      <FontType>AvalonType</FontType>
+      <FontType>PanicStricken</FontType>
       <FontSize>42</FontSize>
       <FontBrush x:type="ColorBrush" Color="#FF6AA3CB" />
     </ControlStyle>
     <ControlStyle x:type="LabelStyle" StyleId="Avalon 42 White">
-      <FontType>AvalonType</FontType>
+      <FontType>PanicStricken</FontType>
       <FontSize>42</FontSize>
       <FontBrush x:type="ColorBrush" Color="#FF000000" />
     </ControlStyle>
     <ControlStyle x:type="LabelStyle" StyleId="Avalon 50 Blue">
-      <FontType>AvalonType</FontType>
+      <FontType>PanicStricken</FontType>
       <FontSize>50</FontSize>
       <FontBrush x:type="ColorBrush" Color="#FF6AA3CB" />
     </ControlStyle>
@@ -50,17 +50,17 @@
       <BorderBrush />
     </ControlStyle>
     <ControlStyle x:type="LabelStyle" StyleId="Avalon 50 White">
-      <FontType>AvalonType</FontType>
+      <FontType>PanicStricken</FontType>
       <FontSize>50</FontSize>
       <FontBrush x:type="ColorBrush" Color="#FF000000" />
     </ControlStyle>
     <ControlStyle x:type="LabelStyle" StyleId="Avalon 60 Blue">
-      <FontType>AvalonType</FontType>
+      <FontType>PanicStricken</FontType>
       <FontSize>60</FontSize>
       <FontBrush x:type="ColorBrush" Color="#FF6AA3CB" />
     </ControlStyle>
     <ControlStyle x:type="LabelStyle" StyleId="Avalon 60 White">
-      <FontType>Arial</FontType>
+      <FontType>PanicStricken</FontType>
       <FontSize>60</FontSize>
       <FontBrush x:type="ColorBrush" Color="#FF000000" />
     </ControlStyle>
@@ -71,7 +71,7 @@
       <BorderBrush />
     </ControlStyle>
     <ControlStyle x:type="LabelStyle" StyleId="Avalon 74 Blue">
-      <FontType>AvalonType</FontType>
+      <FontType>PanicStricken</FontType>
       <FontWeight>Black</FontWeight>
       <FontSize>74</FontSize>
       <FontBrush x:type="ColorBrush" Color="#FF6AA3CB" />
@@ -84,7 +84,7 @@
       <GlossBrush />
     </ControlStyle>
     <ControlStyle x:type="LabelStyle" StyleId="Avalon 74 White">
-      <FontType>AvalonType</FontType>
+      <FontType>PanicStricken</FontType>
       <FontSize>74</FontSize>
       <FontBrush x:type="ColorBrush" Color="#FF000000" />
     </ControlStyle>
@@ -95,12 +95,12 @@
       <BorderBrush />
     </ControlStyle>
     <ControlStyle x:type="LabelStyle" StyleId="Avalon 85 Grey">
-      <FontType>AvalonType</FontType>
+      <FontType>PanicStricken</FontType>
       <FontSize>85</FontSize>
       <FontBrush x:type="ColorBrush" Color="#FF000000" />
     </ControlStyle>
     <ControlStyle x:type="LabelStyle" StyleId="Avalon 100 Grey">
-      <FontType>AvalonType</FontType>
+      <FontType>PanicStricken</FontType>
       <FontSize>100</FontSize>
       <FontBrush x:type="ColorBrush" Color="#FF708090" />
     </ControlStyle>
@@ -119,7 +119,7 @@
         </GradientStops>
       </ShadeBrush>
       <GlossBrush />
-      <FontType>Titan</FontType>
+      <FontType>PanicStricken</FontType>
       <FontSize>40</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FFAFEEEE" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
@@ -138,7 +138,7 @@
         </GradientStops>
       </ShadeBrush>
       <GlossBrush />
-      <FontType>Titan</FontType>
+      <FontType>PanicStricken</FontType>
       <FontSize>40</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FFAFEEEE" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
@@ -158,7 +158,7 @@
         </GradientStops>
       </ShadeBrush>
       <GlossBrush />
-      <FontType>Titan</FontType>
+      <FontType>PanicStricken</FontType>
       <FontSize>40</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FFAFEEEE" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
@@ -177,7 +177,7 @@
           <GradientStop Color="Transparent" Offset="1" />
         </GradientStops>
       </ShadeBrush>
-      <FontType>Titan</FontType>
+      <FontType>PanicStricken</FontType>
       <FontSize>25</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FF00FF00" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
@@ -197,7 +197,7 @@
           <GradientStop Color="Transparent" Offset="1" />
         </GradientStops>
       </ShadeBrush>
-      <FontType>Titan</FontType>
+      <FontType>PanicStricken</FontType>
       <FontSize>25</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FF00FF00" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
@@ -265,7 +265,7 @@
       <NoFocusBorderBrush />
       <FocusBrush x:type="ColorBrush" Color="#FF6AA3CB" />
       <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
-      <FontType>AvalonType</FontType>
+      <FontType>PanicStricken</FontType>
       <FontSize>25</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FF6AA3CB" />
@@ -286,7 +286,7 @@
       <NoFocusBorderBrush />
       <FocusBrush x:type="ColorBrush" Color="#FF6AA3CB" />
       <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
-      <FontType>AvalonType</FontType>
+      <FontType>PanicStricken</FontType>
       <FontWeight>Black</FontWeight>
       <FontSize>25</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
@@ -320,7 +320,7 @@
       <FocusBorderBrush />
       <ShadeBrush />
       <GlossBrush />
-      <FontType>AvalonType</FontType>
+      <FontType>PanicStricken</FontType>
       <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FF808080" />
       <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
@@ -332,7 +332,7 @@
       <NoFocusBorderBrush />
       <FocusBrush x:type="ColorBrush" Color="#FF6AA3CB" />
       <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
-      <FontType>AvalonType</FontType>
+      <FontType>PanicStricken</FontType>
       <FontSize>25</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FF6AA3CB" />
@@ -372,7 +372,7 @@
       <FocusBorderBrush />
       <ShadeBrush />
       <GlossBrush />
-      <FontType>AvalonType</FontType>
+      <FontType>PanicStricken</FontType>
       <FontSize>60</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FF6AA3CB" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FF000000" />
@@ -385,7 +385,7 @@
       <FocusBorderBrush />
       <ShadeBrush />
       <GlossBrush />
-      <FontType>AvalonType</FontType>
+      <FontType>PanicStricken</FontType>
       <FontSize>40</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FF808080" />
@@ -402,7 +402,7 @@
         </GradientStops>
       </FocusBrush>
       <FocusBorderBrush />
-      <FontType>AvalonType</FontType>
+      <FontType>PanicStricken</FontType>
       <FontSize>50</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FF565656" />
@@ -447,7 +447,7 @@
       </FocusBrush>
       <FocusBorderBrush />
       <ShadeBrush />
-      <FontType>Titan</FontType>
+      <FontType>PanicStricken</FontType>
       <FontSize>25</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FF4682B4" />
@@ -504,7 +504,7 @@
         </GradientStops>
       </FocusBrush>
       <FocusBorderBrush />
-      <FontType>AvalonType</FontType>
+      <FontType>PanicStricken</FontType>
       <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FF565656" />
       <LabelMargin>5,0,0,0</LabelMargin>
@@ -524,7 +524,7 @@
       <BorderBrush />
     </ControlStyle>
     <ControlStyle x:type="LabelStyle" StyleId="Avalon 85 White">
-      <FontType>AvalonType</FontType>
+      <FontType>PanicStricken</FontType>
       <FontSize>85</FontSize>
       <FontBrush x:type="ColorBrush" Color="#FF000000" />
     </ControlStyle>
@@ -552,7 +552,7 @@
           <GradientStop Color="#FF233649" Offset="1" />
         </GradientStops>
       </FocusBorderBrush>
-      <FontType>AvalonType</FontType>
+      <FontType>PanicStricken</FontType>
       <FontSize>50</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FF565656" />
@@ -578,7 +578,7 @@
         </GradientStops>
       </FocusBrush>
       <FocusBorderBrush />
-      <FontType>AvalonType</FontType>
+      <FontType>PanicStricken</FontType>
       <FontSize>50</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FF565656" />
@@ -612,7 +612,7 @@
       <FocusBorderBrush />
       <ShadeBrush />
       <GlossBrush />
-      <FontType>AvalonType</FontType>
+      <FontType>PanicStricken</FontType>
       <FontSize>35</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FF000000" />
@@ -629,7 +629,9 @@
       <BackgroundBrush x:type="ImageBrush" Image="\Styles\Paper\WorldWeather_viewport.png" />
       <BorderBrush />
     </ControlStyle>
-    <ControlStyle x:type="ButtonStyle" StyleId="MPDHome Button" />
+    <ControlStyle x:type="ButtonStyle" StyleId="MPDHome Button">
+      <FontType>PanicStricken</FontType>
+    </ControlStyle>
     <ControlStyle x:type="ImageStyle" StyleId="Homescreen_Weather">
       <BorderThickness>0,0,0,0</BorderThickness>
       <CornerRadius>0,0,0,0</CornerRadius>
@@ -646,7 +648,7 @@
         </GradientStops>
       </FocusBrush>
       <FocusBorderBrush />
-      <FontType>AvalonType</FontType>
+      <FontType>PanicStricken</FontType>
       <FontSize>50</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FF565656" />
@@ -723,7 +725,7 @@
       <SelectionZoomY>135</SelectionZoomY>
     </ControlStyle>
     <ControlStyle x:type="LabelStyle" StyleId="Avalon 33 Black">
-      <FontType>AvalonType</FontType>
+      <FontType>PanicStricken</FontType>
       <FontSize>33</FontSize>
       <FontBrush x:type="ColorBrush" Color="#FF6AA3CB" />
     </ControlStyle>
@@ -756,7 +758,7 @@
         </GradientStops>
       </FocusBrush>
       <FocusBorderBrush />
-      <FontType>Arial</FontType>
+      <FontType>PanicStricken</FontType>
       <FontSize>25</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FF000000" />
@@ -771,14 +773,14 @@
       <Height>80</Height>
       <ItemMargin>1,1,1,1</ItemMargin>
       <EnableLabel2>true</EnableLabel2>
-      <Label2FontType>Arial</Label2FontType>
+      <Label2FontType>PanicStricken</Label2FontType>
       <Label2FontSize>20</Label2FontSize>
       <Label2FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
       <Label2NoFocusFontBrush x:type="ColorBrush" Color="#FF000000" />
       <Label2Margin>0,0,10,0</Label2Margin>
       <Label2HorizontalAlignment>Right</Label2HorizontalAlignment>
       <EnableLabel3>true</EnableLabel3>
-      <Label3FontType>Arial</Label3FontType>
+      <Label3FontType>PanicStricken</Label3FontType>
       <Label3FontSize>35</Label3FontSize>
       <Label3FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
       <Label3NoFocusFontBrush x:type="ColorBrush" Color="#FF808080" />
@@ -798,7 +800,7 @@
       </FocusBrush>
       <FocusBorderBrush />
       <ShadeBrush />
-      <FontType>AvalonType</FontType>
+      <FontType>PanicStricken</FontType>
       <FontSize>50</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FF565656" />
@@ -817,7 +819,7 @@
       <NoFocusBorderBrush />
       <FocusBrush />
       <FocusBorderBrush />
-      <FontType>AvalonType</FontType>
+      <FontType>PanicStricken</FontType>
       <FontSize>50</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FF808080" />
@@ -849,7 +851,7 @@
         </GradientStops>
       </FocusBrush>
       <FocusBorderBrush />
-      <FontType>AvalonType</FontType>
+      <FontType>PanicStricken</FontType>
       <FontSize>50</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FF565656" />
@@ -899,7 +901,7 @@
       <NoFocusBorderBrush />
       <FocusBrush x:type="ImageBrush" Image="\listcontrol_item_selected_big.png" Stretch="Fill" />
       <FocusBorderBrush />
-      <FontType>AvalonType</FontType>
+      <FontType>PanicStricken</FontType>
       <FontSize>50</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
@@ -918,7 +920,7 @@
       <NoFocusBorderBrush />
       <FocusBrush x:type="ImageBrush" Image="\listcontrol_item_selected_big.png" Stretch="Fill" />
       <FocusBorderBrush />
-      <FontType>AvalonType</FontType>
+      <FontType>PanicStricken</FontType>
       <FontSize>50</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
@@ -948,7 +950,7 @@
         </GradientStops>
       </FocusBrush>
       <FocusBorderBrush />
-      <FontType>AvalonType</FontType>
+      <FontType>PanicStricken</FontType>
       <FontSize>50</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FF565656" />

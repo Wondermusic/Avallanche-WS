@@ -3,22 +3,26 @@
   <BrushStyles />
   <ControlStyles>
     <ControlStyle x:type="LabelStyle" StyleId="Avalon 26 Blue">
-      <FontType>AvalonType</FontType>
+      <FontType>Avallanche</FontType>
+      <FontWeight>Bold</FontWeight>
       <FontSize>26</FontSize>
       <FontBrush x:type="ColorBrush" Color="#FF6AA3CB" />
     </ControlStyle>
     <ControlStyle x:type="LabelStyle" StyleId="Avalon 26 White">
-      <FontType>AvalonType</FontType>
+      <FontType>Avallanche</FontType>
+      <FontWeight>Bold</FontWeight>
       <FontSize>26</FontSize>
       <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
     </ControlStyle>
     <ControlStyle x:type="LabelStyle" StyleId="Avalon 33 Blue">
-      <FontType>AvalonType</FontType>
+      <FontType>Avallanche</FontType>
+      <FontWeight>Bold</FontWeight>
       <FontSize>33</FontSize>
       <FontBrush x:type="ColorBrush" Color="#FF6AA3CB" />
     </ControlStyle>
     <ControlStyle x:type="LabelStyle" StyleId="Avalon 33 White">
-      <FontType>AvalonType</FontType>
+      <FontType>Avallanche</FontType>
+      <FontWeight>Bold</FontWeight>
       <FontSize>33</FontSize>
       <FontBrush x:type="ColorBrush" Color="#FF6AA3CB" />
     </ControlStyle>
@@ -29,17 +33,19 @@
       <BorderBrush />
     </ControlStyle>
     <ControlStyle x:type="LabelStyle" StyleId="Avalon 42 Blue">
-      <FontType>AvalonType</FontType>
+      <FontType>Avallanche</FontType>
+      <FontWeight>Bold</FontWeight>
       <FontSize>42</FontSize>
       <FontBrush x:type="ColorBrush" Color="#FF6AA3CB" />
     </ControlStyle>
     <ControlStyle x:type="LabelStyle" StyleId="Avalon 42 White">
-      <FontType>AvalonType</FontType>
+      <FontType>Avallanche</FontType>
+      <FontWeight>Bold</FontWeight>
       <FontSize>42</FontSize>
       <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
     </ControlStyle>
     <ControlStyle x:type="LabelStyle" StyleId="Avalon 50 Blue">
-      <FontType>AvalonType</FontType>
+      <FontType>Avallanche</FontType>
       <FontSize>50</FontSize>
       <FontBrush x:type="ColorBrush" Color="#FF6AA3CB" />
     </ControlStyle>
@@ -50,17 +56,17 @@
       <BorderBrush />
     </ControlStyle>
     <ControlStyle x:type="LabelStyle" StyleId="Avalon 50 White">
-      <FontType>AvalonType</FontType>
+      <FontType>Avallanche</FontType>
       <FontSize>50</FontSize>
       <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
     </ControlStyle>
     <ControlStyle x:type="LabelStyle" StyleId="Avalon 60 Blue">
-      <FontType>AvalonType</FontType>
+      <FontType>Avallanche</FontType>
       <FontSize>60</FontSize>
       <FontBrush x:type="ColorBrush" Color="#FF6AA3CB" />
     </ControlStyle>
     <ControlStyle x:type="LabelStyle" StyleId="Avalon 60 White">
-      <FontType>Arial</FontType>
+      <FontType>Avallanche</FontType>
       <FontSize>60</FontSize>
       <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
     </ControlStyle>
@@ -71,7 +77,7 @@
       <BorderBrush />
     </ControlStyle>
     <ControlStyle x:type="LabelStyle" StyleId="Avalon 74 Blue">
-      <FontType>AvalonType</FontType>
+      <FontType>Avallanche</FontType>
       <FontWeight>Black</FontWeight>
       <FontSize>74</FontSize>
       <FontBrush x:type="ColorBrush" Color="#FF6AA3CB" />
@@ -84,7 +90,7 @@
       <GlossBrush />
     </ControlStyle>
     <ControlStyle x:type="LabelStyle" StyleId="Avalon 74 White">
-      <FontType>AvalonType</FontType>
+      <FontType>Avallanche</FontType>
       <FontSize>74</FontSize>
       <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
     </ControlStyle>
@@ -95,12 +101,12 @@
       <BorderBrush />
     </ControlStyle>
     <ControlStyle x:type="LabelStyle" StyleId="Avalon 85 Grey">
-      <FontType>AvalonType</FontType>
+      <FontType>Avallanche</FontType>
       <FontSize>85</FontSize>
       <FontBrush x:type="ColorBrush" Color="#FFC0C0C0" />
     </ControlStyle>
     <ControlStyle x:type="LabelStyle" StyleId="Avalon 100 Grey">
-      <FontType>AvalonType</FontType>
+      <FontType>Avallanche</FontType>
       <FontSize>100</FontSize>
       <FontBrush x:type="ColorBrush" Color="#FFA9A9A9" />
     </ControlStyle>
@@ -119,7 +125,8 @@
         </GradientStops>
       </ShadeBrush>
       <GlossBrush />
-      <FontType>Titan</FontType>
+      <FontType>Avallanche</FontType>
+      <FontWeight>Bold</FontWeight>
       <FontSize>40</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FFAFEEEE" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
@@ -138,7 +145,8 @@
         </GradientStops>
       </ShadeBrush>
       <GlossBrush />
-      <FontType>Titan</FontType>
+      <FontType>Avallanche</FontType>
+      <FontWeight>Bold</FontWeight>
       <FontSize>40</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FFAFEEEE" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
@@ -158,7 +166,8 @@
         </GradientStops>
       </ShadeBrush>
       <GlossBrush />
-      <FontType>Titan</FontType>
+      <FontType>Avallanche</FontType>
+      <FontWeight>Bold</FontWeight>
       <FontSize>40</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FFAFEEEE" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
@@ -177,7 +186,8 @@
           <GradientStop Color="Transparent" Offset="1" />
         </GradientStops>
       </ShadeBrush>
-      <FontType>Titan</FontType>
+      <FontType>Avallanche</FontType>
+      <FontWeight>Bold</FontWeight>
       <FontSize>25</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FF00FF00" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
@@ -197,7 +207,8 @@
           <GradientStop Color="Transparent" Offset="1" />
         </GradientStops>
       </ShadeBrush>
-      <FontType>Titan</FontType>
+      <FontType>Avallanche</FontType>
+      <FontWeight>Bold</FontWeight>
       <FontSize>25</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FF00FF00" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
@@ -213,7 +224,7 @@
     <ControlStyle x:type="ImageStyle" StyleId="Default_BG">
       <BorderThickness>0,0,0,0</BorderThickness>
       <CornerRadius>0,0,0,0</CornerRadius>
-      <BackgroundBrush x:type="ImageBrush" Image="\Styles\Blue\splashscreen.png" Stretch="Fill" />
+      <BackgroundBrush x:type="ImageBrush" Image="\Styles\Blue\background.png" Stretch="Fill" />
       <BorderBrush />
     </ControlStyle>
     <ControlStyle x:type="ImageStyle" StyleId="Overlay">
@@ -265,7 +276,8 @@
       <NoFocusBorderBrush />
       <FocusBrush x:type="ColorBrush" Color="#FF6AA3CB" />
       <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
-      <FontType>AvalonType</FontType>
+      <FontType>Avallanche</FontType>
+      <FontWeight>Bold</FontWeight>
       <FontSize>25</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FF6AA3CB" />
@@ -299,7 +311,8 @@
       <FocusBorderBrush />
       <ShadeBrush />
       <GlossBrush />
-      <FontType>AvalonType</FontType>
+      <FontType>Avallanche</FontType>
+      <FontWeight>Bold</FontWeight>
       <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FF808080" />
       <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
@@ -311,7 +324,8 @@
       <NoFocusBorderBrush />
       <FocusBrush x:type="ColorBrush" Color="#FF6AA3CB" />
       <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
-      <FontType>AvalonType</FontType>
+      <FontType>Avallanche</FontType>
+      <FontWeight>Bold</FontWeight>
       <FontSize>25</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FF6AA3CB" />
@@ -351,7 +365,7 @@
       <FocusBorderBrush />
       <ShadeBrush />
       <GlossBrush />
-      <FontType>AvalonType</FontType>
+      <FontType>Avallanche</FontType>
       <FontSize>60</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FF6AA3CB" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
@@ -364,7 +378,8 @@
       <FocusBorderBrush />
       <ShadeBrush />
       <GlossBrush />
-      <FontType>AvalonType</FontType>
+      <FontType>Avallanche</FontType>
+      <FontWeight>Bold</FontWeight>
       <FontSize>40</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FF6AA3CB" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
@@ -381,7 +396,7 @@
         </GradientStops>
       </FocusBrush>
       <FocusBorderBrush />
-      <FontType>AvalonType</FontType>
+      <FontType>Avallanche</FontType>
       <FontSize>50</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
@@ -427,7 +442,8 @@
       </FocusBrush>
       <FocusBorderBrush />
       <ShadeBrush />
-      <FontType>Titan</FontType>
+      <FontType>Avallanche</FontType>
+      <FontWeight>Bold</FontWeight>
       <FontSize>25</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FF4682B4" />
@@ -484,7 +500,8 @@
         </GradientStops>
       </FocusBrush>
       <FocusBorderBrush />
-      <FontType>AvalonType</FontType>
+      <FontType>Avallanche</FontType>
+      <FontWeight>Bold</FontWeight>
       <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FF6AA3CB" />
       <LabelMargin>5,0,0,0</LabelMargin>
@@ -504,7 +521,7 @@
       <BorderBrush />
     </ControlStyle>
     <ControlStyle x:type="LabelStyle" StyleId="Avalon 85 White">
-      <FontType>AvalonType</FontType>
+      <FontType>Avallanche</FontType>
       <FontSize>85</FontSize>
       <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
     </ControlStyle>
@@ -532,7 +549,7 @@
           <GradientStop Color="#FF233649" Offset="1" />
         </GradientStops>
       </FocusBorderBrush>
-      <FontType>AvalonType</FontType>
+      <FontType>Avallanche</FontType>
       <FontSize>50</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FF6AA3CB" />
@@ -558,7 +575,7 @@
         </GradientStops>
       </FocusBrush>
       <FocusBorderBrush />
-      <FontType>AvalonType</FontType>
+      <FontType>Avallanche</FontType>
       <FontSize>50</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
@@ -592,7 +609,8 @@
       <FocusBorderBrush />
       <ShadeBrush />
       <GlossBrush />
-      <FontType>AvalonType</FontType>
+      <FontType>Avallanche</FontType>
+      <FontWeight>Bold</FontWeight>
       <FontSize>35</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FF6AA3CB" />
@@ -624,7 +642,7 @@
           <GradientStop Color="Transparent" Offset="1" />
         </GradientStops>
       </ShadeBrush>
-      <FontType>AvalonType</FontType>
+      <FontType>Avallanche</FontType>
       <FontSize>40</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
@@ -644,7 +662,7 @@
       <NoFocusBorderBrush />
       <FocusBrush x:type="ImageBrush" Image="\listcontrol_item_selected_big.png" Stretch="Fill" />
       <FocusBorderBrush />
-      <FontType>AvalonType</FontType>
+      <FontType>Avallanche</FontType>
       <FontSize>50</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
@@ -658,6 +676,7 @@
       <ItemMargin>1,1,1,1</ItemMargin>
       <HorizontalAlignment>Right</HorizontalAlignment>
       <EnableLabel2>true</EnableLabel2>
+      <Label2FontType>Avallanche</Label2FontType>
       <Label2FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
       <Label2NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
       <Label2HorizontalAlignment>Right</Label2HorizontalAlignment>
@@ -719,7 +738,7 @@
       <SelectionZoomY>135</SelectionZoomY>
     </ControlStyle>
     <ControlStyle x:type="LabelStyle" StyleId="Avalon 33 Black">
-      <FontType>AvalonType</FontType>
+      <FontType>Avallanche</FontType>
       <FontSize>33</FontSize>
       <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
     </ControlStyle>
@@ -752,7 +771,8 @@
         </GradientStops>
       </FocusBrush>
       <FocusBorderBrush />
-      <FontType>Arial</FontType>
+      <FontType>Avallanche</FontType>
+      <FontWeight>Bold</FontWeight>
       <FontSize>25</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
@@ -767,14 +787,16 @@
       <Height>80</Height>
       <ItemMargin>1,1,1,1</ItemMargin>
       <EnableLabel2>true</EnableLabel2>
-      <Label2FontType>Arial</Label2FontType>
+      <Label2FontType>Avallanche</Label2FontType>
+      <Label2FontWeight>Bold</Label2FontWeight>
       <Label2FontSize>20</Label2FontSize>
       <Label2FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
       <Label2NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
       <Label2Margin>0,0,10,0</Label2Margin>
       <Label2HorizontalAlignment>Right</Label2HorizontalAlignment>
       <EnableLabel3>true</EnableLabel3>
-      <Label3FontType>Arial</Label3FontType>
+      <Label3FontType>Avallanche</Label3FontType>
+      <Label3FontWeight>Bold</Label3FontWeight>
       <Label3FontSize>35</Label3FontSize>
       <Label3FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
       <Label3NoFocusFontBrush x:type="ColorBrush" Color="#FF808080" />
@@ -787,7 +809,7 @@
       <NoFocusBorderBrush />
       <FocusBrush x:type="ImageBrush" Image="\listcontrol_item_selected_big.png" Stretch="Fill" />
       <FocusBorderBrush />
-      <FontType>AvalonType</FontType>
+      <FontType>Avallanche</FontType>
       <FontSize>50</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
@@ -812,7 +834,7 @@
         </GradientStops>
       </FocusBrush>
       <FocusBorderBrush />
-      <FontType>AvalonType</FontType>
+      <FontType>Avallanche</FontType>
       <FontSize>50</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
@@ -838,7 +860,7 @@
       <NoFocusBorderBrush />
       <FocusBrush x:type="ImageBrush" Image="\listcontrol_item_selected_big.png" Stretch="Fill" />
       <FocusBorderBrush />
-      <FontType>AvalonType</FontType>
+      <FontType>Avallanche</FontType>
       <FontSize>50</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
@@ -888,7 +910,7 @@
       <NoFocusBorderBrush />
       <FocusBrush x:type="ImageBrush" Image="\listcontrol_item_selected_big.png" Stretch="Fill" />
       <FocusBorderBrush />
-      <FontType>AvalonType</FontType>
+      <FontType>Avallanche</FontType>
       <FontSize>50</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
@@ -907,7 +929,7 @@
       <NoFocusBorderBrush />
       <FocusBrush x:type="ImageBrush" Image="\listcontrol_item_selected_big.png" Stretch="Fill" />
       <FocusBorderBrush />
-      <FontType>AvalonType</FontType>
+      <FontType>Avallanche</FontType>
       <FontSize>50</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
@@ -937,7 +959,7 @@
         </GradientStops>
       </FocusBrush>
       <FocusBorderBrush />
-      <FontType>AvalonType</FontType>
+      <FontType>Avallanche</FontType>
       <FontSize>50</FontSize>
       <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FF565656" />

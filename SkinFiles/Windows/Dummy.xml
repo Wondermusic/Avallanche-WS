@@ -92,13 +92,16 @@
             </Control>
             <Control x:type="Image">
               <Name>Rec Icon</Name>
-              <Id>9</Id>
-              <Width>137</Width>
-              <Height>38</Height>
-              <PosX>629</PosX>
+              <Id>144</Id>
+              <Width>230</Width>
+              <Height>76</Height>
+              <PosX>1045</PosX>
               <VisibleCondition>IsTvRecording</VisibleCondition>
               <IsWindowOpenVisible>false</IsWindowOpenVisible>
-              <Animations />
+              <Animations>
+                <Animation x:type="Fade" Condition="VisibleTrue" Duration="1000" Easing="EaseInOut" Reverse="true" Repeat="50000" />
+                <Animation x:type="Fade" Condition="VisibleFalse" Duration="1000" Easing="EaseInOut" From="100" To="0" />
+              </Animations>
               <MediaPortalFocusControls />
               <ImageStyle StyleId="Logo_Image" />
               <Image>\RecordingIndicator.png</Image>
