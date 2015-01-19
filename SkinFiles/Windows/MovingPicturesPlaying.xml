@@ -105,118 +105,200 @@
               <ScrollSpeed>2</ScrollSpeed>
               <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
             </Control>
+          </GroupControls>
+        </Control>
+        <Control x:type="Group">
+          <Name>NoClearArts</Name>
+          <Id>36</Id>
+          <Width>1280</Width>
+          <Height>720</Height>
+          <VisibleCondition>IsSkinOptionEnabled(NoClearArts)</VisibleCondition>
+          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <Animations />
+          <MediaPortalFocusControls />
+          <GroupStyle StyleId="Empty" />
+          <GroupControls>
+            <Control x:type="Image">
+              <Name>OSD</Name>
+              <Id>37</Id>
+              <Width>1200</Width>
+              <Height>450</Height>
+              <PosX>42</PosX>
+              <PosY>395</PosY>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <ImageStyle StyleId="Music Details BG" />
+              <ImageStretch>None</ImageStretch>
+              <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+            </Control>
             <Control x:type="Label">
-              <Name>Time</Name>
-              <Id>8</Id>
-              <Width>408</Width>
-              <Height>95</Height>
-              <PosX>872</PosX>
-              <PosY>-10</PosY>
+              <Name>Title</Name>
+              <Id>38</Id>
+              <Width>900</Width>
+              <Height>115</Height>
+              <PosX>300</PosX>
+              <PosY>436</PosY>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <LabelStyle StyleId="Avalon 100 Grey" />
+              <LabelText>#MovingPictures.SelectedMovie.title</LabelText>
+              <LabelTextAlignment>Center</LabelTextAlignment>
+              <ScrollSpeed>5</ScrollSpeed>
+              <ScrollSeperator>  |  </ScrollSeperator>
+            </Control>
+            <Control x:type="ProgressBar">
+              <Name>ProgressBar</Name>
+              <Id>39</Id>
+              <Width>900</Width>
+              <Height>56</Height>
+              <PosX>300</PosX>
+              <PosY>576</PosY>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <ProgressBarStyle StyleId="Default" />
+              <ProgressValue>#percentage</ProgressValue>
+            </Control>
+            <Control x:type="Label">
+              <Name>currentplaytime</Name>
+              <Id>40</Id>
+              <Width>321</Width>
+              <Height>105</Height>
+              <PosX>300</PosX>
+              <PosY>625</PosY>
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
               <LabelStyle StyleId="Avalon 85 Grey" />
-              <LabelText>#time</LabelText>
+              <LabelText>#currentplaytime</LabelText>
+              <IsScrollingEnabled>false</IsScrollingEnabled>
+              <ScrollSpeed>2</ScrollSpeed>
+              <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+            </Control>
+            <Control x:type="Label">
+              <Name>currentremaining</Name>
+              <Id>41</Id>
+              <Width>420</Width>
+              <Height>105</Height>
+              <PosX>785</PosX>
+              <PosY>625</PosY>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <LabelStyle StyleId="Avalon 85 Grey" />
+              <LabelText>#currentremaining</LabelText>
               <LabelTextAlignment>Right</LabelTextAlignment>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollSpeed>2</ScrollSpeed>
               <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
             </Control>
             <Control x:type="Image">
-              <Name>Rec Icon</Name>
-              <Id>32</Id>
-              <Width>230</Width>
-              <Height>76</Height>
-              <PosX>1045</PosX>
-              <VisibleCondition>IsTvRecording</VisibleCondition>
-              <IsWindowOpenVisible>false</IsWindowOpenVisible>
-              <Animations>
-                <Animation x:type="Fade" Condition="VisibleTrue" Duration="1000" Easing="EaseInOut" Reverse="true" Repeat="50000" />
-                <Animation x:type="Fade" Condition="VisibleFalse" Duration="1000" Easing="EaseInOut" From="100" To="0" />
-              </Animations>
+              <Name>Image</Name>
+              <Id>42</Id>
+              <Width>195</Width>
+              <Height>275</Height>
+              <PosX>86</PosX>
+              <PosY>434</PosY>
+              <VisibleCondition />
+              <Animations />
               <MediaPortalFocusControls />
               <ImageStyle StyleId="Logo_Image" />
-              <Image>\RecordingIndicator.png</Image>
-              <ImageStretch>Fill</ImageStretch>
+              <Image>#Play.Current.Thumb</Image>
+              <DefaultImage>\missing_coverart.png</DefaultImage>
+              <ImageStretch>Uniform</ImageStretch>
+              <ImageCornerRadius>15</ImageCornerRadius>
               <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
             </Control>
           </GroupControls>
         </Control>
-        <Control x:type="Image">
-          <Name>OSD</Name>
-          <Id>30</Id>
-          <Width>1200</Width>
-          <Height>450</Height>
-          <PosX>42</PosX>
-          <PosY>395</PosY>
-          <VisibleCondition />
+        <Control x:type="Group">
+          <Name>ClearArts</Name>
+          <Id>43</Id>
+          <Width>1280</Width>
+          <Height>720</Height>
+          <VisibleCondition>IsSkinOptionEnabled(ClearArts)</VisibleCondition>
           <Animations />
           <MediaPortalFocusControls />
-          <ImageStyle StyleId="Music Details BG" />
-          <ImageStretch>None</ImageStretch>
-          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
-        </Control>
-        <Control x:type="Label">
-          <Name>Title</Name>
-          <Id>10</Id>
-          <Width>900</Width>
-          <Height>115</Height>
-          <PosX>300</PosX>
-          <PosY>436</PosY>
-          <VisibleCondition />
-          <Animations />
-          <MediaPortalFocusControls />
-          <LabelStyle StyleId="Avalon 100 Grey" />
-          <LabelText>#MovingPictures.SelectedMovie.title</LabelText>
-          <LabelTextAlignment>Center</LabelTextAlignment>
-          <ScrollSpeed>5</ScrollSpeed>
-          <ScrollSeperator>  |  </ScrollSeperator>
-        </Control>
-        <Control x:type="ProgressBar">
-          <Name>ProgressBar</Name>
-          <Id>11</Id>
-          <Width>900</Width>
-          <Height>56</Height>
-          <PosX>300</PosX>
-          <PosY>576</PosY>
-          <VisibleCondition />
-          <Animations />
-          <MediaPortalFocusControls />
-          <ProgressBarStyle StyleId="Default" />
-          <ProgressValue>#percentage</ProgressValue>
-        </Control>
-        <Control x:type="Label">
-          <Name>currentplaytime</Name>
-          <Id>12</Id>
-          <Width>321</Width>
-          <Height>105</Height>
-          <PosX>300</PosX>
-          <PosY>625</PosY>
-          <VisibleCondition />
-          <Animations />
-          <MediaPortalFocusControls />
-          <LabelStyle StyleId="Avalon 85 Grey" />
-          <LabelText>#currentplaytime</LabelText>
-          <IsScrollingEnabled>false</IsScrollingEnabled>
-          <ScrollSpeed>2</ScrollSpeed>
-          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
-        </Control>
-        <Control x:type="Label">
-          <Name>currentremaining</Name>
-          <Id>13</Id>
-          <Width>420</Width>
-          <Height>105</Height>
-          <PosX>785</PosX>
-          <PosY>625</PosY>
-          <VisibleCondition />
-          <Animations />
-          <MediaPortalFocusControls />
-          <LabelStyle StyleId="Avalon 85 Grey" />
-          <LabelText>#currentremaining</LabelText>
-          <LabelTextAlignment>Right</LabelTextAlignment>
-          <IsScrollingEnabled>false</IsScrollingEnabled>
-          <ScrollSpeed>2</ScrollSpeed>
-          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+          <GroupStyle StyleId="Empty" />
+          <GroupControls>
+            <Control x:type="Image">
+              <Name>OSD</Name>
+              <Id>48</Id>
+              <Width>988</Width>
+              <Height>634</Height>
+              <PosX>137</PosX>
+              <PosY>195</PosY>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <ImageStyle StyleId="Music Details BG" />
+              <ImageStretch>None</ImageStretch>
+              <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+            </Control>
+            <Control x:type="Image">
+              <Name>ClearArt</Name>
+              <Id>44</Id>
+              <Width>922</Width>
+              <Height>319</Height>
+              <PosX>170</PosX>
+              <PosY>241</PosY>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <ImageStyle StyleId="Logo_Image" />
+              <Image>\Arts\MovingPictures\ClearArt\FullSize\+#Play.Current.IMDBNumber+.png</Image>
+              <ImageStretch>Uniform</ImageStretch>
+              <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+            </Control>
+            <Control x:type="ProgressBar">
+              <Name>ProgressBar</Name>
+              <Id>45</Id>
+              <Width>920</Width>
+              <Height>56</Height>
+              <PosX>170</PosX>
+              <PosY>575</PosY>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <ProgressBarStyle StyleId="Default" />
+              <ProgressValue>#percentage</ProgressValue>
+            </Control>
+            <Control x:type="Label">
+              <Name>currentplaytime</Name>
+              <Id>46</Id>
+              <Width>321</Width>
+              <Height>105</Height>
+              <PosX>170</PosX>
+              <PosY>625</PosY>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <LabelStyle StyleId="Avalon 85 Grey" />
+              <LabelText>#currentplaytime</LabelText>
+              <IsScrollingEnabled>false</IsScrollingEnabled>
+              <ScrollSpeed>2</ScrollSpeed>
+              <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+            </Control>
+            <Control x:type="Label">
+              <Name>currentremaining</Name>
+              <Id>47</Id>
+              <Width>420</Width>
+              <Height>105</Height>
+              <PosX>671</PosX>
+              <PosY>625</PosY>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <LabelStyle StyleId="Avalon 85 Grey" />
+              <LabelText>#currentremaining</LabelText>
+              <LabelTextAlignment>Right</LabelTextAlignment>
+              <IsScrollingEnabled>false</IsScrollingEnabled>
+              <ScrollSpeed>2</ScrollSpeed>
+              <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+            </Control>
+          </GroupControls>
         </Control>
         <Control x:type="Group">
           <Name>Icon Group</Name>
@@ -305,38 +387,6 @@
             </Control>
           </GroupControls>
         </Control>
-        <Control x:type="Image">
-          <Name>Image</Name>
-          <Id>31</Id>
-          <Width>195</Width>
-          <Height>275</Height>
-          <PosX>86</PosX>
-          <PosY>434</PosY>
-          <VisibleCondition />
-          <Animations />
-          <MediaPortalFocusControls />
-          <ImageStyle StyleId="VideoCover" />
-          <Image>#Play.Current.Thumb</Image>
-          <DefaultImage>\missing_coverart.png</DefaultImage>
-          <ImageStretch>Uniform</ImageStretch>
-          <ImageCornerRadius>15</ImageCornerRadius>
-          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
-        </Control>
-        <Control x:type="Image">
-          <Name>ClearArt</Name>
-          <Id>29</Id>
-          <Width>469</Width>
-          <Height>260</Height>
-          <PosX>706</PosX>
-          <PosY>164</PosY>
-          <VisibleCondition />
-          <Animations />
-          <MediaPortalFocusControls />
-          <ImageStyle StyleId="Logo_Image" />
-          <Image>\Arts\MovingPictures\ClearArt\FullSize\+#Play.Current.IMDBNumber+.png</Image>
-          <ImageStretch>Uniform</ImageStretch>
-          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
-        </Control>
       </GroupControls>
     </Control>
     <Control x:type="Button">
@@ -353,6 +403,59 @@
       <Actions>
         <Action Action="OpenDialog" Param="904" />
       </Actions>
+    </Control>
+    <Control x:type="Group">
+      <Name>TimeRec</Name>
+      <Id>33</Id>
+      <Width>1280</Width>
+      <Height>100</Height>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <GroupStyle>
+        <BorderThickness>0,0,0,0</BorderThickness>
+        <CornerRadius>0,0,0,0</CornerRadius>
+      </GroupStyle>
+      <GroupControls>
+        <Control x:type="Label">
+          <Name>Time</Name>
+          <Id>34</Id>
+          <Width>408</Width>
+          <Height>95</Height>
+          <PosX>872</PosX>
+          <PosY>-10</PosY>
+          <VisibleCondition>!IsControlVisible(35)</VisibleCondition>
+          <Animations>
+            <Animation x:type="Fade" Condition="VisibleFalse" Duration="1000" Reverse="true" Repeat="100000" From="100" To="0" />
+            <Animation x:type="Fade" Condition="VisibleTrue" Duration="1000" />
+          </Animations>
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="Avalon 85 Grey" />
+          <LabelText>#time</LabelText>
+          <LabelTextAlignment>Right</LabelTextAlignment>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+        <Control x:type="Image">
+          <Name>Rec Icon</Name>
+          <Id>35</Id>
+          <Width>200</Width>
+          <Height>76</Height>
+          <PosX>1080</PosX>
+          <VisibleCondition>IsTvRecording</VisibleCondition>
+          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <Animations>
+            <Animation x:type="Fade" Condition="VisibleTrue" Duration="1000" Reverse="true" Repeat="50000" />
+            <Animation x:type="Fade" Condition="VisibleFalse" Duration="1000" From="100" To="0" />
+          </Animations>
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>\RecordingIndicator.png</Image>
+          <ImageStretch>Fill</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+      </GroupControls>
     </Control>
   </WindowControls>
   <VisibleCondition>IsPlayer(MovingPictures)</VisibleCondition>

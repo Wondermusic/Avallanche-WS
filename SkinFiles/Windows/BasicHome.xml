@@ -65,7 +65,6 @@
               <MediaPortalFocusControls />
               <ImageStyle StyleId="Default_BG" />
               <Image>\BasicHomeBG\+#MPD_Subitem+.jpg</Image>
-              <DefaultImage>\splashscreen.png</DefaultImage>
               <ImageStretch>Fill</ImageStretch>
               <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
             </Control>
@@ -81,6 +80,22 @@
               <Animations />
               <MediaPortalFocusControls />
               <ImageStyle StyleId="ViewPort_NoPoster" />
+              <ImageStretch>Fill</ImageStretch>
+              <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+            </Control>
+            <Control x:type="Image">
+              <Name>LatestMusic</Name>
+              <Id>122</Id>
+              <Width>646</Width>
+              <Height>365</Height>
+              <PosY>160</PosY>
+              <VisibleCondition>IsControlVisible(145)</VisibleCondition>
+              <IsWindowOpenVisible>false</IsWindowOpenVisible>
+              <Animations />
+              <MediaPortalFocusControls />
+              <ImageStyle StyleId="Logo_Image" />
+              <Image>#latestMediaHandler.music.selected.fanart1</Image>
+              <DefaultImage>\BasicHomeBG\Music.jpg</DefaultImage>
               <ImageStretch>Fill</ImageStretch>
               <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
             </Control>
@@ -140,41 +155,6 @@
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollSpeed>2</ScrollSpeed>
               <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
-            </Control>
-            <Control x:type="Label">
-              <Name>Time</Name>
-              <Id>18</Id>
-              <Width>408</Width>
-              <Height>95</Height>
-              <PosX>872</PosX>
-              <PosY>-10</PosY>
-              <VisibleCondition />
-              <Animations />
-              <MediaPortalFocusControls />
-              <LabelStyle StyleId="Avalon 85 Grey" />
-              <LabelText>#time</LabelText>
-              <LabelTextAlignment>Right</LabelTextAlignment>
-              <IsScrollingEnabled>false</IsScrollingEnabled>
-              <ScrollSpeed>2</ScrollSpeed>
-              <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
-            </Control>
-            <Control x:type="Image">
-              <Name>Rec Icon</Name>
-              <Id>19</Id>
-              <Width>230</Width>
-              <Height>76</Height>
-              <PosX>1045</PosX>
-              <VisibleCondition>IsTvRecording</VisibleCondition>
-              <IsWindowOpenVisible>false</IsWindowOpenVisible>
-              <Animations>
-                <Animation x:type="Fade" Condition="VisibleTrue" Duration="1000" Easing="EaseInOut" Reverse="true" Repeat="50000" />
-                <Animation x:type="Fade" Condition="VisibleFalse" Duration="1000" Easing="EaseInOut" From="100" To="0" />
-              </Animations>
-              <MediaPortalFocusControls />
-              <ImageStyle StyleId="Logo_Image" />
-              <Image>\RecordingIndicator.png</Image>
-              <ImageStretch>Fill</ImageStretch>
-              <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
             </Control>
             <Control x:type="Rectangle">
               <Name>Dummy</Name>
@@ -593,21 +573,6 @@
         </Control>
       </GroupControls>
     </Control>
-    <Control x:type="Button">
-      <Name>Menu</Name>
-      <Id>119</Id>
-      <Width>1280</Width>
-      <Height>150</Height>
-      <PosY>570</PosY>
-      <VisibleCondition />
-      <Animations />
-      <MediaPortalFocusControls />
-      <ButtonStyle StyleId="Clear" />
-      <LabelText>NewButton</LabelText>
-      <Actions>
-        <Action Action="OpenDialog" Param="903" />
-      </Actions>
-    </Control>
     <Control x:type="Group">
       <Name>Side Menu</Name>
       <Id>31</Id>
@@ -763,6 +728,502 @@
           <Actions>
             <Action Action="MediaPortalAction" Param="ACTION_EXIT" />
           </Actions>
+        </Control>
+      </GroupControls>
+    </Control>
+    <Control x:type="Button">
+      <Name>Menu</Name>
+      <Id>119</Id>
+      <Width>1280</Width>
+      <Height>150</Height>
+      <PosY>570</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle StyleId="Clear" />
+      <LabelText>NewButton</LabelText>
+      <Actions>
+        <Action Action="OpenDialog" Param="903" />
+      </Actions>
+    </Control>
+    <Control x:type="Group">
+      <Name>TimeRec</Name>
+      <Id>122</Id>
+      <Width>1280</Width>
+      <Height>100</Height>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <GroupStyle>
+        <BorderThickness>0,0,0,0</BorderThickness>
+        <CornerRadius>0,0,0,0</CornerRadius>
+      </GroupStyle>
+      <GroupControls>
+        <Control x:type="Label">
+          <Name>Time</Name>
+          <Id>123</Id>
+          <Width>408</Width>
+          <Height>95</Height>
+          <PosX>872</PosX>
+          <PosY>-10</PosY>
+          <VisibleCondition>!IsControlVisible(124)</VisibleCondition>
+          <Animations>
+            <Animation x:type="Fade" Condition="VisibleFalse" Duration="1000" Reverse="true" Repeat="100000" From="100" To="0" />
+            <Animation x:type="Fade" Condition="VisibleTrue" Duration="1000" />
+          </Animations>
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="Avalon 85 Grey" />
+          <LabelText>#time</LabelText>
+          <LabelTextAlignment>Right</LabelTextAlignment>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+        <Control x:type="Image">
+          <Name>Rec Icon</Name>
+          <Id>124</Id>
+          <Width>200</Width>
+          <Height>76</Height>
+          <PosX>1080</PosX>
+          <VisibleCondition>IsTvRecording</VisibleCondition>
+          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <Animations>
+            <Animation x:type="Fade" Condition="VisibleTrue" Duration="1000" Reverse="true" Repeat="50000" />
+            <Animation x:type="Fade" Condition="VisibleFalse" Duration="1000" From="100" To="0" />
+          </Animations>
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>\RecordingIndicator.png</Image>
+          <ImageStretch>Fill</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+      </GroupControls>
+    </Control>
+    <Control x:type="Group">
+      <Name>LatestMedia</Name>
+      <Id>126</Id>
+      <Width>628</Width>
+      <Height>365</Height>
+      <PosX>634</PosX>
+      <PosY>159</PosY>
+      <VisibleCondition>IsMediaPortalControlFocused(919199840) || IsMediaPortalControlFocused(919199910) || IsMediaPortalControlFocused(919199940) || IsMediaPortalControlFocused(919199710) || IsMediaPortalControlFocused(919199970)</VisibleCondition>
+      <IsWindowOpenVisible>false</IsWindowOpenVisible>
+      <Animations>
+        <Animation x:type="Slide" Condition="VisibleTrue" Duration="500" Easing="EaseOut" StartX="1280" StartY="159" EndX="634" EndY="159" />
+        <Animation x:type="Slide" Condition="VisibleFalse" Duration="500" Easing="EaseIn" StartX="634" StartY="159" EndX="1280" EndY="159" />
+      </Animations>
+      <MediaPortalFocusControls />
+      <GroupStyle StyleId="TVSeries_Detail" />
+      <GroupControls>
+        <Control x:type="Group">
+          <Name>Recordings</Name>
+          <Id>127</Id>
+          <Width>628</Width>
+          <Height>358</Height>
+          <VisibleCondition>IsMediaPortalControlFocused(919199840)</VisibleCondition>
+          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <Animations />
+          <MediaPortalFocusControls />
+          <GroupStyle StyleId="Empty" />
+          <GroupControls>
+            <Control x:type="Label">
+              <Name>Rec</Name>
+              <Id>129</Id>
+              <Width>618</Width>
+              <Height>60</Height>
+              <PosX>3</PosX>
+              <PosY>5</PosY>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <LabelStyle StyleId="Avalon 50 White" />
+              <LabelText>@recordings</LabelText>
+            </Control>
+            <Control x:type="Label">
+              <Name>Title</Name>
+              <Id>128</Id>
+              <Width>616</Width>
+              <Height>52</Height>
+              <PosX>4</PosX>
+              <PosY>105</PosY>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <LabelStyle StyleId="Avalon 42 White" />
+              <LabelText>#latestMediaHandler.tvrecordings.selected.title</LabelText>
+              <LabelTextAlignment>Center</LabelTextAlignment>
+              <ScrollSpeed>5</ScrollSpeed>
+              <ScrollSeperator>  |  </ScrollSeperator>
+            </Control>
+            <Control x:type="Image">
+              <Name>Thumb</Name>
+              <Id>130</Id>
+              <Width>150</Width>
+              <Height>150</Height>
+              <PosX>12</PosX>
+              <PosY>171</PosY>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <ImageStyle StyleId="Logo_Image" />
+              <Image>#latestMediaHandler.tvrecordings.selected.thumb</Image>
+              <ImageStretch>Uniform</ImageStretch>
+              <ImageCornerRadius>5</ImageCornerRadius>
+              <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+            </Control>
+            <Control x:type="Label">
+              <Name>StartTime</Name>
+              <Id>131</Id>
+              <Width>450</Width>
+              <Height>45</Height>
+              <PosX>171</PosX>
+              <PosY>178</PosY>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <LabelStyle StyleId="Avalon 33 Blue" />
+              <LabelText>#latestMediaHandler.tvrecordings.selected.startTime</LabelText>
+            </Control>
+            <Control x:type="Label">
+              <Name>StopTime</Name>
+              <Id>132</Id>
+              <Width>450</Width>
+              <Height>45</Height>
+              <PosX>171</PosX>
+              <PosY>215</PosY>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <LabelStyle StyleId="Avalon 33 Blue" />
+              <LabelText>#latestMediaHandler.tvrecordings.selected.startTime</LabelText>
+            </Control>
+            <Control x:type="Label">
+              <Name>Summary</Name>
+              <Id>133</Id>
+              <Width>450</Width>
+              <Height>101</Height>
+              <PosX>173</PosX>
+              <PosY>253</PosY>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <LabelStyle StyleId="Avalon 26 White" />
+              <LabelText>#latestMediaHandler.tvrecordings.selected.summary</LabelText>
+              <IsVertical>true</IsVertical>
+              <ScrollSpeed>4</ScrollSpeed>
+              <ScrollSeperator>------------</ScrollSeperator>
+            </Control>
+          </GroupControls>
+        </Control>
+        <Control x:type="Group">
+          <Name>MovingPictures</Name>
+          <Id>134</Id>
+          <Width>628</Width>
+          <Height>358</Height>
+          <VisibleCondition>IsMediaPortalControlFocused(919199910)</VisibleCondition>
+          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <Animations />
+          <MediaPortalFocusControls />
+          <GroupStyle StyleId="Empty" />
+          <GroupControls>
+            <Control x:type="Label">
+              <Name>Movies</Name>
+              <Id>135</Id>
+              <Width>598</Width>
+              <Height>60</Height>
+              <PosX>3</PosX>
+              <PosY>5</PosY>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <LabelStyle StyleId="Avalon 50 White" />
+              <LabelText>@Movies</LabelText>
+            </Control>
+            <Control x:type="List">
+              <Name>NewList</Name>
+              <Id>136</Id>
+              <Width>622</Width>
+              <Height>229</Height>
+              <PosX>3</PosX>
+              <PosY>63</PosY>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <ListControlStyle StyleId="empty" />
+              <ListType>MediaPortalListControl</ListType>
+              <ListLayout>Horizontal</ListLayout>
+              <VerticalItemStyle />
+              <VerticalIconItemStyle />
+              <HorizontalItemStyle>
+                <EnableLabel>false</EnableLabel>
+                <EnableImage>true</EnableImage>
+                <Width>203</Width>
+                <Height>223</Height>
+                <SelectionZoomX>110</SelectionZoomX>
+                <SelectionZoomY>110</SelectionZoomY>
+              </HorizontalItemStyle>
+              <CoverFlowItemStyle />
+            </Control>
+            <Control x:type="Label">
+              <Name>Title</Name>
+              <Id>137</Id>
+              <Width>601</Width>
+              <Height>58</Height>
+              <PosX>16</PosX>
+              <PosY>295</PosY>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <LabelStyle StyleId="Avalon 42 White" />
+              <LabelText>#latestMediaHandler.movingpicture.selected.title</LabelText>
+              <LabelTextAlignment>Center</LabelTextAlignment>
+              <ScrollDelay>2</ScrollDelay>
+              <ScrollSpeed>4</ScrollSpeed>
+              <ScrollSeperator>  |  </ScrollSeperator>
+            </Control>
+          </GroupControls>
+        </Control>
+        <Control x:type="Group">
+          <Name>Series</Name>
+          <Id>138</Id>
+          <Width>628</Width>
+          <Height>358</Height>
+          <VisibleCondition>IsMediaPortalControlFocused(919199940)</VisibleCondition>
+          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <Animations />
+          <MediaPortalFocusControls />
+          <GroupStyle StyleId="Empty" />
+          <GroupControls>
+            <Control x:type="Label">
+              <Name>Series</Name>
+              <Id>139</Id>
+              <Width>598</Width>
+              <Height>60</Height>
+              <PosX>3</PosX>
+              <PosY>5</PosY>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <LabelStyle StyleId="Avalon 50 White" />
+              <LabelText>@Series</LabelText>
+            </Control>
+            <Control x:type="List">
+              <Name>NewList</Name>
+              <Id>140</Id>
+              <Width>622</Width>
+              <Height>229</Height>
+              <PosX>3</PosX>
+              <PosY>63</PosY>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <ListControlStyle StyleId="empty" />
+              <ListType>MediaPortalListControl</ListType>
+              <ListLayout>Horizontal</ListLayout>
+              <VerticalItemStyle />
+              <VerticalIconItemStyle />
+              <HorizontalItemStyle>
+                <EnableLabel>false</EnableLabel>
+                <EnableImage>true</EnableImage>
+                <Width>203</Width>
+                <Height>223</Height>
+                <SelectionZoomX>110</SelectionZoomX>
+                <SelectionZoomY>110</SelectionZoomY>
+              </HorizontalItemStyle>
+              <CoverFlowItemStyle />
+            </Control>
+            <Control x:type="Label">
+              <Name>Title</Name>
+              <Id>141</Id>
+              <Width>601</Width>
+              <Height>58</Height>
+              <PosX>16</PosX>
+              <PosY>295</PosY>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <LabelStyle StyleId="Avalon 42 White" />
+              <LabelText>#selecteditem+ - +#latestMediaHandler.tvseries.selected.episodeName</LabelText>
+              <LabelTextAlignment>Center</LabelTextAlignment>
+              <ScrollDelay>2</ScrollDelay>
+              <ScrollSpeed>4</ScrollSpeed>
+              <ScrollSeperator>  |  </ScrollSeperator>
+            </Control>
+          </GroupControls>
+        </Control>
+        <Control x:type="Group">
+          <Name>Pictures</Name>
+          <Id>142</Id>
+          <Width>628</Width>
+          <Height>358</Height>
+          <VisibleCondition>IsMediaPortalControlFocused(919199710)</VisibleCondition>
+          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <Animations />
+          <MediaPortalFocusControls />
+          <GroupStyle StyleId="Empty" />
+          <GroupControls>
+            <Control x:type="Label">
+              <Name>Pictures</Name>
+              <Id>143</Id>
+              <Width>598</Width>
+              <Height>60</Height>
+              <PosX>3</PosX>
+              <PosY>5</PosY>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <LabelStyle StyleId="Avalon 50 White" />
+              <LabelText>@Pictures</LabelText>
+            </Control>
+            <Control x:type="List">
+              <Name>NewList</Name>
+              <Id>144</Id>
+              <Width>622</Width>
+              <Height>291</Height>
+              <PosX>3</PosX>
+              <PosY>63</PosY>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <ListControlStyle StyleId="empty" />
+              <ListType>MediaPortalListControl</ListType>
+              <ListLayout>Vertical</ListLayout>
+              <VerticalItemStyle>
+                <NoFocusBrush />
+                <NoFocusBorderBrush />
+                <FocusBrush x:type="GradientBrush">
+                  <GradientStops>
+                    <GradientStop Color="#FFB1CCE2" Offset="0" />
+                    <GradientStop Color="#FF3D75A1" Offset="0.763" />
+                  </GradientStops>
+                  <Angle>Vertical</Angle>
+                </FocusBrush>
+                <FocusBorderBrush x:type="GradientBrush">
+                  <GradientStops>
+                    <GradientStop Color="#FF30373F" Offset="0" />
+                    <GradientStop Color="#FF233649" Offset="1" />
+                  </GradientStops>
+                  <Angle>Vertical</Angle>
+                </FocusBorderBrush>
+                <FontType>Avallanche</FontType>
+                <FontSize>50</FontSize>
+                <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+                <NoFocusFontBrush x:type="ColorBrush" Color="#FF6AA3CB" />
+                <LabelMargin>10,0,0,0</LabelMargin>
+                <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
+                <ImageMargin>3,3,3,3</ImageMargin>
+                <ImageHorizontalAlignment>Left</ImageHorizontalAlignment>
+                <ImageVerticalAlignment>Top</ImageVerticalAlignment>
+                <ImageCornerRadius>4</ImageCornerRadius>
+                <Width>622</Width>
+                <Height>50</Height>
+                <ItemMargin>1,1,1,1</ItemMargin>
+                <HorizontalAlignment>Right</HorizontalAlignment>
+              </VerticalItemStyle>
+              <VerticalIconItemStyle>
+                <NoFocusBrush />
+                <NoFocusBorderBrush />
+                <FocusBrush x:type="GradientBrush">
+                  <GradientStops>
+                    <GradientStop Color="#FF74B7E9" Offset="0" />
+                    <GradientStop Color="#FF3F79A5" Offset="0.705" />
+                  </GradientStops>
+                  <Angle>Vertical</Angle>
+                </FocusBrush>
+                <FocusBorderBrush />
+                <FontType>Avallanche</FontType>
+                <FontSize>50</FontSize>
+                <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+                <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+                <LabelHorizontalAlignment>Right</LabelHorizontalAlignment>
+                <ImageMargin>3,3,3,3</ImageMargin>
+                <ImageHorizontalAlignment>Left</ImageHorizontalAlignment>
+                <ImageVerticalAlignment>Top</ImageVerticalAlignment>
+                <ImageCornerRadius>4</ImageCornerRadius>
+                <Width>721</Width>
+                <Height>73</Height>
+                <ItemMargin>1,1,1,1</ItemMargin>
+                <HorizontalAlignment>Left</HorizontalAlignment>
+              </VerticalIconItemStyle>
+              <HorizontalItemStyle>
+                <EnableLabel>false</EnableLabel>
+                <EnableImage>true</EnableImage>
+                <Width>203</Width>
+                <Height>223</Height>
+                <SelectionZoomX>110</SelectionZoomX>
+                <SelectionZoomY>110</SelectionZoomY>
+              </HorizontalItemStyle>
+              <CoverFlowItemStyle />
+            </Control>
+          </GroupControls>
+        </Control>
+        <Control x:type="Group">
+          <Name>Music</Name>
+          <Id>145</Id>
+          <Width>628</Width>
+          <Height>358</Height>
+          <VisibleCondition>IsMediaPortalControlFocused(919199970)</VisibleCondition>
+          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <Animations />
+          <MediaPortalFocusControls />
+          <GroupStyle StyleId="Empty" />
+          <GroupControls>
+            <Control x:type="Label">
+              <Name>Series</Name>
+              <Id>146</Id>
+              <Width>598</Width>
+              <Height>60</Height>
+              <PosX>3</PosX>
+              <PosY>5</PosY>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <LabelStyle StyleId="Avalon 50 White" />
+              <LabelText>@Music</LabelText>
+            </Control>
+            <Control x:type="List">
+              <Name>NewList</Name>
+              <Id>147</Id>
+              <Width>622</Width>
+              <Height>229</Height>
+              <PosX>3</PosX>
+              <PosY>63</PosY>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <ListControlStyle StyleId="empty" />
+              <ListType>MediaPortalListControl</ListType>
+              <ListLayout>Horizontal</ListLayout>
+              <VerticalItemStyle />
+              <VerticalIconItemStyle />
+              <HorizontalItemStyle>
+                <EnableLabel>false</EnableLabel>
+                <EnableImage>true</EnableImage>
+                <Width>203</Width>
+                <Height>223</Height>
+                <SelectionZoomX>110</SelectionZoomX>
+                <SelectionZoomY>110</SelectionZoomY>
+              </HorizontalItemStyle>
+              <CoverFlowItemStyle />
+            </Control>
+            <Control x:type="Label">
+              <Name>Title</Name>
+              <Id>148</Id>
+              <Width>601</Width>
+              <Height>58</Height>
+              <PosX>16</PosX>
+              <PosY>295</PosY>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <LabelStyle StyleId="Avalon 42 White" />
+              <LabelText>#selecteditem</LabelText>
+              <LabelTextAlignment>Center</LabelTextAlignment>
+              <ScrollDelay>2</ScrollDelay>
+              <ScrollSpeed>4</ScrollSpeed>
+              <ScrollSeperator>  |  </ScrollSeperator>
+            </Control>
+          </GroupControls>
         </Control>
       </GroupControls>
     </Control>

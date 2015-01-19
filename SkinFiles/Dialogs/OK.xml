@@ -153,6 +153,7 @@
         <Height>100</Height>
         <ItemMargin>1,1,1,1</ItemMargin>
       </VerticalItemStyle>
+      <VerticalIconItemStyle />
       <HorizontalItemStyle>
         <BorderThickness>1,1,1,1</BorderThickness>
         <CornerRadius>4,4,4,4</CornerRadius>

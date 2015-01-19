@@ -42,7 +42,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <ImageStyle StyleId="Logo_Image" />
+              <ImageStyle StyleId="Default_BG" />
               <DefaultImage>\BG\hover_OnlineVideos.jpg</DefaultImage>
               <ImageStretch>Fill</ImageStretch>
               <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
@@ -127,45 +127,10 @@
               <Animations />
               <MediaPortalFocusControls />
               <LabelStyle StyleId="Avalon 50 Blue" />
-              <LabelText>#mvCentral.ViewAs</LabelText>
+              <LabelText>#currentmodule</LabelText>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollSpeed>2</ScrollSpeed>
               <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
-            </Control>
-            <Control x:type="Label">
-              <Name>Time</Name>
-              <Id>10</Id>
-              <Width>408</Width>
-              <Height>95</Height>
-              <PosX>872</PosX>
-              <PosY>-10</PosY>
-              <VisibleCondition />
-              <Animations />
-              <MediaPortalFocusControls />
-              <LabelStyle StyleId="Avalon 85 Grey" />
-              <LabelText>#time</LabelText>
-              <LabelTextAlignment>Right</LabelTextAlignment>
-              <IsScrollingEnabled>false</IsScrollingEnabled>
-              <ScrollSpeed>2</ScrollSpeed>
-              <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
-            </Control>
-            <Control x:type="Image">
-              <Name>Rec Icon</Name>
-              <Id>41</Id>
-              <Width>230</Width>
-              <Height>76</Height>
-              <PosX>1045</PosX>
-              <VisibleCondition>IsTvRecording</VisibleCondition>
-              <IsWindowOpenVisible>false</IsWindowOpenVisible>
-              <Animations>
-                <Animation x:type="Fade" Condition="VisibleTrue" Duration="1000" Easing="EaseInOut" Reverse="true" Repeat="50000" />
-                <Animation x:type="Fade" Condition="VisibleFalse" Duration="1000" Easing="EaseInOut" From="100" To="0" />
-              </Animations>
-              <MediaPortalFocusControls />
-              <ImageStyle StyleId="Logo_Image" />
-              <Image>\RecordingIndicator.png</Image>
-              <ImageStretch>Fill</ImageStretch>
-              <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
             </Control>
           </GroupControls>
         </Control>
@@ -188,7 +153,7 @@
           <Name>List</Name>
           <Id>13</Id>
           <Width>1237</Width>
-          <Height>489</Height>
+          <Height>480</Height>
           <PosY>83</PosY>
           <VisibleCondition />
           <Animations />
@@ -197,6 +162,7 @@
           <ListType>MediaPortalListControl</ListType>
           <ListLayout>Auto</ListLayout>
           <VerticalItemStyle StyleId="OnVid_Vertical" />
+          <VerticalIconItemStyle />
           <HorizontalItemStyle StyleId="Horizontal" />
           <CoverFlowItemStyle StyleId="Coverflow" />
         </Control>
@@ -218,6 +184,69 @@
           <ImageCornerRadius>15</ImageCornerRadius>
           <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
         </Control>
+        <Control x:type="Group">
+          <Name>InfoScreen</Name>
+          <Id>45</Id>
+          <Width>918</Width>
+          <Height>495</Height>
+          <PosX>326</PosX>
+          <PosY>78</PosY>
+          <VisibleCondition>IsMediaPortalControlFocused(80)</VisibleCondition>
+          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <Animations>
+            <Animation x:type="Slide" Condition="VisibleTrue" Duration="500" Easing="EaseInOut" StartX="1280" StartY="78" EndX="326" EndY="78" />
+            <Animation x:type="Slide" Condition="VisibleFalse" Duration="500" Easing="EaseInOut" StartX="326" StartY="78" EndX="1280" EndY="78" />
+          </Animations>
+          <MediaPortalFocusControls />
+          <GroupStyle StyleId="OnVidInfo" />
+          <GroupControls>
+            <Control x:type="Label">
+              <Name>Title</Name>
+              <Id>46</Id>
+              <Width>826</Width>
+              <Height>60</Height>
+              <PosX>63</PosX>
+              <PosY>38</PosY>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <LabelStyle StyleId="Avalon 50 White" />
+              <LabelText>#selecteditem</LabelText>
+              <ScrollSpeed>8</ScrollSpeed>
+            </Control>
+            <Control x:type="Label">
+              <Name>Playtime</Name>
+              <Id>47</Id>
+              <Width>826</Width>
+              <Height>54</Height>
+              <PosX>63</PosX>
+              <PosY>95</PosY>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <LabelStyle StyleId="Avalon 33 Blue" />
+              <LabelText>#selecteditem2</LabelText>
+              <IsScrollingEnabled>false</IsScrollingEnabled>
+              <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+            </Control>
+            <Control x:type="Label">
+              <Name>Description</Name>
+              <Id>48</Id>
+              <Width>826</Width>
+              <Height>299</Height>
+              <PosX>63</PosX>
+              <PosY>180</PosY>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <LabelStyle StyleId="Avalon 33 White" />
+              <LabelText>#OnlineVideos.desc</LabelText>
+              <IsVertical>true</IsVertical>
+              <ScrollSpeed>4</ScrollSpeed>
+              <ScrollSeperator>-----------------------------------------------------------</ScrollSeperator>
+            </Control>
+          </GroupControls>
+        </Control>
       </GroupControls>
     </Control>
     <Control x:type="Button">
@@ -235,6 +264,59 @@
       <Actions>
         <Action Action="OpenDialog" Param="903" />
       </Actions>
+    </Control>
+    <Control x:type="Group">
+      <Name>TimeRec</Name>
+      <Id>42</Id>
+      <Width>1280</Width>
+      <Height>100</Height>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <GroupStyle>
+        <BorderThickness>0,0,0,0</BorderThickness>
+        <CornerRadius>0,0,0,0</CornerRadius>
+      </GroupStyle>
+      <GroupControls>
+        <Control x:type="Label">
+          <Name>Time</Name>
+          <Id>43</Id>
+          <Width>408</Width>
+          <Height>95</Height>
+          <PosX>872</PosX>
+          <PosY>-10</PosY>
+          <VisibleCondition>!IsControlVisible(44)</VisibleCondition>
+          <Animations>
+            <Animation x:type="Fade" Condition="VisibleFalse" Duration="1000" Reverse="true" Repeat="100000" From="100" To="0" />
+            <Animation x:type="Fade" Condition="VisibleTrue" Duration="1000" />
+          </Animations>
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="Avalon 85 Grey" />
+          <LabelText>#time</LabelText>
+          <LabelTextAlignment>Right</LabelTextAlignment>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+        <Control x:type="Image">
+          <Name>Rec Icon</Name>
+          <Id>44</Id>
+          <Width>200</Width>
+          <Height>76</Height>
+          <PosX>1080</PosX>
+          <VisibleCondition>IsTvRecording</VisibleCondition>
+          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <Animations>
+            <Animation x:type="Fade" Condition="VisibleTrue" Duration="1000" Reverse="true" Repeat="50000" />
+            <Animation x:type="Fade" Condition="VisibleFalse" Duration="1000" From="100" To="0" />
+          </Animations>
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>\RecordingIndicator.png</Image>
+          <ImageStretch>Fill</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+      </GroupControls>
     </Control>
     <Control x:type="Group">
       <Name>Action Menu</Name>
@@ -262,6 +344,7 @@
           <ListType>MediaPortalButtonGroup</ListType>
           <ListLayout>Auto</ListLayout>
           <VerticalItemStyle StyleId="Action Menu" />
+          <VerticalIconItemStyle />
           <HorizontalItemStyle>
             <BorderThickness>1,1,1,1</BorderThickness>
             <CornerRadius>4,4,4,4</CornerRadius>

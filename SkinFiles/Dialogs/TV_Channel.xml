@@ -85,6 +85,7 @@
       <ListType>MediaPortalDialogList</ListType>
       <ListLayout>Auto</ListLayout>
       <VerticalItemStyle StyleId="TV_Channel_List" />
+      <VerticalIconItemStyle />
       <HorizontalItemStyle>
         <BorderThickness>1,1,1,1</BorderThickness>
         <CornerRadius>4,4,4,4</CornerRadius>

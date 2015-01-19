@@ -143,41 +143,6 @@
                   <ScrollSpeed>2</ScrollSpeed>
                   <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
                 </Control>
-                <Control x:type="Label">
-                  <Name>Time</Name>
-                  <Id>25</Id>
-                  <Width>408</Width>
-                  <Height>95</Height>
-                  <PosX>872</PosX>
-                  <PosY>-10</PosY>
-                  <VisibleCondition />
-                  <Animations />
-                  <MediaPortalFocusControls />
-                  <LabelStyle StyleId="Avalon 85 Grey" />
-                  <LabelText>#time</LabelText>
-                  <LabelTextAlignment>Right</LabelTextAlignment>
-                  <IsScrollingEnabled>false</IsScrollingEnabled>
-                  <ScrollSpeed>2</ScrollSpeed>
-                  <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
-                </Control>
-                <Control x:type="Image">
-                  <Name>Rec Icon</Name>
-                  <Id>90</Id>
-                  <Width>230</Width>
-                  <Height>76</Height>
-                  <PosX>1045</PosX>
-                  <VisibleCondition>IsTvRecording</VisibleCondition>
-                  <IsWindowOpenVisible>false</IsWindowOpenVisible>
-                  <Animations>
-                    <Animation x:type="Fade" Condition="VisibleTrue" Duration="1000" Easing="EaseInOut" Reverse="true" Repeat="50000" />
-                    <Animation x:type="Fade" Condition="VisibleFalse" Duration="1000" Easing="EaseInOut" From="100" To="0" />
-                  </Animations>
-                  <MediaPortalFocusControls />
-                  <ImageStyle StyleId="Logo_Image" />
-                  <Image>\RecordingIndicator.png</Image>
-                  <ImageStretch>Fill</ImageStretch>
-                  <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
-                </Control>
               </GroupControls>
             </Control>
             <Control x:type="Label">
@@ -208,6 +173,7 @@
               <ListType>MediaPortalListControl</ListType>
               <ListLayout>Auto</ListLayout>
               <VerticalItemStyle StyleId="MovPic_Vertical" />
+              <VerticalIconItemStyle />
               <HorizontalItemStyle StyleId="Horizontal" />
               <CoverFlowItemStyle StyleId="Coverflow" />
             </Control>
@@ -272,6 +238,7 @@
               <ListType>MediaPortalButtonGroup</ListType>
               <ListLayout>Auto</ListLayout>
               <VerticalItemStyle StyleId="Action Menu" />
+              <VerticalIconItemStyle />
               <HorizontalItemStyle>
                 <BorderThickness>1,1,1,1</BorderThickness>
                 <CornerRadius>4,4,4,4</CornerRadius>
@@ -425,41 +392,6 @@
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollSpeed>2</ScrollSpeed>
               <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
-            </Control>
-            <Control x:type="Label">
-              <Name>Time</Name>
-              <Id>42</Id>
-              <Width>408</Width>
-              <Height>95</Height>
-              <PosX>872</PosX>
-              <PosY>-10</PosY>
-              <VisibleCondition />
-              <Animations />
-              <MediaPortalFocusControls />
-              <LabelStyle StyleId="Avalon 85 Grey" />
-              <LabelText>#time</LabelText>
-              <LabelTextAlignment>Right</LabelTextAlignment>
-              <IsScrollingEnabled>false</IsScrollingEnabled>
-              <ScrollSpeed>2</ScrollSpeed>
-              <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
-            </Control>
-            <Control x:type="Image">
-              <Name>Rec Icon</Name>
-              <Id>91</Id>
-              <Width>230</Width>
-              <Height>76</Height>
-              <PosX>1045</PosX>
-              <VisibleCondition>IsTvRecording</VisibleCondition>
-              <IsWindowOpenVisible>false</IsWindowOpenVisible>
-              <Animations>
-                <Animation x:type="Fade" Condition="VisibleTrue" Duration="1000" Easing="EaseInOut" Reverse="true" Repeat="50000" />
-                <Animation x:type="Fade" Condition="VisibleFalse" Duration="1000" Easing="EaseInOut" From="100" To="0" />
-              </Animations>
-              <MediaPortalFocusControls />
-              <ImageStyle StyleId="Logo_Image" />
-              <Image>\RecordingIndicator.png</Image>
-              <ImageStretch>Fill</ImageStretch>
-              <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
             </Control>
           </GroupControls>
         </Control>
@@ -701,6 +633,59 @@
           <Actions>
             <Action Action="OpenDialog" Param="903" />
           </Actions>
+        </Control>
+      </GroupControls>
+    </Control>
+    <Control x:type="Group">
+      <Name>TimeRec</Name>
+      <Id>92</Id>
+      <Width>1280</Width>
+      <Height>100</Height>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <GroupStyle>
+        <BorderThickness>0,0,0,0</BorderThickness>
+        <CornerRadius>0,0,0,0</CornerRadius>
+      </GroupStyle>
+      <GroupControls>
+        <Control x:type="Label">
+          <Name>Time</Name>
+          <Id>93</Id>
+          <Width>408</Width>
+          <Height>95</Height>
+          <PosX>872</PosX>
+          <PosY>-10</PosY>
+          <VisibleCondition>!IsControlVisible(94)</VisibleCondition>
+          <Animations>
+            <Animation x:type="Fade" Condition="VisibleFalse" Duration="1000" Reverse="true" Repeat="100000" From="100" To="0" />
+            <Animation x:type="Fade" Condition="VisibleTrue" Duration="1000" />
+          </Animations>
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="Avalon 85 Grey" />
+          <LabelText>#time</LabelText>
+          <LabelTextAlignment>Right</LabelTextAlignment>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+        <Control x:type="Image">
+          <Name>Rec Icon</Name>
+          <Id>94</Id>
+          <Width>200</Width>
+          <Height>76</Height>
+          <PosX>1080</PosX>
+          <VisibleCondition>IsTvRecording</VisibleCondition>
+          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <Animations>
+            <Animation x:type="Fade" Condition="VisibleTrue" Duration="1000" Reverse="true" Repeat="50000" />
+            <Animation x:type="Fade" Condition="VisibleFalse" Duration="1000" From="100" To="0" />
+          </Animations>
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="Logo_Image" />
+          <Image>\RecordingIndicator.png</Image>
+          <ImageStretch>Fill</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
         </Control>
       </GroupControls>
     </Control>

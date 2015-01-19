@@ -368,6 +368,22 @@
       <IsInternal>false</IsInternal>
     </XmlProperty>
     <XmlProperty>
+      <SkinTag>#latestMediaHandler.tvrecordings.selected.thumb</SkinTag>
+      <PropertyType>Image</PropertyType>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#latestMediaHandler.tvrecordings.selected.thumb" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#latestMediaHandler.music.selected.fanart1</SkinTag>
+      <PropertyType>Image</PropertyType>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#latestMediaHandler.music.selected.fanart1" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
       <SkinTag>#percentage</SkinTag>
       <PropertyType>Number</PropertyType>
       <DesignerValue>10</DesignerValue>
@@ -2459,6 +2475,77 @@
       <MediaPortalTags>
         <XmlMediaPortalTag Tag="#TVSeries.Season.ID" />
         <XmlMediaPortalTag Tag="#TVSeries.Series.ID" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#OnlineVideos.desc</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>New....</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#OnlineVideos.desc" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#WorldWeather.TodayIconNumber</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>34</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#WorldWeather.TodayIconNumber" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#latestMediaHandler.tvrecordings.selected.title</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>Navy CIS</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#latestMediaHandler.tvrecordings.selected.title" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#latestMediaHandler.tvrecordings.selected.startTime</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>2015-01-17  17:35:06</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#latestMediaHandler.tvrecordings.selected.startTime" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#latestMediaHandler.tvrecordings.selected.endTime</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>2015-01-17  17:35:06</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#latestMediaHandler.tvrecordings.selected.endTime" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#latestMediaHandler.tvrecordings.selected.summary</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#latestMediaHandler.tvrecordings.selected.summary" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#latestMediaHandler.movingpicture.selected.title</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>Nachts im Museum</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#latestMediaHandler.movingpicture.selected.title" />
+      </MediaPortalTags>
+      <IsInternal>false</IsInternal>
+    </XmlProperty>
+    <XmlProperty>
+      <SkinTag>#latestMediaHandler.tvseries.selected.episodeName</SkinTag>
+      <PropertyType>Label</PropertyType>
+      <DesignerValue>Anruf aus dem Weißen Haus</DesignerValue>
+      <MediaPortalTags>
+        <XmlMediaPortalTag Tag="#latestMediaHandler.tvseries.selected.episodeName" />
       </MediaPortalTags>
       <IsInternal>false</IsInternal>
     </XmlProperty>

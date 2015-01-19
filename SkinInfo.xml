@@ -2,8 +2,8 @@
 <XmlSkinInfo xmlns:x="http://www.w3.org/2001/XMLSchema-instance">
   <SkinWidth>1280</SkinWidth>
   <SkinHeight>720</SkinHeight>
-  <CurrentStyle>Default</CurrentStyle>
-  <CurrentLanguage>English</CurrentLanguage>
+  <CurrentStyle>Addict</CurrentStyle>
+  <CurrentLanguage>Deutsch</CurrentLanguage>
   <TextEnableScrolling>false</TextEnableScrolling>
   <TextHorizontalScrollDelay>3</TextHorizontalScrollDelay>
   <TextHorizontalScrollSpeed>20</TextHorizontalScrollSpeed>
@@ -14,8 +14,8 @@
   <TextVerticalScrollWrap>true</TextVerticalScrollWrap>
   <TextVerticalScrollSeperator>---------------------------------</TextVerticalScrollSeperator>
   <SkinOptions>
-    <SkinOption Name="ClearArts" Group="ClearArts" IsPreviewImageEnabled="true" PreviewImage="\ClearArt.png" Description="Use this if you have installed DVDArt or MePo-Tools." />
-    <SkinOption Name="NoClearArts" Group="ClearArts" IsEnabled="true" IsPreviewImageEnabled="true" PreviewImage="\NoClearArt.png" Description="Use this Option if you have not installed DVDArt or MePo-Tools." />
+    <SkinOption Name="ClearArts" Group="BasicHome" IsEnabled="true" IsPreviewImageEnabled="true" PreviewImage="\ClearArt.png" Description="Use this if you have installed DVDArt or MePo-Tools." />
+    <SkinOption Name="NoClearArts" Group="BasicHome" IsPreviewImageEnabled="true" PreviewImage="\NoClearArt.png" Description="Use this Option if you have not installed DVDArt or MePo-Tools." />
   </SkinOptions>
   <SkinName>Avallanche-WS</SkinName>
   <Author>Wondermusic</Author>
