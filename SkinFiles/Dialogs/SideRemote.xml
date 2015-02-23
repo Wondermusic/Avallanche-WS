@@ -29,10 +29,7 @@
       <VisibleCondition />
       <Animations />
       <MediaPortalFocusControls />
-      <GroupStyle>
-        <BorderThickness>0,0,0,0</BorderThickness>
-        <CornerRadius>0,0,0,0</CornerRadius>
-      </GroupStyle>
+      <GroupStyle />
       <GroupControls>
         <Control x:type="Group">
           <Name>NewGroup</Name>
@@ -42,10 +39,7 @@
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <GroupStyle>
-            <BorderThickness>0,0,0,0</BorderThickness>
-            <CornerRadius>0,0,0,0</CornerRadius>
-          </GroupStyle>
+          <GroupStyle />
           <GroupControls>
             <Control x:type="Image">
               <Name>NewImage</Name>

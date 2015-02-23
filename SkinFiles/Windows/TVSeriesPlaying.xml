@@ -27,8 +27,6 @@
           <Animations />
           <MediaPortalFocusControls />
           <GroupStyle>
-            <BorderThickness>0,0,0,0</BorderThickness>
-            <CornerRadius>0,0,0,0</CornerRadius>
             <BackgroundBrush />
             <BorderBrush />
             <GlossBrush />
@@ -56,8 +54,6 @@
               <VisibleCondition>IsSkinOptionEnabled(ClearArts)</VisibleCondition>
               <Animations />
               <MediaPortalFocusControls />
-              <BorderThickness>0,0,0,0</BorderThickness>
-              <CornerRadius>0,0,0,0</CornerRadius>
               <BackgroundBrush x:type="ColorBrush" Color="#E2000000" />
             </Control>
             <Control x:type="Image">
@@ -97,8 +93,6 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <BorderThickness>0,0,0,0</BorderThickness>
-              <CornerRadius>0,0,0,0</CornerRadius>
               <BackgroundBrush x:type="ColorBrush" Color="#FF6AA5CB" />
             </Control>
             <Control x:type="Label">
@@ -351,7 +345,7 @@
               <Animations />
               <MediaPortalFocusControls />
               <ImageStyle StyleId="Logo_Image" />
-              <Image>\Arts\TVSeries\ClearArt\FullSize\+#TVSeries.Series.ID+.png</Image>
+              <Image>#TVSeries.Play.ClearArt</Image>
               <ImageStretch>Uniform</ImageStretch>
               <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
             </Control>
@@ -406,7 +400,7 @@
               <Id>31</Id>
               <Width>1280</Width>
               <Height>105</Height>
-              <PosY>461</PosY>
+              <PosY>475</PosY>
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
@@ -443,10 +437,7 @@
       <VisibleCondition />
       <Animations />
       <MediaPortalFocusControls />
-      <GroupStyle>
-        <BorderThickness>0,0,0,0</BorderThickness>
-        <CornerRadius>0,0,0,0</CornerRadius>
-      </GroupStyle>
+      <GroupStyle />
       <GroupControls>
         <Control x:type="Label">
           <Name>Time</Name>

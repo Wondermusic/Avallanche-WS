@@ -37,8 +37,6 @@
               <Animations />
               <MediaPortalFocusControls />
               <GroupStyle>
-                <BorderThickness>0,0,0,0</BorderThickness>
-                <CornerRadius>0,0,0,0</CornerRadius>
                 <BackgroundBrush />
                 <BorderBrush />
                 <GlossBrush />
@@ -123,8 +121,6 @@
                   <VisibleCondition />
                   <Animations />
                   <MediaPortalFocusControls />
-                  <BorderThickness>0,0,0,0</BorderThickness>
-                  <CornerRadius>0,0,0,0</CornerRadius>
                   <BackgroundBrush x:type="ColorBrush" Color="#FF6AA5CB" />
                 </Control>
                 <Control x:type="Label">
@@ -301,8 +297,6 @@
           <Animations />
           <MediaPortalFocusControls />
           <GroupStyle>
-            <BorderThickness>0,0,0,0</BorderThickness>
-            <CornerRadius>0,0,0,0</CornerRadius>
             <BackgroundBrush />
             <BorderBrush />
             <GlossBrush />
@@ -373,8 +367,6 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <BorderThickness>0,0,0,0</BorderThickness>
-              <CornerRadius>0,0,0,0</CornerRadius>
               <BackgroundBrush x:type="ColorBrush" Color="#FF6AA5CB" />
             </Control>
             <Control x:type="Label">
@@ -644,10 +636,7 @@
       <VisibleCondition />
       <Animations />
       <MediaPortalFocusControls />
-      <GroupStyle>
-        <BorderThickness>0,0,0,0</BorderThickness>
-        <CornerRadius>0,0,0,0</CornerRadius>
-      </GroupStyle>
+      <GroupStyle />
       <GroupControls>
         <Control x:type="Label">
           <Name>Time</Name>

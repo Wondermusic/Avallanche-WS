@@ -43,8 +43,6 @@
           <Animations />
           <MediaPortalFocusControls />
           <GroupStyle>
-            <BorderThickness>0,0,0,0</BorderThickness>
-            <CornerRadius>0,0,0,0</CornerRadius>
             <BackgroundBrush />
             <BorderBrush />
             <GlossBrush />
@@ -409,8 +407,6 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <BorderThickness>0,0,0,0</BorderThickness>
-              <CornerRadius>0,0,0,0</CornerRadius>
               <BackgroundBrush x:type="ColorBrush" Color="#FF6AA5CB" />
             </Control>
             <Control x:type="Label">
@@ -463,11 +459,11 @@
                   <PosY>122</PosY>
                   <VisibleCondition />
                   <Animations>
-                    <Animation x:type="Rotate" Condition="VisibleTrue" Duration="4000" Repeat="10000" Pos3DZTo="-360" />
+                    <Animation x:type="Rotate" Condition="VisibleTrue" Duration="8000" Repeat="10000" Pos3DZTo="-360" />
                   </Animations>
                   <MediaPortalFocusControls />
                   <ImageStyle StyleId="Logo_Image" />
-                  <Image>\Arts\TVSeries\CDArt\FullSize\+#MPD2.TVSeries.CDArt+.png</Image>
+                  <Image>#MPD.TVSeries.CDArt</Image>
                   <ImageStretch>Fill</ImageStretch>
                   <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
                 </Control>
@@ -515,31 +511,7 @@
                   <ListControlStyle StyleId="empty" />
                   <ListType>MediaPortalListControl</ListType>
                   <ListLayout>Auto</ListLayout>
-                  <VerticalItemStyle>
-                    <NoFocusBrush />
-                    <NoFocusBorderBrush />
-                    <FocusBrush x:type="GradientBrush">
-                      <GradientStops>
-                        <GradientStop Color="#FF71B4E9" Offset="0" />
-                        <GradientStop Color="#FF3F77A5" Offset="0.705" />
-                      </GradientStops>
-                      <Angle>Vertical</Angle>
-                    </FocusBrush>
-                    <FocusBorderBrush />
-                    <FontType>Avallanche</FontType>
-                    <FontSize>45</FontSize>
-                    <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
-                    <NoFocusFontBrush x:type="ColorBrush" Color="#FF000000" />
-                    <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
-                    <ImageMargin>25,25,0,25</ImageMargin>
-                    <ImageHorizontalAlignment>Right</ImageHorizontalAlignment>
-                    <ImageVerticalAlignment>Top</ImageVerticalAlignment>
-                    <Width>750</Width>
-                    <Height>73</Height>
-                    <ItemMargin>1,1,1,1</ItemMargin>
-                    <HorizontalAlignment>Right</HorizontalAlignment>
-                    <Image2HorizontalAlignment>Right</Image2HorizontalAlignment>
-                  </VerticalItemStyle>
+                  <VerticalItemStyle StyleId="TVSeries Vertical" />
                   <VerticalIconItemStyle StyleId="TVSeries Vertical Icon" />
                   <HorizontalItemStyle StyleId="Horizontal" />
                   <CoverFlowItemStyle StyleId="Coverflow" />
@@ -555,7 +527,7 @@
                   <Animations />
                   <MediaPortalFocusControls />
                   <ImageStyle StyleId="Logo_Image" />
-                  <Image>\Arts\TVSeries\ClearLogo\FullSize\+#TVSeries.Series.ID+.png</Image>
+                  <Image>#MPD.TVSeries.ClearLogo</Image>
                   <ImageStretch>Uniform</ImageStretch>
                   <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
                 </Control>
@@ -631,10 +603,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <GroupStyle>
-                <BorderThickness>0,0,0,0</BorderThickness>
-                <CornerRadius>0,0,0,0</CornerRadius>
-              </GroupStyle>
+              <GroupStyle />
               <GroupControls>
                 <Control x:type="Label">
                   <Name>Time</Name>
@@ -697,8 +666,6 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <BorderThickness>0,0,0,0</BorderThickness>
-              <CornerRadius>0,0,0,0</CornerRadius>
               <BackgroundBrush x:type="GradientBrush">
                 <GradientStops>
                   <GradientStop Color="#B9000000" Offset="0.842" />

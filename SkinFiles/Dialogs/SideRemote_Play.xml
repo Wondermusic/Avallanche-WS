@@ -29,10 +29,7 @@
       <VisibleCondition>!IsControlVisible(23)</VisibleCondition>
       <Animations />
       <MediaPortalFocusControls />
-      <GroupStyle>
-        <BorderThickness>0,0,0,0</BorderThickness>
-        <CornerRadius>0,0,0,0</CornerRadius>
-      </GroupStyle>
+      <GroupStyle />
       <GroupControls>
         <Control x:type="Group">
           <Name>NewGroup</Name>
@@ -42,10 +39,7 @@
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <GroupStyle>
-            <BorderThickness>0,0,0,0</BorderThickness>
-            <CornerRadius>0,0,0,0</CornerRadius>
-          </GroupStyle>
+          <GroupStyle />
           <GroupControls>
             <Control x:type="Image">
               <Name>NewImage</Name>
@@ -228,7 +222,6 @@
       <Animations />
       <MediaPortalFocusControls />
       <GroupStyle>
-        <BorderThickness>0,0,0,0</BorderThickness>
         <CornerRadius>12,12,12,12</CornerRadius>
         <BackgroundBrush x:type="ColorBrush" Color="#FF000000" />
       </GroupStyle>
@@ -672,7 +665,6 @@
           <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <BorderThickness>0,0,0,0</BorderThickness>
           <CornerRadius>12,12,12,12</CornerRadius>
           <BackgroundBrush x:type="GradientBrush">
             <GradientStops>

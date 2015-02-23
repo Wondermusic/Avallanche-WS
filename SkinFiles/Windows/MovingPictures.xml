@@ -27,8 +27,6 @@
           <Animations />
           <MediaPortalFocusControls />
           <GroupStyle>
-            <BorderThickness>0,0,0,0</BorderThickness>
-            <CornerRadius>0,0,0,0</CornerRadius>
             <BackgroundBrush />
             <BorderBrush />
             <GlossBrush />
@@ -99,8 +97,6 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <BorderThickness>0,0,0,0</BorderThickness>
-              <CornerRadius>0,0,0,0</CornerRadius>
               <BackgroundBrush x:type="ColorBrush" Color="#FF6AA5CB" />
             </Control>
             <Control x:type="Label">
@@ -127,10 +123,7 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <GroupStyle>
-                <BorderThickness>0,0,0,0</BorderThickness>
-                <CornerRadius>0,0,0,0</CornerRadius>
-              </GroupStyle>
+              <GroupStyle />
               <GroupControls>
                 <Control x:type="Label">
                   <Name>Time</Name>
@@ -292,13 +285,13 @@
               </Animations>
               <MediaPortalFocusControls />
               <ImageStyle StyleId="Logo_Image" />
-              <Image>\Arts\MovingPictures\DVDArt\FullSize\+#MovingPictures.SelectedMovie.imdb_id+.png</Image>
+              <Image>#MPD.MovingPictures.CDArt</Image>
               <DefaultImage>\blu-ray-disc-b.png</DefaultImage>
               <ImageStretch>Fill</ImageStretch>
               <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
             </Control>
             <Control x:type="Image">
-              <Name>ClearArt</Name>
+              <Name>ClearLogo</Name>
               <Id>153</Id>
               <Width>441</Width>
               <Height>169</Height>
@@ -309,7 +302,7 @@
               <Animations />
               <MediaPortalFocusControls />
               <ImageStyle StyleId="Logo_Image" />
-              <Image>\Arts\MovingPictures\ClearLogo\FullSize\+#MovingPictures.SelectedMovie.imdb_id+.png</Image>
+              <Image>#MPD.MovingPictures.ClearLogo</Image>
               <ImageStretch>Uniform</ImageStretch>
               <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
             </Control>
@@ -497,8 +490,6 @@
           <Animations />
           <MediaPortalFocusControls />
           <GroupStyle>
-            <BorderThickness>0,0,0,0</BorderThickness>
-            <CornerRadius>0,0,0,0</CornerRadius>
             <BackgroundBrush />
             <BorderBrush />
             <GlossBrush />

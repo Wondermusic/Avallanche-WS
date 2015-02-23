@@ -27,8 +27,6 @@
       <FontBrush x:type="ColorBrush" Color="#FF6AA3CB" />
     </ControlStyle>
     <ControlStyle x:type="ImageStyle" StyleId="Logo_Image">
-      <BorderThickness>0,0,0,0</BorderThickness>
-      <CornerRadius>0,0,0,0</CornerRadius>
       <BackgroundBrush />
       <BorderBrush />
     </ControlStyle>
@@ -50,7 +48,6 @@
       <FontBrush x:type="ColorBrush" Color="#FF6AA3CB" />
     </ControlStyle>
     <ControlStyle x:type="ImageStyle" StyleId="Music Cover">
-      <BorderThickness>0,0,0,0</BorderThickness>
       <CornerRadius>10,10,10,10</CornerRadius>
       <BackgroundBrush x:type="ImageBrush" Image="\audio_nothumb.png" Stretch="Uniform" />
       <BorderBrush />
@@ -71,7 +68,6 @@
       <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
     </ControlStyle>
     <ControlStyle x:type="ImageStyle" StyleId="VideoCover">
-      <BorderThickness>0,0,0,0</BorderThickness>
       <CornerRadius>10,10,10,10</CornerRadius>
       <BackgroundBrush x:type="ImageBrush" Image="\missing_coverart.png" Stretch="Uniform" />
       <BorderBrush />
@@ -83,8 +79,6 @@
       <FontBrush x:type="ColorBrush" Color="#FF6AA3CB" />
     </ControlStyle>
     <ControlStyle x:type="GroupStyle" StyleId="Empty">
-      <BorderThickness>0,0,0,0</BorderThickness>
-      <CornerRadius>0,0,0,0</CornerRadius>
       <BackgroundBrush />
       <BorderBrush />
       <GlossBrush />
@@ -95,7 +89,6 @@
       <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
     </ControlStyle>
     <ControlStyle x:type="ImageStyle" StyleId="Radio Cover">
-      <BorderThickness>0,0,0,0</BorderThickness>
       <CornerRadius>10,10,10,10</CornerRadius>
       <BackgroundBrush x:type="ImageBrush" Image="\audio_nothumb.png" Stretch="Uniform" />
       <BorderBrush />
@@ -215,33 +208,23 @@
       <EnableImage>true</EnableImage>
     </ControlStyle>
     <ControlStyle x:type="ListStyle" StyleId="empty">
-      <BorderThickness>0,0,0,0</BorderThickness>
-      <CornerRadius>0,0,0,0</CornerRadius>
       <BackgroundBrush />
       <BorderBrush />
       <GlossBrush />
     </ControlStyle>
     <ControlStyle x:type="ImageStyle" StyleId="Default_BG">
-      <BorderThickness>0,0,0,0</BorderThickness>
-      <CornerRadius>0,0,0,0</CornerRadius>
       <BackgroundBrush x:type="ImageBrush" Image="\Styles\Blue\background.png" Stretch="Fill" />
       <BorderBrush />
     </ControlStyle>
     <ControlStyle x:type="ImageStyle" StyleId="Overlay">
-      <BorderThickness>0,0,0,0</BorderThickness>
-      <CornerRadius>0,0,0,0</CornerRadius>
       <BackgroundBrush x:type="ImageBrush" Image="\Styles\Blue\overlay.png" Stretch="Fill" />
       <BorderBrush />
     </ControlStyle>
     <ControlStyle x:type="ImageStyle" StyleId="ViewPortLong">
-      <BorderThickness>0,0,0,0</BorderThickness>
-      <CornerRadius>0,0,0,0</CornerRadius>
       <BackgroundBrush x:type="ImageBrush" Image="\Styles\Blue\viewport_thumbs_short.png" Stretch="Fill" />
       <BorderBrush />
     </ControlStyle>
     <ControlStyle x:type="ImageStyle" StyleId="Dialog Background">
-      <BorderThickness>0,0,0,0</BorderThickness>
-      <CornerRadius>0,0,0,0</CornerRadius>
       <BackgroundBrush x:type="ImageBrush" Image="\Styles\Blue\dialog_background.png" Stretch="Fill" />
       <BorderBrush />
     </ControlStyle>
@@ -258,14 +241,10 @@
       <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
     </ControlStyle>
     <ControlStyle x:type="ImageStyle" StyleId="OverlayLong">
-      <BorderThickness>0,0,0,0</BorderThickness>
-      <CornerRadius>0,0,0,0</CornerRadius>
       <BackgroundBrush x:type="ImageBrush" Image="\Styles\Blue\overlay_long.png" Stretch="Fill" />
       <BorderBrush />
     </ControlStyle>
     <ControlStyle x:type="ImageStyle" StyleId="ViewPortThumbsLong">
-      <BorderThickness>0,0,0,0</BorderThickness>
-      <CornerRadius>0,0,0,0</CornerRadius>
       <BackgroundBrush x:type="ImageBrush" Image="\Styles\Blue\viewport_thumbs_short.png" Stretch="Fill" />
       <BorderBrush />
     </ControlStyle>
@@ -340,21 +319,15 @@
       <ItemMargin>1,1,1,1</ItemMargin>
     </ControlStyle>
     <ControlStyle x:type="GroupStyle" StyleId="ActionMenu">
-      <BorderThickness>0,0,0,0</BorderThickness>
-      <CornerRadius>0,0,0,0</CornerRadius>
       <BackgroundBrush x:type="ImageBrush" Image="\Styles\Blue\menu_bg.png" Stretch="Fill" />
       <BorderBrush />
       <GlossBrush />
     </ControlStyle>
     <ControlStyle x:type="ImageStyle" StyleId="BasicHome_Top">
-      <BorderThickness>0,0,0,0</BorderThickness>
-      <CornerRadius>0,0,0,0</CornerRadius>
       <BackgroundBrush x:type="ImageBrush" Image="\Styles\Blue\basichome_top_menu_bg_full.png" Stretch="Fill" />
       <BorderBrush />
     </ControlStyle>
     <ControlStyle x:type="ImageStyle" StyleId="ViewPort_NoPoster">
-      <BorderThickness>0,0,0,0</BorderThickness>
-      <CornerRadius>0,0,0,0</CornerRadius>
       <BackgroundBrush x:type="ImageBrush" Image="\Styles\Blue\viewport_noposter.png" Stretch="Fill" />
       <BorderBrush />
     </ControlStyle>
@@ -398,7 +371,7 @@
       <FocusBorderBrush />
       <FontType>Avallanche</FontType>
       <FontSize>50</FontSize>
-      <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+      <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
       <LabelHorizontalAlignment>Right</LabelHorizontalAlignment>
       <ImageMargin>3,3,3,3</ImageMargin>
@@ -411,8 +384,6 @@
       <HorizontalAlignment>Left</HorizontalAlignment>
     </ControlStyle>
     <ControlStyle x:type="ImageStyle" StyleId="InfoBG">
-      <BorderThickness>0,0,0,0</BorderThickness>
-      <CornerRadius>0,0,0,0</CornerRadius>
       <BackgroundBrush x:type="ImageBrush" Image="\Styles\Blue\info_bg.png" Stretch="Fill" />
       <BorderBrush />
     </ControlStyle>
@@ -458,14 +429,10 @@
       <ItemMargin>1,1,1,1</ItemMargin>
     </ControlStyle>
     <ControlStyle x:type="ImageStyle" StyleId="Music Details BG">
-      <BorderThickness>0,0,0,0</BorderThickness>
-      <CornerRadius>0,0,0,0</CornerRadius>
       <BackgroundBrush x:type="ImageBrush" Image="\Styles\Blue\music_details_bg.png" Stretch="Fill" />
       <BorderBrush />
     </ControlStyle>
     <ControlStyle x:type="ImageStyle" StyleId="FilmStrip Default">
-      <BorderThickness>0,0,0,0</BorderThickness>
-      <CornerRadius>0,0,0,0</CornerRadius>
       <BackgroundBrush x:type="ImageBrush" Image="\Styles\Blue\filmstrip_default_overlay.png" Stretch="Fill" />
       <BorderBrush />
     </ControlStyle>
@@ -476,7 +443,6 @@
       <BorderBrush x:type="ColorBrush" Color="#FFC0C0C0" />
       <ShadeBrush />
       <BarMargin>2,2,2,2</BarMargin>
-      <BarBorderThickness>0,0,0,0</BarBorderThickness>
       <BarCornerRadius>12,12,12,12</BarCornerRadius>
       <BarBorderBrush />
       <BarBackgroundBrush x:type="GradientBrush">
@@ -486,6 +452,13 @@
           <GradientStop Color="#FF417CA8" Offset="1" />
         </GradientStops>
       </BarBackgroundBrush>
+      <LabelMovingVerticalAlignment>Top</LabelMovingVerticalAlignment>
+      <EnableLabelFixed>true</EnableLabelFixed>
+      <LabelFixedFontType>Avallanche</LabelFixedFontType>
+      <LabelFixedFontSize>42</LabelFixedFontSize>
+      <LabelFixedFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <LabelFixedHorizontalAlignment>Left</LabelFixedHorizontalAlignment>
+      <LabelFixedVerticalAlignment>Top</LabelFixedVerticalAlignment>
     </ControlStyle>
     <ControlStyle x:type="ListItemStyle" StyleId="Action Menu">
       <BorderThickness>1,1,1,1</BorderThickness>
@@ -515,8 +488,6 @@
       <ItemMargin>1,1,1,1</ItemMargin>
     </ControlStyle>
     <ControlStyle x:type="ImageStyle" StyleId="FilmStrip Fanart Overlay">
-      <BorderThickness>0,0,0,0</BorderThickness>
-      <CornerRadius>0,0,0,0</CornerRadius>
       <BackgroundBrush x:type="ImageBrush" Image="\Styles\Blue\filmstrip_fanart_overlay.png" Stretch="Fill" />
       <BorderBrush />
     </ControlStyle>
@@ -526,8 +497,6 @@
       <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
     </ControlStyle>
     <ControlStyle x:type="ImageStyle" StyleId="ViewPort Thumbs short">
-      <BorderThickness>0,0,0,0</BorderThickness>
-      <CornerRadius>0,0,0,0</CornerRadius>
       <BackgroundBrush x:type="ImageBrush" Image="\Styles\Blue\viewport_thumbs_short2.png" Stretch="Fill" />
       <BorderBrush />
     </ControlStyle>
@@ -577,7 +546,7 @@
       <FocusBorderBrush />
       <FontType>Avallanche</FontType>
       <FontSize>50</FontSize>
-      <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+      <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
       <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
       <ImageMargin>3,3,3,3</ImageMargin>
@@ -616,14 +585,10 @@
       <NoFocusFontBrush x:type="ColorBrush" Color="#FF6AA3CB" />
     </ControlStyle>
     <ControlStyle x:type="ImageStyle" StyleId="WeatherBG">
-      <BorderThickness>0,0,0,0</BorderThickness>
-      <CornerRadius>0,0,0,0</CornerRadius>
       <BackgroundBrush x:type="ImageBrush" Image="\Styles\Blue\weather_bg.png" Stretch="Fill" />
       <BorderBrush />
     </ControlStyle>
     <ControlStyle x:type="ImageStyle" StyleId="WeatherBG Overlay">
-      <BorderThickness>0,0,0,0</BorderThickness>
-      <CornerRadius>0,0,0,0</CornerRadius>
       <BackgroundBrush x:type="ImageBrush" Image="\Styles\Blue\WeatherBG_Overlay.png" />
       <BorderBrush />
     </ControlStyle>
@@ -653,8 +618,6 @@
       <ImageStretch>None</ImageStretch>
     </ControlStyle>
     <ControlStyle x:type="ImageStyle" StyleId="Homescreen_Weather">
-      <BorderThickness>0,0,0,0</BorderThickness>
-      <CornerRadius>0,0,0,0</CornerRadius>
       <BackgroundBrush x:type="ImageBrush" Image="\Styles\Blue\basichome_weather-no.recordings.png" Stretch="Fill" />
     </ControlStyle>
     <ControlStyle x:type="ListItemStyle" StyleId="MovPic_Vertical">
@@ -706,7 +669,6 @@
       <SelectionZoomY>135</SelectionZoomY>
     </ControlStyle>
     <ControlStyle x:type="GroupStyle" StyleId="TVSeries_Detail">
-      <BorderThickness>0,0,0,0</BorderThickness>
       <CornerRadius>20,20,20,20</CornerRadius>
       <BackgroundBrush x:type="ColorBrush" Color="#FF141C21" />
       <BorderBrush />
@@ -743,17 +705,12 @@
       <FontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
     </ControlStyle>
     <ControlStyle x:type="ImageStyle" StyleId="HomeBG">
-      <BorderThickness>0,0,0,0</BorderThickness>
-      <CornerRadius>0,0,0,0</CornerRadius>
       <BackgroundBrush x:type="ImageBrush" Image="\Styles\Blue\splashscreen.png" Stretch="Fill" />
     </ControlStyle>
     <ControlStyle x:type="ImageStyle" StyleId="SerienBG">
-      <BorderThickness>0,0,0,0</BorderThickness>
-      <CornerRadius>0,0,0,0</CornerRadius>
       <BackgroundBrush x:type="ImageBrush" Image="\Styles\Blue\SeriesBG.png" Stretch="Fill" />
     </ControlStyle>
     <ControlStyle x:type="ImageStyle" StyleId="TV_Channel_BG">
-      <BorderThickness>0,0,0,0</BorderThickness>
       <CornerRadius>15,15,15,15</CornerRadius>
       <BackgroundBrush x:type="ImageBrush" Image="\Styles\Blue\info_bg.png" Stretch="Fill" />
       <BorderBrush />
@@ -836,7 +793,7 @@
       <FocusBorderBrush />
       <FontType>Avallanche</FontType>
       <FontSize>50</FontSize>
-      <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+      <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
       <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
       <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
       <ImageMargin>3,3,3,3</ImageMargin>
@@ -849,8 +806,6 @@
       <HorizontalAlignment>Right</HorizontalAlignment>
     </ControlStyle>
     <ControlStyle x:type="GroupStyle" StyleId="Serien">
-      <BorderThickness>0,0,0,0</BorderThickness>
-      <CornerRadius>0,0,0,0</CornerRadius>
       <BackgroundBrush x:type="ImageBrush" Image="\Styles\Blue\SeriesBG.png" Stretch="Fill" />
       <BorderBrush />
       <GlossBrush />
@@ -899,8 +854,6 @@
       <FallOffColor x:type="ColorBrush" Color="#FF00BFFF" />
     </ControlStyle>
     <ControlStyle x:type="GroupStyle" StyleId="TV_Infoscreen">
-      <BorderThickness>0,0,0,0</BorderThickness>
-      <CornerRadius>0,0,0,0</CornerRadius>
       <BackgroundBrush x:type="ImageBrush" Image="\Styles\Blue\music_details_bg.png" Stretch="Fill" />
       <BorderBrush />
       <GlossBrush />
@@ -1024,7 +977,6 @@
       <SelectionZoomY>135</SelectionZoomY>
     </ControlStyle>
     <ControlStyle x:type="GroupStyle" StyleId="OnVidInfo">
-      <BorderThickness>0,0,0,0</BorderThickness>
       <CornerRadius>15,15,15,15</CornerRadius>
       <BackgroundBrush x:type="ImageBrush" Image="\Styles\Blue\info_bg.png" />
     </ControlStyle>
@@ -1032,6 +984,7 @@
       <BorderThickness>6,6,6,6</BorderThickness>
       <CornerRadius>5,5,5,5</CornerRadius>
       <FocusBorderBrush x:type="ColorBrush" Color="#FF87CEEB" />
+      <EnableLabel>false</EnableLabel>
       <EnableImage>true</EnableImage>
       <ImageMargin>1,1,1,1</ImageMargin>
       <ImageCornerRadius>5</ImageCornerRadius>
@@ -1114,6 +1067,32 @@
       <RecordingFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
       <OnNowFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
       <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
+    </ControlStyle>
+    <ControlStyle x:type="ListItemStyle" StyleId="TVSeries Vertical">
+      <NoFocusBrush />
+      <NoFocusBorderBrush />
+      <FocusBrush x:type="GradientBrush">
+        <Angle>Vertical</Angle>
+        <GradientStops>
+          <GradientStop Color="#FF71B4E9" Offset="0" />
+          <GradientStop Color="#FF3F77A5" Offset="0.705" />
+        </GradientStops>
+      </FocusBrush>
+      <FocusBorderBrush />
+      <FontType>Avallanche</FontType>
+      <FontWeight>Bold</FontWeight>
+      <FontSize>45</FontSize>
+      <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+      <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
+      <ImageMargin>25,25,0,25</ImageMargin>
+      <ImageHorizontalAlignment>Right</ImageHorizontalAlignment>
+      <ImageVerticalAlignment>Top</ImageVerticalAlignment>
+      <Width>750</Width>
+      <Height>73</Height>
+      <ItemMargin>1,1,1,1</ItemMargin>
+      <HorizontalAlignment>Right</HorizontalAlignment>
+      <Image2HorizontalAlignment>Right</Image2HorizontalAlignment>
     </ControlStyle>
   </ControlStyles>
 </StyleCollection>

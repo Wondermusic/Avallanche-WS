@@ -27,8 +27,6 @@
           <Animations />
           <MediaPortalFocusControls />
           <GroupStyle>
-            <BorderThickness>0,0,0,0</BorderThickness>
-            <CornerRadius>0,0,0,0</CornerRadius>
             <BackgroundBrush />
             <BorderBrush />
             <GlossBrush />
@@ -84,8 +82,6 @@
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <BorderThickness>0,0,0,0</BorderThickness>
-              <CornerRadius>0,0,0,0</CornerRadius>
               <BackgroundBrush x:type="ColorBrush" Color="#FF6AA5CB" />
             </Control>
             <Control x:type="Label">
@@ -154,7 +150,6 @@
             <BorderBrush />
             <ShadeBrush />
             <BarMargin>2,2,2,2</BarMargin>
-            <BarBorderThickness>0,0,0,0</BarBorderThickness>
             <BarCornerRadius>12,12,12,12</BarCornerRadius>
             <BarBorderBrush />
             <BarBackgroundBrush x:type="GradientBrush">
@@ -164,6 +159,9 @@
               </GradientStops>
               <Angle>Vertical</Angle>
             </BarBackgroundBrush>
+            <LabelMovingVerticalAlignment>Top</LabelMovingVerticalAlignment>
+            <LabelFixedHorizontalAlignment>Left</LabelFixedHorizontalAlignment>
+            <LabelFixedVerticalAlignment>Top</LabelFixedVerticalAlignment>
           </ProgressBarStyle>
           <ProgressValue>#TV.Record.percent3</ProgressValue>
         </Control>
@@ -326,10 +324,7 @@
       <VisibleCondition />
       <Animations />
       <MediaPortalFocusControls />
-      <GroupStyle>
-        <BorderThickness>0,0,0,0</BorderThickness>
-        <CornerRadius>0,0,0,0</CornerRadius>
-      </GroupStyle>
+      <GroupStyle />
       <GroupControls>
         <Control x:type="Label">
           <Name>Time</Name>
