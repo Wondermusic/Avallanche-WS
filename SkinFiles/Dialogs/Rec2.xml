@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Dialog xmlns:x="http://www.w3.org/2001/XMLSchema-instance" x:type="MPDisplayDialog">
+  <Name>Rec2</Name>
+  <Id>2001</Id>
+  <Width>1001</Width>
+  <Height>614</Height>
+  <PosX>140</PosX>
+  <PosY>146</PosY>
+  <BorderThickness>2</BorderThickness>
+  <CornerRadius>5</CornerRadius>
+  <BackgroundBrush x:type="ImageBrush" Image="\Styles\Blue\dialog_background.png" Stretch="Uniform" />
+  <BorderBrush />
+  <DialogAnimations>
+    <Animation x:type="Slide" Condition="WindowClose" Duration="1000" Easing="EaseInOut" StartX="140" StartY="146" EndX="140" EndY="720" />
+    <Animation x:type="Slide" Condition="WindowOpen" Duration="1000" Easing="EaseInOut" StartX="140" StartY="720" EndX="140" EndY="146" />
+  </DialogAnimations>
+  <DialogControls>
+    <Control x:type="Label">
+      <Name>Label</Name>
+      <Id>1</Id>
+      <Width>617</Width>
+      <Height>225</Height>
+      <PosX>188</PosX>
+      <PosY>134</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <LabelStyle StyleId="Avalon 50 White" />
+      <LabelText>@Rec2</LabelText>
+      <LabelTextAlignment>Center</LabelTextAlignment>
+      <IsVertical>true</IsVertical>
+      <IsScrollingEnabled>false</IsScrollingEnabled>
+      <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+    </Control>
+    <Control x:type="Button">
+      <Name>yes</Name>
+      <Id>2</Id>
+      <Width>264</Width>
+      <Height>68</Height>
+      <PosX>192</PosX>
+      <PosY>376</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle StyleId="RecButton" />
+      <LabelText>@yes</LabelText>
+      <Actions>
+        <Action Action="ScheduleEPGAction" />
+        <Action Action="OpenDialog" Param="2001" />
+      </Actions>
+    </Control>
+    <Control x:type="Button">
+      <Name>no</Name>
+      <Id>3</Id>
+      <Width>264</Width>
+      <Height>68</Height>
+      <PosX>519</PosX>
+      <PosY>376</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle StyleId="RecButton" />
+      <LabelText>@no</LabelText>
+      <Actions>
+        <Action Action="OpenDialog" Param="2001" />
+      </Actions>
+    </Control>
+  </DialogControls>
+</Dialog>

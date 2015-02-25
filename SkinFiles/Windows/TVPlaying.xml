@@ -230,11 +230,12 @@
             <LabelMovingFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
             <EnableLabelFixed>true</EnableLabelFixed>
             <LabelFixedFontType>Avallanche</LabelFixedFontType>
+            <LabelFixedFontWeight>Bold</LabelFixedFontWeight>
             <LabelFixedFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
           </ProgressBarStyle>
           <ProgressValue>#TV.Record.percent2</ProgressValue>
-          <LabelMovingNumberFormat>#TV.View.Percentage</LabelMovingNumberFormat>
-          <LabelFixedNumberFormat>#TV.View.Percentage</LabelFixedNumberFormat>
+          <LabelFixedText>#TV.Record.percent2+ %</LabelFixedText>
+          <LabelFixedNumberFormat>F1</LabelFixedNumberFormat>
         </Control>
         <Control x:type="Label">
           <Name>currentplaytime</Name>

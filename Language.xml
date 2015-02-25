@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Language xmlns:x="http://www.w3.org/2001/XMLSchema-instance">
   <LanguageEntries>
+    <LanguageEntry Tag="@no">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="nein" />
+        <LanguageValue Language="English" Value="no" />
+        <LanguageValue Language="Francais" Value="no" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@yes">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="ja" />
+        <LanguageValue Language="English" Value="yes" />
+        <LanguageValue Language="Francais" Value="oui" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Rec2">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Soll die Aufnahme gelöscht werden?" />
+        <LanguageValue Language="English" Value="Should this scheduled TV Show disabled?" />
+        <LanguageValue Language="Francais" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Rec1">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Soll die Sendung aufgenommen werden?" />
+        <LanguageValue Language="English" Value="Should this Show be scheduled?" />
+        <LanguageValue Language="Francais" />
+      </Values>
+    </LanguageEntry>
     <LanguageEntry Tag="@recordings">
       <Values>
         <LanguageValue Language="Deutsch" Value="Aufnahmen" />

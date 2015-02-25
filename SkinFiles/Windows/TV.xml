@@ -178,6 +178,8 @@
           <GuideItemMargin>3,3,3,3</GuideItemMargin>
           <ChannelStyle StyleId="ChannelStyle" />
           <ProgramStyle StyleId="GuideProgramStyle" />
+          <CreateDialogId>2000</CreateDialogId>
+          <CancelDialogId>2001</CancelDialogId>
         </Control>
         <Control x:type="Image">
           <Name>Thumb</Name>

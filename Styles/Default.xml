@@ -1116,5 +1116,34 @@
       <HorizontalAlignment>Right</HorizontalAlignment>
       <Image2HorizontalAlignment>Right</Image2HorizontalAlignment>
     </ControlStyle>
+    <ControlStyle x:type="ButtonStyle" StyleId="RecButton">
+      <CornerRadius>10,10,10,10</CornerRadius>
+      <NoFocusBrush x:type="GradientBrush">
+        <Angle>Vertical</Angle>
+        <GradientStops>
+          <GradientStop Color="#AF84CFFE" Offset="0.188" />
+          <GradientStop Color="#647EC4F3" Offset="0.726" />
+        </GradientStops>
+      </NoFocusBrush>
+      <NoFocusBorderBrush />
+      <FocusBrush x:type="GradientBrush">
+        <Angle>Vertical</Angle>
+        <GradientStops>
+          <GradientStop Color="#FF74B7E9" Offset="0.302" />
+          <GradientStop Color="#FF3F78A5" Offset="0.827" />
+        </GradientStops>
+      </FocusBrush>
+      <FocusBorderBrush />
+      <ShadeBrush />
+      <GlossBrush />
+      <FontType>Avallanche</FontType>
+      <FontWeight>Bold</FontWeight>
+      <FontSize>50</FontSize>
+      <FocusFontBrush x:type="ColorBrush" Color="#FFB22222" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+    </ControlStyle>
+    <ControlStyle x:type="ImageStyle" StyleId="RecBG">
+      <BackgroundBrush x:type="ImageBrush" Image="\Styles\White\dialog_background.png" Stretch="Uniform" />
+    </ControlStyle>
   </ControlStyles>
 </StyleCollection>
