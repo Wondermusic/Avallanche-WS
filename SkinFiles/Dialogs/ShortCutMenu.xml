@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Dialog xmlns:x="http://www.w3.org/2001/XMLSchema-instance" x:type="MPDisplayDialog">
+  <Name>ShortCutMenu</Name>
+  <Id>20000</Id>
+  <Width>600</Width>
+  <Height>320</Height>
+  <PosX>320</PosX>
+  <PosY>190</PosY>
+  <BorderThickness>2,2,2,2</BorderThickness>
+  <CornerRadius>25,25,25,25</CornerRadius>
+  <BackgroundBrush x:type="GradientBrush">
+    <GradientStops>
+      <GradientStop Color="#FF788282" Offset="1" />
+      <GradientStop Color="#FF000000" Offset="0.216" />
+    </GradientStops>
+    <Angle>Vertical</Angle>
+  </BackgroundBrush>
+  <BorderBrush x:type="ColorBrush" Color="#FF494949" />
+  <DialogAnimations>
+    <Animation x:type="Zoom" Condition="WindowOpen" Duration="1000" Easing="EaseInOut" />
+    <Animation x:type="Zoom" Condition="WindowClose" Duration="1000" Easing="EaseInOut" From="100" To="0" />
+  </DialogAnimations>
+  <DialogControls>
+    <Control x:type="Button">
+      <Name>EPG</Name>
+      <Id>1</Id>
+      <Width>200</Width>
+      <Height>100</Height>
+      <PosX>10</PosX>
+      <PosY>25</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle>
+        <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+        <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+        <LabelMargin>0,0,0,-40</LabelMargin>
+        <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
+        <EnableImage>true</EnableImage>
+        <ImageCornerRadius>10</ImageCornerRadius>
+      </ButtonStyle>
+      <Image>\BG\Guide.jpg</Image>
+      <LabelText>EPG</LabelText>
+      <Actions>
+        <Action Action="MediaPortalWindow" Param="600" />
+        <Action Action="OpenDialog" Param="20000" />
+      </Actions>
+    </Control>
+    <Control x:type="Button">
+      <Name>Radio</Name>
+      <Id>2</Id>
+      <Width>200</Width>
+      <Height>100</Height>
+      <PosX>200</PosX>
+      <PosY>25</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle>
+        <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+        <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+        <LabelMargin>0,0,0,-40</LabelMargin>
+        <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
+        <EnableImage>true</EnableImage>
+        <ImageCornerRadius>10</ImageCornerRadius>
+      </ButtonStyle>
+      <Image>\BG\hover_my radio.jpg</Image>
+      <LabelText>@Radio</LabelText>
+      <Actions>
+        <Action Action="MediaPortalWindow" Param="30" />
+        <Action Action="OpenDialog" Param="20000" />
+      </Actions>
+    </Control>
+    <Control x:type="Button">
+      <Name>Music</Name>
+      <Id>3</Id>
+      <Width>200</Width>
+      <Height>100</Height>
+      <PosX>390</PosX>
+      <PosY>25</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle>
+        <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+        <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+        <LabelMargin>0,0,0,-40</LabelMargin>
+        <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
+        <EnableImage>true</EnableImage>
+        <ImageCornerRadius>10</ImageCornerRadius>
+      </ButtonStyle>
+      <Image>\BG\hover_my Music_2.jpg</Image>
+      <LabelText>@Music</LabelText>
+      <Actions>
+        <Action Action="MediaPortalWindow" Param="501" />
+        <Action Action="OpenDialog" Param="20000" />
+      </Actions>
+    </Control>
+    <Control x:type="Button">
+      <Name>RadioTime</Name>
+      <Id>4</Id>
+      <Width>200</Width>
+      <Height>100</Height>
+      <PosX>200</PosX>
+      <PosY>169</PosY>
+      <VisibleCondition>IsPluginEnabled(TuneIn)</VisibleCondition>
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle>
+        <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+        <NoFocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+        <LabelMargin>0,0,0,-40</LabelMargin>
+        <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
+        <EnableImage>true</EnableImage>
+        <ImageCornerRadius>10</ImageCornerRadius>
+      </ButtonStyle>
+      <Image>\BG\hover_my streamradio.jpg</Image>
+      <LabelText>RadioTime</LabelText>
+      <Actions>
+        <Action Action="MediaPortalWindow" Param="25650" />
+        <Action Action="OpenDialog" Param="20000" />
+      </Actions>
+    </Control>
+    <Control x:type="Button">
+      <Name>Close Dialog</Name>
+      <Id>5</Id>
+      <Width>100</Width>
+      <Height>100</Height>
+      <PosX>495</PosX>
+      <PosY>215</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle>
+        <EnableLabel>false</EnableLabel>
+        <EnableImage>true</EnableImage>
+      </ButtonStyle>
+      <Image>\top_exit_disabled.png</Image>
+      <LabelText>NewButton</LabelText>
+      <Actions>
+        <Action Action="OpenDialog" Param="20000" />
+      </Actions>
+    </Control>
+  </DialogControls>
+</Dialog>

@@ -345,7 +345,7 @@
               <Animations />
               <MediaPortalFocusControls />
               <ImageStyle StyleId="Logo_Image" />
-              <Image>#TVSeries.Play.ClearArt</Image>
+              <Image>#MPD.TVSeries.ClearArt</Image>
               <ImageStretch>Uniform</ImageStretch>
               <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
             </Control>

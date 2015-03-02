@@ -167,23 +167,6 @@
             </Control>
           </GroupControls>
         </Control>
-        <Control x:type="Label">
-          <Name>Title</Name>
-          <Id>20</Id>
-          <Width>1260</Width>
-          <Height>200</Height>
-          <PosX>10</PosX>
-          <PosY>470</PosY>
-          <VisibleCondition />
-          <Animations />
-          <MediaPortalFocusControls />
-          <LabelStyle StyleId="Avalon 74 White" />
-          <LabelText>#MPD_MovPic</LabelText>
-          <IsVertical>true</IsVertical>
-          <IsScrollingEnabled>false</IsScrollingEnabled>
-          <ScrollSpeed>2</ScrollSpeed>
-          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
-        </Control>
         <Control x:type="Group">
           <Name>CatView</Name>
           <Id>21</Id>
@@ -258,6 +241,23 @@
               <HorizontalItemStyle StyleId="Horizontal" />
               <CoverFlowItemStyle StyleId="Coverflow" />
             </Control>
+            <Control x:type="Label">
+              <Name>Title</Name>
+              <Id>163</Id>
+              <Width>1260</Width>
+              <Height>200</Height>
+              <PosX>10</PosX>
+              <PosY>470</PosY>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <LabelStyle StyleId="Avalon 74 White" />
+              <LabelText>#MPD_MovPic</LabelText>
+              <IsVertical>true</IsVertical>
+              <IsScrollingEnabled>false</IsScrollingEnabled>
+              <ScrollSpeed>2</ScrollSpeed>
+              <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+            </Control>
           </GroupControls>
         </Control>
         <Control x:type="Group">
@@ -293,10 +293,9 @@
             <Control x:type="Image">
               <Name>ClearLogo</Name>
               <Id>153</Id>
-              <Width>441</Width>
-              <Height>169</Height>
-              <PosX>834</PosX>
-              <PosY>546</PosY>
+              <Width>1280</Width>
+              <Height>250</Height>
+              <PosY>476</PosY>
               <VisibleCondition>IsControlVisible(23)</VisibleCondition>
               <IsWindowOpenVisible>false</IsWindowOpenVisible>
               <Animations />

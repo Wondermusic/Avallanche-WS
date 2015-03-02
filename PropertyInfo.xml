@@ -342,14 +342,6 @@
       <IsInternal>false</IsInternal>
     </XmlProperty>
     <XmlProperty>
-      <SkinTag>#TVSeries.Play.ClearArt</SkinTag>
-      <PropertyType>Image</PropertyType>
-      <MediaPortalTags>
-        <XmlMediaPortalTag Tag="#TVSeries.Play.ClearArt" />
-      </MediaPortalTags>
-      <IsInternal>false</IsInternal>
-    </XmlProperty>
-    <XmlProperty>
       <SkinTag>#Avallanche.Music.CDArt</SkinTag>
       <PropertyType>Image</PropertyType>
       <DesignerValue>New....</DesignerValue>
@@ -393,65 +385,12 @@
       <IsInternal>false</IsInternal>
     </XmlProperty>
     <XmlProperty>
-      <SkinTag>#MPD.TVSeries.CDArt</SkinTag>
-      <PropertyType>Image</PropertyType>
-      <DesignerValue>70626</DesignerValue>
-      <MediaPortalTags>
-        <XmlMediaPortalTag Tag="#MPD.TVSeries.CDArt" />
-      </MediaPortalTags>
-      <IsInternal>false</IsInternal>
-    </XmlProperty>
-    <XmlProperty>
-      <SkinTag>#MPD.TVSeries.ClearLogo</SkinTag>
+      <SkinTag>#MPD.TVSeries.ClearArt</SkinTag>
       <PropertyType>Image</PropertyType>
       <DesignerValue>New....</DesignerValue>
       <MediaPortalTags>
-        <XmlMediaPortalTag Tag="#MPD.TVSeries.ClearLogo" />
-      </MediaPortalTags>
-      <IsInternal>false</IsInternal>
-    </XmlProperty>
-    <XmlProperty>
-      <SkinTag>#MPD.Music.ClearArt</SkinTag>
-      <PropertyType>Image</PropertyType>
-      <DesignerValue>New....</DesignerValue>
-      <MediaPortalTags>
-        <XmlMediaPortalTag Tag="#MPD.Music.ClearArt" />
-      </MediaPortalTags>
-      <IsInternal>false</IsInternal>
-    </XmlProperty>
-    <XmlProperty>
-      <SkinTag>#MPD.Music.CDArt</SkinTag>
-      <PropertyType>Image</PropertyType>
-      <DesignerValue>New....</DesignerValue>
-      <MediaPortalTags>
-        <XmlMediaPortalTag Tag="#MPD.Music.CDArt" />
-      </MediaPortalTags>
-      <IsInternal>false</IsInternal>
-    </XmlProperty>
-    <XmlProperty>
-      <SkinTag>#MPD.MovingPictures.CDArt</SkinTag>
-      <PropertyType>Image</PropertyType>
-      <DesignerValue>New....</DesignerValue>
-      <MediaPortalTags>
-        <XmlMediaPortalTag Tag="#MPD.MovingPictures.CDArt" />
-      </MediaPortalTags>
-      <IsInternal>false</IsInternal>
-    </XmlProperty>
-    <XmlProperty>
-      <SkinTag>#MPD.MovingPictures.ClearArt</SkinTag>
-      <PropertyType>Image</PropertyType>
-      <DesignerValue>New....</DesignerValue>
-      <MediaPortalTags>
-        <XmlMediaPortalTag Tag="#MPD.MovingPictures.ClearArt" />
-      </MediaPortalTags>
-      <IsInternal>false</IsInternal>
-    </XmlProperty>
-    <XmlProperty>
-      <SkinTag>#MPD.MovingPictures.ClearLogo</SkinTag>
-      <PropertyType>Image</PropertyType>
-      <DesignerValue>New....</DesignerValue>
-      <MediaPortalTags>
-        <XmlMediaPortalTag Tag="#MPD.MovingPictures.ClearLogo" />
+        <XmlMediaPortalTag Tag="#TVSeries.Play.ClearArt" />
+        <XmlMediaPortalTag Tag="#TVSeries.Play.DVDArt.ClearArt" />
       </MediaPortalTags>
       <IsInternal>false</IsInternal>
     </XmlProperty>

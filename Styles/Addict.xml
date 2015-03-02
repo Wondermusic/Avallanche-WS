@@ -453,7 +453,6 @@
         </GradientStops>
       </BarBackgroundBrush>
       <LabelMovingVerticalAlignment>Top</LabelMovingVerticalAlignment>
-      <EnableLabelFixed>true</EnableLabelFixed>
       <LabelFixedFontType>Avallanche</LabelFixedFontType>
       <LabelFixedFontSize>42</LabelFixedFontSize>
       <LabelFixedFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />

@@ -8,22 +8,6 @@
   <BackgroundBrush />
   <WindowAnimations />
   <WindowControls>
-    <Control x:type="Button">
-      <Name>Menu</Name>
-      <Id>38</Id>
-      <Width>1280</Width>
-      <Height>150</Height>
-      <PosY>570</PosY>
-      <VisibleCondition>IsPlayer(None)</VisibleCondition>
-      <IsWindowOpenVisible>false</IsWindowOpenVisible>
-      <Animations />
-      <MediaPortalFocusControls />
-      <ButtonStyle StyleId="Clear" />
-      <LabelText>NewButton</LabelText>
-      <Actions>
-        <Action Action="OpenDialog" Param="903" />
-      </Actions>
-    </Control>
     <Control x:type="Group">
       <Name>Main</Name>
       <Id>1</Id>
@@ -365,23 +349,6 @@
               <ImageStretch>Fill</ImageStretch>
               <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
             </Control>
-            <Control x:type="Label">
-              <Name>Title</Name>
-              <Id>44</Id>
-              <Width>1230</Width>
-              <Height>200</Height>
-              <PosX>10</PosX>
-              <PosY>470</PosY>
-              <VisibleCondition />
-              <Animations />
-              <MediaPortalFocusControls />
-              <LabelStyle StyleId="Avalon 74 White" />
-              <LabelText>#TVSeries.Title</LabelText>
-              <IsVertical>true</IsVertical>
-              <IsScrollingEnabled>false</IsScrollingEnabled>
-              <ScrollSpeed>2</ScrollSpeed>
-              <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
-            </Control>
             <Control x:type="Image">
               <Name>MP Image</Name>
               <Id>162</Id>
@@ -519,10 +486,10 @@
                 <Control x:type="Image">
                   <Name>ClearArt</Name>
                   <Id>159</Id>
-                  <Width>452</Width>
-                  <Height>166</Height>
-                  <PosX>823</PosX>
-                  <PosY>549</PosY>
+                  <Width>1280</Width>
+                  <Height>240</Height>
+                  <PosX>5</PosX>
+                  <PosY>474</PosY>
                   <VisibleCondition />
                   <Animations />
                   <MediaPortalFocusControls />
@@ -592,6 +559,23 @@
                   <VerticalIconItemStyle StyleId="TVSeries Vertical Icon" />
                   <HorizontalItemStyle StyleId="Horizontal" />
                   <CoverFlowItemStyle StyleId="Coverflow" />
+                </Control>
+                <Control x:type="Label">
+                  <Name>Title</Name>
+                  <Id>173</Id>
+                  <Width>1230</Width>
+                  <Height>200</Height>
+                  <PosX>10</PosX>
+                  <PosY>470</PosY>
+                  <VisibleCondition />
+                  <Animations />
+                  <MediaPortalFocusControls />
+                  <LabelStyle StyleId="Avalon 74 White" />
+                  <LabelText>#TVSeries.Title</LabelText>
+                  <IsVertical>true</IsVertical>
+                  <IsScrollingEnabled>false</IsScrollingEnabled>
+                  <ScrollSpeed>2</ScrollSpeed>
+                  <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
                 </Control>
               </GroupControls>
             </Control>
@@ -727,6 +711,22 @@
           </GroupControls>
         </Control>
       </GroupControls>
+    </Control>
+    <Control x:type="Button">
+      <Name>Menu</Name>
+      <Id>38</Id>
+      <Width>1280</Width>
+      <Height>150</Height>
+      <PosY>570</PosY>
+      <VisibleCondition>IsPlayer(None)</VisibleCondition>
+      <IsWindowOpenVisible>false</IsWindowOpenVisible>
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle StyleId="Clear" />
+      <LabelText>NewButton</LabelText>
+      <Actions>
+        <Action Action="OpenDialog" Param="903" />
+      </Actions>
     </Control>
     <Control x:type="Group">
       <Name>Action Menu</Name>

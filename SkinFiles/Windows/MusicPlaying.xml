@@ -248,39 +248,14 @@
             <Control x:type="ProgressBar">
               <Name>ProgressBar</Name>
               <Id>33</Id>
-              <Width>560</Width>
+              <Width>500</Width>
               <Height>50</Height>
-              <PosX>364</PosX>
+              <PosX>410</PosX>
               <PosY>655</PosY>
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
-              <ProgressBarStyle>
-                <BorderThickness>2,2,2,2</BorderThickness>
-                <CornerRadius>15,15,15,15</CornerRadius>
-                <BackgroundBrush />
-                <BorderBrush x:type="ColorBrush" Color="#FFC0C0C0" />
-                <ShadeBrush />
-                <BarMargin>2,2,2,2</BarMargin>
-                <BarCornerRadius>12,12,12,12</BarCornerRadius>
-                <BarBorderBrush />
-                <BarBackgroundBrush x:type="GradientBrush">
-                  <GradientStops>
-                    <GradientStop Color="#FF75B7E9" Offset="0.347" />
-                    <GradientStop Color="#FF417CA8" Offset="1" />
-                  </GradientStops>
-                  <Angle>Vertical</Angle>
-                </BarBackgroundBrush>
-                <LabelMovingFontType>Avallanche</LabelMovingFontType>
-                <LabelMovingFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
-                <LabelMovingVerticalAlignment>Top</LabelMovingVerticalAlignment>
-                <EnableLabelFixed>true</EnableLabelFixed>
-                <LabelFixedFontType>Arial</LabelFixedFontType>
-                <LabelFixedFontSize>42</LabelFixedFontSize>
-                <LabelFixedFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
-                <LabelFixedHorizontalAlignment>Left</LabelFixedHorizontalAlignment>
-                <LabelFixedVerticalAlignment>Top</LabelFixedVerticalAlignment>
-              </ProgressBarStyle>
+              <ProgressBarStyle StyleId="Default" />
               <ProgressValue>#percentage</ProgressValue>
               <LabelMovingText>#currentplaytime</LabelMovingText>
               <LabelFixedText>#currentplaytime</LabelFixedText>

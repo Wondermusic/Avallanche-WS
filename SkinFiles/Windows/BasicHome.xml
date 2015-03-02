@@ -179,7 +179,7 @@
                       <Animations />
                       <MediaPortalFocusControls />
                       <LabelStyle StyleId="Avalon 33 Blue" />
-                      <LabelText>#latestMediaHandler.tvrecordings.selected.startTime</LabelText>
+                      <LabelText>#latestMediaHandler.tvrecordings.selected.endTime</LabelText>
                     </Control>
                     <Control x:type="Label">
                       <Name>Summary</Name>
@@ -828,7 +828,7 @@
                   <Name>Current Condition</Name>
                   <Id>105</Id>
                   <Width>284</Width>
-                  <Height>43</Height>
+                  <Height>53</Height>
                   <PosX>450</PosX>
                   <PosY>656</PosY>
                   <VisibleCondition />
@@ -837,8 +837,8 @@
                   <LabelStyle StyleId="Avalon 42 Blue" />
                   <LabelText>#WorldWeather.TodayCondition</LabelText>
                   <LabelTextAlignment>Right</LabelTextAlignment>
-                  <IsScrollingEnabled>false</IsScrollingEnabled>
-                  <ScrollSpeed>2</ScrollSpeed>
+                  <ScrollDelay>2</ScrollDelay>
+                  <ScrollSpeed>4</ScrollSpeed>
                   <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
                 </Control>
                 <Control x:type="Image">
@@ -874,7 +874,7 @@
                   <Name>Day</Name>
                   <Id>108</Id>
                   <Width>245</Width>
-                  <Height>43</Height>
+                  <Height>47</Height>
                   <VisibleCondition />
                   <Animations />
                   <MediaPortalFocusControls />
@@ -934,7 +934,7 @@
                   <Name>Day</Name>
                   <Id>112</Id>
                   <Width>245</Width>
-                  <Height>43</Height>
+                  <Height>47</Height>
                   <VisibleCondition />
                   <Animations />
                   <MediaPortalFocusControls />
