@@ -124,7 +124,7 @@
           <Height>317</Height>
           <PosX>82</PosX>
           <PosY>396</PosY>
-          <VisibleCondition>IsPlayer(RadioTime)</VisibleCondition>
+          <VisibleCondition>IsPlayer(TuneIn)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
@@ -216,13 +216,13 @@
           <ScrollSeperator>    |    </ScrollSeperator>
         </Control>
         <Control x:type="Label">
-          <Name>Station (RadioTime)</Name>
+          <Name>Station (TuneIn)</Name>
           <Id>15</Id>
           <Width>1094</Width>
           <Height>95</Height>
           <PosX>89</PosX>
           <PosY>435</PosY>
-          <VisibleCondition>IsPlayer(RadioTime)</VisibleCondition>
+          <VisibleCondition>IsPlayer(TuneIn)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
@@ -242,7 +242,7 @@
           <Height>95</Height>
           <PosX>89</PosX>
           <PosY>524</PosY>
-          <VisibleCondition>IsPlayer(RadioTime)</VisibleCondition>
+          <VisibleCondition>IsPlayer(TuneIn)</VisibleCondition>
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
@@ -340,5 +340,5 @@
       </GroupControls>
     </Control>
   </WindowControls>
-  <VisibleCondition>IsPlayer(IsRadio) || IsPlayer(YoutubeFm) || IsPlayer(RadioTime) || IsPlayer(Streamradio)</VisibleCondition>
+  <VisibleCondition>IsPlayer(IsRadio) || IsPlayer(YoutubeFm) || IsPlayer(TuneIn) || IsPlayer(Streamradio)</VisibleCondition>
 </Window>

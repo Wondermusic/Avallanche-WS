@@ -173,7 +173,7 @@
               <PosY>113</PosY>
               <VisibleCondition />
               <Animations>
-                <Animation x:type="Rotate" Condition="VisibleTrue" Duration="4000" Repeat="10000" Pos3DZTo="-360" />
+                <Animation x:type="Rotate" Condition="VisibleTrue" Duration="8000" Repeat="10000" Pos3DZTo="-360" />
               </Animations>
               <MediaPortalFocusControls />
               <ImageStyle StyleId="Logo_Image" />

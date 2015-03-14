@@ -278,7 +278,7 @@
       </GroupControls>
     </Control>
     <Control x:type="Group">
-      <Name>RadioTime Presets</Name>
+      <Name>TuneIn Presets</Name>
       <Id>33</Id>
       <Width>1280</Width>
       <Height>720</Height>
@@ -380,7 +380,7 @@
               <Animations />
               <MediaPortalFocusControls />
               <LabelStyle StyleId="Avalon 50 Blue" />
-              <LabelText>#mvCentral.ViewAs</LabelText>
+              <LabelText>@Radio</LabelText>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollSpeed>2</ScrollSpeed>
               <IsScrollWrapEnabled>false</IsScrollWrapEnabled>

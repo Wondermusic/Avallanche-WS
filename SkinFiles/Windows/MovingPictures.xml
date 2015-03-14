@@ -280,7 +280,7 @@
               <VisibleCondition>IsControlVisible(23)</VisibleCondition>
               <IsWindowOpenVisible>false</IsWindowOpenVisible>
               <Animations>
-                <Animation x:type="Rotate" Condition="VisibleTrue" Duration="4000" Repeat="10000" Pos3DZTo="-360" />
+                <Animation x:type="Rotate" Condition="VisibleTrue" Duration="8000" Repeat="10000" Pos3DZTo="-360" />
                 <Animation x:type="Slide" Condition="VisibleTrue" Duration="800" StartX="80" StartY="140" EndX="190" EndY="140" />
               </Animations>
               <MediaPortalFocusControls />
