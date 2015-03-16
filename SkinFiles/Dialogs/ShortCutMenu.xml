@@ -97,7 +97,7 @@
       </Actions>
     </Control>
     <Control x:type="Button">
-      <Name>RadioTime</Name>
+      <Name>TuneIn</Name>
       <Id>4</Id>
       <Width>200</Width>
       <Height>100</Height>
@@ -115,7 +115,7 @@
         <ImageCornerRadius>10</ImageCornerRadius>
       </ButtonStyle>
       <Image>\BG\hover_my streamradio.jpg</Image>
-      <LabelText>RadioTime</LabelText>
+      <LabelText>TuneIn</LabelText>
       <Actions>
         <Action Action="MediaPortalWindow" Param="25650" />
         <Action Action="OpenDialog" Param="20000" />
