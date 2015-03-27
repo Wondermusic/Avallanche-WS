@@ -2,8 +2,8 @@
 <XmlSkinInfo xmlns:x="http://www.w3.org/2001/XMLSchema-instance">
   <SkinWidth>1280</SkinWidth>
   <SkinHeight>720</SkinHeight>
-  <CurrentStyle>Addict</CurrentStyle>
-  <CurrentLanguage>Deutsch</CurrentLanguage>
+  <CurrentStyle>Default</CurrentStyle>
+  <CurrentLanguage>English</CurrentLanguage>
   <TextEnableScrolling>false</TextEnableScrolling>
   <TextHorizontalScrollDelay>3</TextHorizontalScrollDelay>
   <TextHorizontalScrollSpeed>20</TextHorizontalScrollSpeed>

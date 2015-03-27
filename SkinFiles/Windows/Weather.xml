@@ -32,8 +32,8 @@
           <Animations />
           <MediaPortalFocusControls />
           <ImageStyle StyleId="Logo_Image" />
-          <Image>\WeatherBG\+#WorldWeather.TodayIconNumber+.jpg</Image>
-          <DefaultImage>\WeatherBG\13.jpg</DefaultImage>
+          <Image>#MPD.Weather.Background.Image</Image>
+          <DefaultImage>\BG\Weather.jpg</DefaultImage>
           <ImageStretch>Fill</ImageStretch>
           <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
         </Control>
