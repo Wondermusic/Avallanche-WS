@@ -1176,6 +1176,7 @@
           <Animations>
             <Animation x:type="Fade" Condition="VisibleFalse" Duration="1000" Reverse="true" Repeat="100000" From="100" To="0" />
             <Animation x:type="Fade" Condition="VisibleTrue" Duration="1000" />
+            <Animation x:type="Fade" Condition="WindowOpen" Duration="500" />
           </Animations>
           <MediaPortalFocusControls />
           <LabelStyle StyleId="Avalon 85 Grey" />
