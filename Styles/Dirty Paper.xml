@@ -1109,5 +1109,94 @@
     <ControlStyle x:type="ImageStyle" StyleId="RecBG">
       <BackgroundBrush x:type="ImageBrush" Image="\Styles\Paper\dialog_background.png" Stretch="Uniform" />
     </ControlStyle>
+    <ControlStyle x:type="ImageStyle" StyleId="Frame1">
+      <CornerRadius>20,20,20,20</CornerRadius>
+      <BackgroundBrush x:type="ColorBrush" Color="#BEFFFFFF" />
+    </ControlStyle>
+    <ControlStyle x:type="ImageStyle" StyleId="Frame2">
+      <CornerRadius>20,20,20,20</CornerRadius>
+      <BackgroundBrush x:type="ColorBrush" Color="#9BFFFFFF" />
+    </ControlStyle>
+    <ControlStyle x:type="ButtonStyle" StyleId="Settings1">
+      <CornerRadius>2,2,2,2</CornerRadius>
+      <NoFocusBrush x:type="GradientBrush">
+        <Angle>Vertical</Angle>
+        <GradientStops>
+          <GradientStop Color="#3283CFFE" Offset="0.188" />
+          <GradientStop Color="#047EC4F3" Offset="0.726" />
+        </GradientStops>
+      </NoFocusBrush>
+      <NoFocusBorderBrush />
+      <FocusBrush x:type="GradientBrush">
+        <Angle>Vertical</Angle>
+        <GradientStops>
+          <GradientStop Color="#FF74B7E9" Offset="0.302" />
+          <GradientStop Color="#FF3F78A5" Offset="0.827" />
+        </GradientStops>
+      </FocusBrush>
+      <FocusBorderBrush />
+      <ShadeBrush />
+      <GlossBrush />
+      <FontType>PanicStricken</FontType>
+      <FontWeight>Bold</FontWeight>
+      <FontSize>25</FontSize>
+      <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+      <LabelMargin>5,0,5,0</LabelMargin>
+      <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
+    </ControlStyle>
+    <ControlStyle x:type="ButtonStyle" StyleId="Settings2">
+      <CornerRadius>2,2,2,2</CornerRadius>
+      <NoFocusBrush x:type="GradientBrush">
+        <Angle>Vertical</Angle>
+        <GradientStops>
+          <GradientStop Color="#4684CFFE" Offset="0.188" />
+          <GradientStop Color="#067EC4F3" Offset="0.726" />
+        </GradientStops>
+      </NoFocusBrush>
+      <NoFocusBorderBrush />
+      <FocusBrush x:type="GradientBrush">
+        <Angle>Vertical</Angle>
+        <GradientStops>
+          <GradientStop Color="#FF74B7E9" Offset="0.302" />
+          <GradientStop Color="#FF3F78A5" Offset="0.827" />
+        </GradientStops>
+      </FocusBrush>
+      <FocusBorderBrush />
+      <ShadeBrush />
+      <GlossBrush />
+      <FontType>PanicStricken</FontType>
+      <FontWeight>Bold</FontWeight>
+      <FontSize>26</FontSize>
+      <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+      <LabelMargin>5,0,5,0</LabelMargin>
+      <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
+    </ControlStyle>
+    <ControlStyle x:type="LabelStyle" StyleId="Avalon20White">
+      <FontType>PanicStricken</FontType>
+      <FontBrush x:type="ColorBrush" Color="#FF000000" />
+    </ControlStyle>
+    <ControlStyle x:type="ButtonStyle" StyleId="Skipsteps">
+      <FontType>PanicStricken</FontType>
+      <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FF808080" />
+    </ControlStyle>
+    <ControlStyle x:type="ListItemStyle" StyleId="Empty ListItemStyle">
+      <EnableLabel>false</EnableLabel>
+    </ControlStyle>
+    <ControlStyle x:type="ListItemStyle" StyleId="Settings ListItemStyle">
+      <NoFocusBrush />
+      <FocusBrush x:type="ImageBrush" Image="\settings_listcontrol_focus.png" Stretch="Fill" />
+      <FontType>PanicStricken</FontType>
+      <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+      <NoFocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+      <LabelMargin>30,0,0,0</LabelMargin>
+      <LabelHorizontalAlignment>Left</LabelHorizontalAlignment>
+      <Width>300</Width>
+      <Height>40</Height>
+      <ItemMargin>5,5,5,5</ItemMargin>
+      <HorizontalAlignment>Left</HorizontalAlignment>
+    </ControlStyle>
   </ControlStyles>
 </StyleCollection>

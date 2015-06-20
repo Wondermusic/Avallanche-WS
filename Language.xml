@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Language xmlns:x="http://www.w3.org/2001/XMLSchema-instance">
   <LanguageEntries>
+    <LanguageEntry Tag="@settings">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Einstellungen" />
+        <LanguageValue Language="English" Value="Settings" />
+        <LanguageValue Language="Francais" />
+      </Values>
+    </LanguageEntry>
     <LanguageEntry Tag="@no">
       <Values>
         <LanguageValue Language="Deutsch" Value="nein" />

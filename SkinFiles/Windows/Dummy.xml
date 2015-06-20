@@ -172,5 +172,5 @@
       </GroupControls>
     </Control>
   </WindowControls>
-  <VisibleCondition>IsMediaPortalWindow(4) || IsMediaPortalWindow(16001) || IsMediaPortalWindow(7776) || IsMediaPortalWindow(7777) || IsMediaPortalWindow(1016) || IsMediaPortalWindow(1018) || IsMediaPortalWindow(1021) || IsMediaPortalWindow(1019) || IsMediaPortalWindow(1017) || IsMediaPortalWindow(1007) || IsMediaPortalWindow(1008) || IsMediaPortalWindow(705) || IsMediaPortalWindow(1022) || IsMediaPortalWindow(155110) || IsMediaPortalWindow(9) || IsMediaPortalWindow(1020) || IsMediaPortalWindow(1005) || IsMediaPortalWindow(1006) || IsMediaPortalWindow(708) || IsMediaPortalWindow(700) || IsMediaPortalWindow(12) || IsMediaPortalWindow(703) || IsMediaPortalWindow(704) || IsMediaPortalWindow(1024) || IsMediaPortalWindow(14) || IsMediaPortalWindow(1015) || IsMediaPortalWindow(1000) || IsMediaPortalWindow(1012) || IsMediaPortalWindow(1001) || IsMediaPortalWindow(31)</VisibleCondition>
+  <VisibleCondition>IsMediaPortalWindow(16001) || IsMediaPortalWindow(7776) || IsMediaPortalWindow(7777)</VisibleCondition>
 </Window>

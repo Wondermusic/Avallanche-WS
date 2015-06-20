@@ -319,7 +319,6 @@
           <Width>1280</Width>
           <Height>720</Height>
           <VisibleCondition>IsMediaPortalListLayout(Vertical) || IsMediaPortalListLayout(VerticalIcon)</VisibleCondition>
-          <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
           <GroupStyle StyleId="Empty" />
@@ -488,7 +487,6 @@
                   <Id>159</Id>
                   <Width>1280</Width>
                   <Height>240</Height>
-                  <PosX>5</PosX>
                   <PosY>474</PosY>
                   <VisibleCondition />
                   <Animations />
@@ -640,13 +638,17 @@
           <IsWindowOpenVisible>false</IsWindowOpenVisible>
           <Animations />
           <MediaPortalFocusControls />
-          <GroupStyle StyleId="Serien" />
+          <GroupStyle>
+            <BackgroundBrush x:type="ImageBrush" Image="\Styles\Blue\SeriesBG.png" Stretch="Fill" />
+            <BorderBrush />
+            <GlossBrush />
+          </GroupStyle>
           <GroupControls>
             <Control x:type="Rectangle">
               <Name>NewRectangle</Name>
               <Id>172</Id>
-              <Width>200</Width>
-              <Height>200</Height>
+              <Width>1280</Width>
+              <Height>720</Height>
               <VisibleCondition />
               <Animations />
               <MediaPortalFocusControls />
