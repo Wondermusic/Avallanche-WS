@@ -9,11 +9,11 @@
   <WindowAnimations />
   <WindowControls>
     <Control x:type="Group">
-      <Name>Main</Name>
+      <Name>MenuScreen</Name>
       <Id>1</Id>
       <Width>1280</Width>
       <Height>720</Height>
-      <VisibleCondition />
+      <VisibleCondition>IsMediaPortalWindow(2)</VisibleCondition>
       <Animations />
       <MediaPortalFocusControls />
       <GroupStyle StyleId="Empty" />
@@ -41,7 +41,7 @@
               <Animations />
               <MediaPortalFocusControls />
               <ImageStyle StyleId="Logo_Image" />
-              <Image>#selectedthumb</Image>
+              <Image>#fanarthandler.picture.backdrop.selected</Image>
               <DefaultImage>\BG\hover_my pictures_2.jpg</DefaultImage>
               <ImageStretch>Fill</ImageStretch>
               <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
@@ -59,20 +59,6 @@
               <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
             </Control>
             <Control x:type="Image">
-              <Name>Overlay Vertical List</Name>
-              <Id>5</Id>
-              <Width>1261</Width>
-              <Height>540</Height>
-              <PosY>55</PosY>
-              <VisibleCondition>IsMediaPortalListLayout(Vertical)</VisibleCondition>
-              <IsWindowOpenVisible>false</IsWindowOpenVisible>
-              <Animations />
-              <MediaPortalFocusControls />
-              <ImageStyle StyleId="ViewPort_NoPoster" />
-              <ImageStretch>Fill</ImageStretch>
-              <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
-            </Control>
-            <Control x:type="Image">
               <Name>Overlay2</Name>
               <Id>6</Id>
               <Width>1260</Width>
@@ -83,6 +69,20 @@
               <Animations />
               <MediaPortalFocusControls />
               <ImageStyle StyleId="ViewPort Thumbs short" />
+              <ImageStretch>Fill</ImageStretch>
+              <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+            </Control>
+            <Control x:type="Image">
+              <Name>Overlay Vertical List</Name>
+              <Id>5</Id>
+              <Width>1261</Width>
+              <Height>540</Height>
+              <PosY>55</PosY>
+              <VisibleCondition>IsMediaPortalListLayout(Vertical)</VisibleCondition>
+              <IsWindowOpenVisible>false</IsWindowOpenVisible>
+              <Animations />
+              <MediaPortalFocusControls />
+              <ImageStyle StyleId="ViewPort_NoPoster" />
               <ImageStretch>Fill</ImageStretch>
               <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
             </Control>
@@ -124,7 +124,7 @@
               <Animations />
               <MediaPortalFocusControls />
               <LabelStyle StyleId="Avalon 50 Blue" />
-              <LabelText>#mvCentral.ViewAs</LabelText>
+              <LabelText>#currentmodule</LabelText>
               <IsScrollingEnabled>false</IsScrollingEnabled>
               <ScrollSpeed>2</ScrollSpeed>
               <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
@@ -163,40 +163,742 @@
           <HorizontalItemStyle StyleId="Horizontal" />
           <CoverFlowItemStyle StyleId="Coverflow" />
         </Control>
-        <Control x:type="Label">
-          <Name>Label</Name>
-          <Id>14</Id>
-          <Width>727</Width>
-          <Height>154</Height>
-          <PosX>12</PosX>
-          <PosY>98</PosY>
-          <VisibleCondition>IsMediaPortalWindow(2007)</VisibleCondition>
+        <Control x:type="Button">
+          <Name>Menu</Name>
+          <Id>72</Id>
+          <Width>1280</Width>
+          <Height>150</Height>
+          <PosY>570</PosY>
+          <VisibleCondition />
           <Animations />
           <MediaPortalFocusControls />
-          <LabelStyle StyleId="Avalon 33 White" />
-          <LabelText>@notavailable</LabelText>
-          <LabelTextAlignment>Center</LabelTextAlignment>
-          <IsVertical>true</IsVertical>
-          <IsScrollingEnabled>false</IsScrollingEnabled>
-          <ScrollSpeed>2</ScrollSpeed>
-          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+          <ButtonStyle StyleId="Clear" />
+          <LabelText>NewButton</LabelText>
+          <Actions>
+            <Action Action="OpenDialog" Param="903" />
+          </Actions>
         </Control>
       </GroupControls>
     </Control>
-    <Control x:type="Button">
-      <Name>Menu</Name>
-      <Id>17</Id>
+    <Control x:type="Group">
+      <Name>PictureInfo</Name>
+      <Id>22</Id>
       <Width>1280</Width>
-      <Height>150</Height>
-      <PosY>570</PosY>
-      <VisibleCondition />
+      <Height>720</Height>
+      <VisibleCondition>IsMediaPortalWindow(2007)</VisibleCondition>
+      <IsWindowOpenVisible>false</IsWindowOpenVisible>
       <Animations />
       <MediaPortalFocusControls />
-      <ButtonStyle StyleId="Clear" />
-      <LabelText>NewButton</LabelText>
-      <Actions>
-        <Action Action="OpenDialog" Param="903" />
-      </Actions>
+      <GroupStyle StyleId="Empty" />
+      <GroupControls>
+        <Control x:type="Group">
+          <Name>Background</Name>
+          <Id>23</Id>
+          <Width>1280</Width>
+          <Height>720</Height>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <GroupStyle>
+            <BackgroundBrush />
+            <BorderBrush />
+            <GlossBrush />
+          </GroupStyle>
+          <GroupControls>
+            <Control x:type="Image">
+              <Name>Image</Name>
+              <Id>24</Id>
+              <Width>1280</Width>
+              <Height>720</Height>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <ImageStyle StyleId="Logo_Image" />
+              <Image>\BG\hover_my pictures_2.jpg</Image>
+              <ImageStretch>UniformToFill</ImageStretch>
+              <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+            </Control>
+            <Control x:type="Rectangle">
+              <Name>NewRectangle</Name>
+              <Id>71</Id>
+              <Width>1280</Width>
+              <Height>720</Height>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <BackgroundBrush x:type="ColorBrush" Color="#A3000000" />
+            </Control>
+            <Control x:type="Image">
+              <Name>Overlay</Name>
+              <Id>25</Id>
+              <Width>1280</Width>
+              <Height>720</Height>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <ImageStyle StyleId="OverlayLong" />
+              <ImageStretch>Fill</ImageStretch>
+              <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+            </Control>
+            <Control x:type="Image">
+              <Name>Overlay Vertical List</Name>
+              <Id>26</Id>
+              <Width>1261</Width>
+              <Height>531</Height>
+              <PosY>61</PosY>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <ImageStyle StyleId="ViewPort_NoPoster" />
+              <ImageStretch>Fill</ImageStretch>
+              <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+            </Control>
+            <Control x:type="Image">
+              <Name>MP Image</Name>
+              <Id>28</Id>
+              <Width>78</Width>
+              <Height>57</Height>
+              <PosX>10</PosX>
+              <PosY>10</PosY>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <ImageStyle StyleId="Logo_Image" />
+              <Image>\Styles\White\MP-Logo.png</Image>
+              <ImageStretch>Uniform</ImageStretch>
+              <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+            </Control>
+            <Control x:type="Rectangle">
+              <Name>Devider</Name>
+              <Id>29</Id>
+              <Width>3</Width>
+              <Height>73</Height>
+              <PosX>100</PosX>
+              <PosY>2</PosY>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <BackgroundBrush x:type="ColorBrush" Color="#FF6AA5CB" />
+            </Control>
+            <Control x:type="Label">
+              <Name>Window</Name>
+              <Id>30</Id>
+              <Width>755</Width>
+              <Height>60</Height>
+              <PosX>109</PosX>
+              <PosY>8</PosY>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <LabelStyle StyleId="Avalon 50 Blue" />
+              <LabelText>#currentmodule</LabelText>
+              <IsScrollingEnabled>false</IsScrollingEnabled>
+              <ScrollSpeed>2</ScrollSpeed>
+              <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+            </Control>
+          </GroupControls>
+        </Control>
+        <Control x:type="Group">
+          <Name>some Infos</Name>
+          <Id>32</Id>
+          <Width>1280</Width>
+          <Height>720</Height>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <GroupStyle StyleId="Empty" />
+          <GroupControls>
+            <Control x:type="Image">
+              <Name>Slideshow Thumb</Name>
+              <Id>33</Id>
+              <Width>425</Width>
+              <Height>425</Height>
+              <PosX>795</PosX>
+              <PosY>109</PosY>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <ImageStyle StyleId="Logo_Image" />
+              <Image>#Picture.Slideshow.Thumb</Image>
+              <ImageStretch>Uniform</ImageStretch>
+              <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+            </Control>
+            <Control x:type="Label">
+              <Name>selecteditem</Name>
+              <Id>34</Id>
+              <Width>1200</Width>
+              <Height>60</Height>
+              <PosX>15</PosX>
+              <PosY>599</PosY>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <LabelStyle StyleId="Avalon 50 White" />
+              <LabelText>#selecteditem</LabelText>
+            </Control>
+            <Control x:type="Label">
+              <Name>Camera</Name>
+              <Id>35</Id>
+              <Width>750</Width>
+              <Height>60</Height>
+              <PosX>20</PosX>
+              <PosY>90</PosY>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <LabelStyle StyleId="Avalon 50 White" />
+              <LabelText>#Picture.Exif.EquipmentMake</LabelText>
+              <DefaultLabelText>@Camera</DefaultLabelText>
+            </Control>
+            <Control x:type="Label">
+              <Name>CameraModel</Name>
+              <Id>36</Id>
+              <Width>750</Width>
+              <Height>60</Height>
+              <PosX>20</PosX>
+              <PosY>150</PosY>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <LabelStyle StyleId="Avalon 50 White" />
+              <LabelText>#Picture.Exif.CameraModel</LabelText>
+              <DefaultLabelText>@CameraModel</DefaultLabelText>
+            </Control>
+            <Control x:type="Label">
+              <Name>Dimensions</Name>
+              <Id>37</Id>
+              <Width>750</Width>
+              <Height>60</Height>
+              <PosX>20</PosX>
+              <PosY>210</PosY>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <LabelStyle StyleId="Avalon 50 White" />
+              <LabelText>#Picture.Exif.ImageDimensionsX+ x +#Picture.Exif.ImageDimensionsY</LabelText>
+            </Control>
+            <Control x:type="Label">
+              <Name>Date</Name>
+              <Id>38</Id>
+              <Width>750</Width>
+              <Height>60</Height>
+              <PosX>20</PosX>
+              <PosY>270</PosY>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <LabelStyle StyleId="Avalon 50 White" />
+              <LabelText>#Picture.Exif.DatePictureTaken</LabelText>
+            </Control>
+          </GroupControls>
+        </Control>
+        <Control x:type="Button">
+          <Name>Button</Name>
+          <Id>39</Id>
+          <Width>760</Width>
+          <Height>488</Height>
+          <PosX>8</PosX>
+          <PosY>86</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ButtonStyle StyleId="Clear" />
+          <LabelText>NewButton</LabelText>
+          <Actions>
+            <Action Action="ControlVisible" Param="40" />
+          </Actions>
+        </Control>
+        <Control x:type="Button">
+          <Name>Menu</Name>
+          <Id>73</Id>
+          <Width>1280</Width>
+          <Height>150</Height>
+          <PosY>570</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ButtonStyle StyleId="Clear" />
+          <LabelText>NewButton</LabelText>
+          <Actions>
+            <Action Action="OpenDialog" Param="903" />
+          </Actions>
+        </Control>
+        <Control x:type="Group">
+          <Name>EXIF</Name>
+          <Id>40</Id>
+          <Width>1280</Width>
+          <Height>720</Height>
+          <VisibleCondition />
+          <IsWindowOpenVisible>false</IsWindowOpenVisible>
+          <Animations />
+          <MediaPortalFocusControls />
+          <GroupStyle StyleId="TVSeries_Detail" />
+          <GroupControls>
+            <Control x:type="Group">
+              <Name>Info</Name>
+              <Id>41</Id>
+              <Width>1240</Width>
+              <Height>530</Height>
+              <PosX>20</PosX>
+              <PosY>78</PosY>
+              <VisibleCondition>!IsControlVisible(42)</VisibleCondition>
+              <Animations />
+              <MediaPortalFocusControls />
+              <GroupStyle />
+              <GroupControls>
+                <Control x:type="Group">
+                  <Name>Fixed Labels</Name>
+                  <Id>43</Id>
+                  <Width>1240</Width>
+                  <Height>530</Height>
+                  <VisibleCondition />
+                  <Animations />
+                  <MediaPortalFocusControls />
+                  <GroupStyle StyleId="Empty" />
+                  <GroupControls>
+                    <Control x:type="Label">
+                      <Name>NewLabel</Name>
+                      <Id>45</Id>
+                      <Width>350</Width>
+                      <Height>45</Height>
+                      <VisibleCondition />
+                      <Animations />
+                      <MediaPortalFocusControls />
+                      <LabelStyle StyleId="Avalon 33 White" />
+                      <LabelText>@Image_dimension</LabelText>
+                    </Control>
+                    <Control x:type="Label">
+                      <Name>NewLabel</Name>
+                      <Id>46</Id>
+                      <Width>350</Width>
+                      <Height>45</Height>
+                      <PosY>45</PosY>
+                      <VisibleCondition />
+                      <Animations />
+                      <MediaPortalFocusControls />
+                      <LabelStyle StyleId="Avalon 33 White" />
+                      <LabelText>@Resolution+:</LabelText>
+                    </Control>
+                    <Control x:type="Label">
+                      <Name>NewLabel</Name>
+                      <Id>47</Id>
+                      <Width>350</Width>
+                      <Height>45</Height>
+                      <PosY>90</PosY>
+                      <VisibleCondition />
+                      <Animations />
+                      <MediaPortalFocusControls />
+                      <LabelStyle StyleId="Avalon 33 White" />
+                      <LabelText>@Flash+:</LabelText>
+                    </Control>
+                    <Control x:type="Label">
+                      <Name>NewLabel</Name>
+                      <Id>48</Id>
+                      <Width>350</Width>
+                      <Height>45</Height>
+                      <PosY>135</PosY>
+                      <VisibleCondition />
+                      <Animations />
+                      <MediaPortalFocusControls />
+                      <LabelStyle StyleId="Avalon 33 White" />
+                      <LabelText>@Metering_Mode+:</LabelText>
+                    </Control>
+                    <Control x:type="Label">
+                      <Name>NewLabel</Name>
+                      <Id>49</Id>
+                      <Width>350</Width>
+                      <Height>45</Height>
+                      <PosY>180</PosY>
+                      <VisibleCondition />
+                      <Animations />
+                      <MediaPortalFocusControls />
+                      <LabelStyle StyleId="Avalon 33 White" />
+                      <LabelText>@Compensation+:</LabelText>
+                    </Control>
+                    <Control x:type="Label">
+                      <Name>NewLabel</Name>
+                      <Id>50</Id>
+                      <Width>350</Width>
+                      <Height>45</Height>
+                      <PosY>225</PosY>
+                      <VisibleCondition />
+                      <Animations />
+                      <MediaPortalFocusControls />
+                      <LabelStyle StyleId="Avalon 33 White" />
+                      <LabelText>@Shutter_Speed+:</LabelText>
+                    </Control>
+                    <Control x:type="Label">
+                      <Name>NewLabel</Name>
+                      <Id>52</Id>
+                      <Width>350</Width>
+                      <Height>45</Height>
+                      <PosY>270</PosY>
+                      <VisibleCondition />
+                      <Animations />
+                      <MediaPortalFocusControls />
+                      <LabelStyle StyleId="Avalon 33 White" />
+                      <LabelText>@Date_taken+:</LabelText>
+                    </Control>
+                    <Control x:type="Label">
+                      <Name>NewLabel</Name>
+                      <Id>53</Id>
+                      <Width>350</Width>
+                      <Height>45</Height>
+                      <PosY>315</PosY>
+                      <VisibleCondition />
+                      <Animations />
+                      <MediaPortalFocusControls />
+                      <LabelStyle StyleId="Avalon 33 White" />
+                      <LabelText>@F-stop+:</LabelText>
+                    </Control>
+                    <Control x:type="Label">
+                      <Name>NewLabel</Name>
+                      <Id>54</Id>
+                      <Width>350</Width>
+                      <Height>45</Height>
+                      <PosY>360</PosY>
+                      <VisibleCondition />
+                      <Animations />
+                      <MediaPortalFocusControls />
+                      <LabelStyle StyleId="Avalon 33 White" />
+                      <LabelText>@Exposure_time+:</LabelText>
+                    </Control>
+                    <Control x:type="Label">
+                      <Name>NewLabel</Name>
+                      <Id>55</Id>
+                      <Width>350</Width>
+                      <Height>45</Height>
+                      <PosY>405</PosY>
+                      <VisibleCondition />
+                      <Animations />
+                      <MediaPortalFocusControls />
+                      <LabelStyle StyleId="Avalon 33 White" />
+                      <LabelText>@CameraModel+:</LabelText>
+                    </Control>
+                    <Control x:type="Label">
+                      <Name>NewLabel</Name>
+                      <Id>56</Id>
+                      <Width>350</Width>
+                      <Height>45</Height>
+                      <PosY>450</PosY>
+                      <VisibleCondition />
+                      <Animations />
+                      <MediaPortalFocusControls />
+                      <LabelStyle StyleId="Avalon 33 White" />
+                      <LabelText>@Equipment_make+:</LabelText>
+                    </Control>
+                  </GroupControls>
+                </Control>
+                <Control x:type="Group">
+                  <Name>Dynamic Labels</Name>
+                  <Id>44</Id>
+                  <Width>1240</Width>
+                  <Height>530</Height>
+                  <VisibleCondition />
+                  <Animations />
+                  <MediaPortalFocusControls />
+                  <GroupStyle StyleId="Empty" />
+                  <GroupControls>
+                    <Control x:type="Label">
+                      <Name>NewLabel</Name>
+                      <Id>51</Id>
+                      <Width>390</Width>
+                      <Height>45</Height>
+                      <PosX>350</PosX>
+                      <VisibleCondition />
+                      <Animations />
+                      <MediaPortalFocusControls />
+                      <LabelStyle StyleId="Avalon 33 Blue" />
+                      <LabelText>#Picture.Exif.ImageDimensionsX+ x +#Picture.Exif.ImageDimensionsY</LabelText>
+                    </Control>
+                    <Control x:type="Label">
+                      <Name>NewLabel</Name>
+                      <Id>57</Id>
+                      <Width>390</Width>
+                      <Height>45</Height>
+                      <PosX>350</PosX>
+                      <PosY>45</PosY>
+                      <VisibleCondition />
+                      <Animations />
+                      <MediaPortalFocusControls />
+                      <LabelStyle StyleId="Avalon 33 Blue" />
+                      <LabelText>#Picture.Exif.ResolutionX+ x +#Picture.Exif.ResolutionY</LabelText>
+                    </Control>
+                    <Control x:type="Label">
+                      <Name>NewLabel</Name>
+                      <Id>58</Id>
+                      <Width>390</Width>
+                      <Height>45</Height>
+                      <PosX>350</PosX>
+                      <PosY>90</PosY>
+                      <VisibleCondition />
+                      <Animations />
+                      <MediaPortalFocusControls />
+                      <LabelStyle StyleId="Avalon 33 Blue" />
+                      <LabelText>#Picture.Exif.Flash</LabelText>
+                    </Control>
+                    <Control x:type="Label">
+                      <Name>NewLabel</Name>
+                      <Id>59</Id>
+                      <Width>390</Width>
+                      <Height>45</Height>
+                      <PosX>350</PosX>
+                      <PosY>135</PosY>
+                      <VisibleCondition />
+                      <Animations />
+                      <MediaPortalFocusControls />
+                      <LabelStyle StyleId="Avalon 33 Blue" />
+                      <LabelText>#Picture.Exif.MeteringMode</LabelText>
+                    </Control>
+                    <Control x:type="Label">
+                      <Name>NewLabel</Name>
+                      <Id>60</Id>
+                      <Width>390</Width>
+                      <Height>45</Height>
+                      <PosX>350</PosX>
+                      <PosY>180</PosY>
+                      <VisibleCondition />
+                      <Animations />
+                      <MediaPortalFocusControls />
+                      <LabelStyle StyleId="Avalon 33 Blue" />
+                      <LabelText>#Picture.Exif.ExposureBias</LabelText>
+                    </Control>
+                    <Control x:type="Label">
+                      <Name>NewLabel</Name>
+                      <Id>61</Id>
+                      <Width>390</Width>
+                      <Height>45</Height>
+                      <PosX>350</PosX>
+                      <PosY>225</PosY>
+                      <VisibleCondition />
+                      <Animations />
+                      <MediaPortalFocusControls />
+                      <LabelStyle StyleId="Avalon 33 Blue" />
+                    </Control>
+                    <Control x:type="Label">
+                      <Name>NewLabel</Name>
+                      <Id>62</Id>
+                      <Width>390</Width>
+                      <Height>45</Height>
+                      <PosX>350</PosX>
+                      <PosY>270</PosY>
+                      <VisibleCondition />
+                      <Animations />
+                      <MediaPortalFocusControls />
+                      <LabelStyle StyleId="Avalon 33 Blue" />
+                      <LabelText>#Picture.Exif.DatePictureTaken</LabelText>
+                    </Control>
+                    <Control x:type="Label">
+                      <Name>NewLabel</Name>
+                      <Id>63</Id>
+                      <Width>390</Width>
+                      <Height>45</Height>
+                      <PosX>350</PosX>
+                      <PosY>315</PosY>
+                      <VisibleCondition />
+                      <Animations />
+                      <MediaPortalFocusControls />
+                      <LabelStyle StyleId="Avalon 33 Blue" />
+                      <LabelText>#Picture.Exif.Fstop</LabelText>
+                    </Control>
+                    <Control x:type="Label">
+                      <Name>NewLabel</Name>
+                      <Id>64</Id>
+                      <Width>390</Width>
+                      <Height>45</Height>
+                      <PosX>350</PosX>
+                      <PosY>360</PosY>
+                      <VisibleCondition />
+                      <Animations />
+                      <MediaPortalFocusControls />
+                      <LabelStyle StyleId="Avalon 33 Blue" />
+                      <LabelText>#Picture.Exif.ExposureTime</LabelText>
+                    </Control>
+                    <Control x:type="Label">
+                      <Name>NewLabel</Name>
+                      <Id>65</Id>
+                      <Width>390</Width>
+                      <Height>45</Height>
+                      <PosX>350</PosX>
+                      <PosY>405</PosY>
+                      <VisibleCondition />
+                      <Animations />
+                      <MediaPortalFocusControls />
+                      <LabelStyle StyleId="Avalon 33 Blue" />
+                      <LabelText>#Picture.Exif.CameraModel</LabelText>
+                    </Control>
+                    <Control x:type="Label">
+                      <Name>NewLabel</Name>
+                      <Id>66</Id>
+                      <Width>390</Width>
+                      <Height>45</Height>
+                      <PosX>350</PosX>
+                      <PosY>450</PosY>
+                      <VisibleCondition />
+                      <Animations />
+                      <MediaPortalFocusControls />
+                      <LabelStyle StyleId="Avalon 33 Blue" />
+                      <LabelText>#Picture.Exif.EquipmentMake</LabelText>
+                    </Control>
+                  </GroupControls>
+                </Control>
+              </GroupControls>
+            </Control>
+            <Control x:type="Group">
+              <Name>GoogleMaps</Name>
+              <Id>42</Id>
+              <Width>1240</Width>
+              <Height>530</Height>
+              <PosX>20</PosX>
+              <PosY>78</PosY>
+              <VisibleCondition />
+              <IsWindowOpenVisible>false</IsWindowOpenVisible>
+              <Animations />
+              <MediaPortalFocusControls />
+              <GroupStyle />
+              <GroupControls>
+                <Control x:type="Image">
+                  <Name>NewImage</Name>
+                  <Id>67</Id>
+                  <Width>1220</Width>
+                  <Height>510</Height>
+                  <PosX>10</PosX>
+                  <PosY>10</PosY>
+                  <VisibleCondition />
+                  <Animations />
+                  <MediaPortalFocusControls />
+                  <ImageStyle />
+                  <ImageStretch>None</ImageStretch>
+                  <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+                  <MapData>#Picture.Exif.MapData</MapData>
+                  <ShowMapControls>true</ShowMapControls>
+                </Control>
+              </GroupControls>
+            </Control>
+            <Control x:type="Button">
+              <Name>GMopen</Name>
+              <Id>68</Id>
+              <Width>300</Width>
+              <Height>60</Height>
+              <PosX>20</PosX>
+              <PosY>635</PosY>
+              <VisibleCondition>!IsControlVisible(42)</VisibleCondition>
+              <Animations />
+              <MediaPortalFocusControls />
+              <ButtonStyle>
+                <CornerRadius>2,2,2,2</CornerRadius>
+                <NoFocusBrush x:type="GradientBrush">
+                  <GradientStops>
+                    <GradientStop Color="#6A85CFFE" Offset="0.188" />
+                    <GradientStop Color="#1A7EC5F3" Offset="0.726" />
+                  </GradientStops>
+                  <Angle>Vertical</Angle>
+                </NoFocusBrush>
+                <NoFocusBorderBrush />
+                <FocusBrush x:type="GradientBrush">
+                  <GradientStops>
+                    <GradientStop Color="#FF74B7E9" Offset="0.302" />
+                    <GradientStop Color="#FF3F78A5" Offset="0.827" />
+                  </GradientStops>
+                  <Angle>Vertical</Angle>
+                </FocusBrush>
+                <FocusBorderBrush />
+                <ShadeBrush />
+                <GlossBrush />
+                <FontType>Avallanche</FontType>
+                <FontWeight>Bold</FontWeight>
+                <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+                <NoFocusFontBrush x:type="ColorBrush" Color="#FF808080" />
+              </ButtonStyle>
+              <LabelText>open GoogleMaps</LabelText>
+              <Actions>
+                <Action Action="ControlVisible" Param="42" />
+              </Actions>
+            </Control>
+            <Control x:type="Button">
+              <Name>GMclose</Name>
+              <Id>69</Id>
+              <Width>300</Width>
+              <Height>60</Height>
+              <PosX>20</PosX>
+              <PosY>635</PosY>
+              <VisibleCondition>IsControlVisible(42)</VisibleCondition>
+              <IsWindowOpenVisible>false</IsWindowOpenVisible>
+              <Animations />
+              <MediaPortalFocusControls />
+              <ButtonStyle>
+                <CornerRadius>2,2,2,2</CornerRadius>
+                <NoFocusBrush x:type="GradientBrush">
+                  <GradientStops>
+                    <GradientStop Color="#6A85CFFE" Offset="0.188" />
+                    <GradientStop Color="#1A7EC5F3" Offset="0.726" />
+                  </GradientStops>
+                  <Angle>Vertical</Angle>
+                </NoFocusBrush>
+                <NoFocusBorderBrush />
+                <FocusBrush x:type="GradientBrush">
+                  <GradientStops>
+                    <GradientStop Color="#FF74B7E9" Offset="0.302" />
+                    <GradientStop Color="#FF3F78A5" Offset="0.827" />
+                  </GradientStops>
+                  <Angle>Vertical</Angle>
+                </FocusBrush>
+                <FocusBorderBrush />
+                <ShadeBrush />
+                <GlossBrush />
+                <FontType>Avallanche</FontType>
+                <FontWeight>Bold</FontWeight>
+                <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+                <NoFocusFontBrush x:type="ColorBrush" Color="#FF808080" />
+              </ButtonStyle>
+              <LabelText>close GoogleMaps</LabelText>
+              <Actions>
+                <Action Action="ControlVisible" Param="42" />
+              </Actions>
+            </Control>
+            <Control x:type="Button">
+              <Name>close</Name>
+              <Id>70</Id>
+              <Width>300</Width>
+              <Height>60</Height>
+              <PosX>950</PosX>
+              <PosY>635</PosY>
+              <VisibleCondition />
+              <Animations />
+              <MediaPortalFocusControls />
+              <ButtonStyle>
+                <CornerRadius>2,2,2,2</CornerRadius>
+                <NoFocusBrush x:type="GradientBrush">
+                  <GradientStops>
+                    <GradientStop Color="#6A85CFFE" Offset="0.188" />
+                    <GradientStop Color="#1A7EC5F3" Offset="0.726" />
+                  </GradientStops>
+                  <Angle>Vertical</Angle>
+                </NoFocusBrush>
+                <NoFocusBorderBrush />
+                <FocusBrush x:type="GradientBrush">
+                  <GradientStops>
+                    <GradientStop Color="#FF74B7E9" Offset="0.302" />
+                    <GradientStop Color="#FF3F78A5" Offset="0.827" />
+                  </GradientStops>
+                  <Angle>Vertical</Angle>
+                </FocusBrush>
+                <FocusBorderBrush />
+                <ShadeBrush />
+                <GlossBrush />
+                <FontType>Avallanche</FontType>
+                <FontWeight>Bold</FontWeight>
+                <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+                <NoFocusFontBrush x:type="ColorBrush" Color="#FF808080" />
+              </ButtonStyle>
+              <LabelText>@Exit</LabelText>
+              <Actions>
+                <Action Action="ControlVisible" Param="40" />
+              </Actions>
+            </Control>
+          </GroupControls>
+        </Control>
+      </GroupControls>
     </Control>
     <Control x:type="Group">
       <Name>TimeRec</Name>
@@ -316,5 +1018,5 @@
       </GroupControls>
     </Control>
   </WindowControls>
-  <VisibleCondition>IsMediaPortalWindow(2) || IsMediaPortalWindow(2014) || IsMediaPortalWindow(2007)</VisibleCondition>
+  <VisibleCondition>IsMediaPortalWindow(2) || IsMediaPortalWindow(2007)</VisibleCondition>
 </Window>

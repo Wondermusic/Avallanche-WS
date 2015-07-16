@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window xmlns:x="http://www.w3.org/2001/XMLSchema-instance" x:type="MPDisplayWindow">
+  <IsDefault>false</IsDefault>
+  <Width>1280</Width>
+  <Height>720</Height>
+  <Name>EPG2</Name>
+  <Id>9999</Id>
+  <BackgroundBrush />
+  <WindowAnimations />
+  <WindowControls>
+    <Control x:type="Image">
+      <Name>Image</Name>
+      <Id>13</Id>
+      <Width>1280</Width>
+      <Height>720</Height>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ImageStyle StyleId="Logo_Image" />
+      <Image>\BG\Guide.jpg</Image>
+      <ImageStretch>Fill</ImageStretch>
+      <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+    </Control>
+    <Control x:type="Group">
+      <Name>Background</Name>
+      <Id>1</Id>
+      <Width>1280</Width>
+      <Height>720</Height>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <GroupStyle>
+        <BackgroundBrush />
+        <BorderBrush />
+        <GlossBrush />
+      </GroupStyle>
+      <GroupControls>
+        <Control x:type="Image">
+          <Name>Overlay</Name>
+          <Id>3</Id>
+          <Width>1280</Width>
+          <Height>720</Height>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="OverlayLong" />
+          <ImageStretch>Fill</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="Image">
+          <Name>Overlay</Name>
+          <Id>4</Id>
+          <Width>1261</Width>
+          <Height>542</Height>
+          <PosY>54</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="ViewPort Thumbs short" />
+          <ImageStretch>Fill</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="Image">
+          <Name>Overlay</Name>
+          <Id>5</Id>
+          <Width>1261</Width>
+          <Height>542</Height>
+          <PosY>54</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <ImageStyle StyleId="ViewPort Thumbs short" />
+          <ImageStretch>Fill</ImageStretch>
+          <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+        </Control>
+        <Control x:type="Rectangle">
+          <Name>Devider</Name>
+          <Id>7</Id>
+          <Width>3</Width>
+          <Height>73</Height>
+          <PosX>100</PosX>
+          <PosY>2</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <BackgroundBrush x:type="ColorBrush" Color="#FF6AA5CB" />
+        </Control>
+        <Control x:type="Label">
+          <Name>Window</Name>
+          <Id>8</Id>
+          <Width>755</Width>
+          <Height>60</Height>
+          <PosX>109</PosX>
+          <PosY>8</PosY>
+          <VisibleCondition />
+          <Animations />
+          <MediaPortalFocusControls />
+          <LabelStyle StyleId="Avalon 50 Blue" />
+          <LabelText>MPDisplay++ EPG</LabelText>
+          <IsScrollingEnabled>false</IsScrollingEnabled>
+          <ScrollSpeed>2</ScrollSpeed>
+          <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+        </Control>
+      </GroupControls>
+    </Control>
+    <Control x:type="Label">
+      <Name>Title</Name>
+      <Id>9</Id>
+      <Width>1086</Width>
+      <Height>60</Height>
+      <PosX>150</PosX>
+      <PosY>576</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <LabelStyle StyleId="Avalon 50 White" />
+      <LabelText>#TV.Guide.Title</LabelText>
+      <IsScrollingEnabled>false</IsScrollingEnabled>
+      <ScrollSpeed>2</ScrollSpeed>
+      <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+    </Control>
+    <Control x:type="Label">
+      <Name>Description</Name>
+      <Id>10</Id>
+      <Width>1120</Width>
+      <Height>86</Height>
+      <PosX>150</PosX>
+      <PosY>630</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <LabelStyle StyleId="Avalon 33 White" />
+      <LabelText>#TV.Guide.Description</LabelText>
+      <IsVertical>true</IsVertical>
+      <ScrollSpeed>4</ScrollSpeed>
+      <ScrollSeperator>------------------------------------------------</ScrollSeperator>
+    </Control>
+    <Control x:type="Guide">
+      <Name>NewGuide</Name>
+      <Id>11</Id>
+      <Width>1234</Width>
+      <Height>490</Height>
+      <PosX>5</PosX>
+      <PosY>81</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <GuideStyle StyleId="GuideStyle">
+        <TimelineMarkerThickness>0</TimelineMarkerThickness>
+      </GuideStyle>
+      <ChannelListWidth>250</ChannelListWidth>
+      <GuideItemHeight>55</GuideItemHeight>
+      <GuideItemMargin>3,3,3,3</GuideItemMargin>
+      <ChannelStyle StyleId="ChannelStyle" />
+      <ProgramStyle StyleId="GuideProgramStyle" />
+      <CreateDialogId>2000</CreateDialogId>
+      <CancelDialogId>2001</CancelDialogId>
+    </Control>
+    <Control x:type="Image">
+      <Name>Thumb</Name>
+      <Id>12</Id>
+      <Width>130</Width>
+      <Height>130</Height>
+      <PosX>9</PosX>
+      <PosY>580</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ImageStyle StyleId="Logo_Image" />
+      <Image>#TV.Guide.thumb</Image>
+      <ImageStretch>Uniform</ImageStretch>
+      <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
+    </Control>
+    <Control x:type="Button">
+      <Name>NewButton</Name>
+      <Id>14</Id>
+      <Width>97</Width>
+      <Height>72</Height>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle>
+        <NoFocusBrush x:type="ImageBrush" Image="\Settings\left_nf.png" Stretch="Uniform" />
+        <FocusBrush x:type="ImageBrush" Image="\Settings\left_f.png" Stretch="Uniform" />
+        <EnableLabel>false</EnableLabel>
+        <ImageHorizontalAlignment>Left</ImageHorizontalAlignment>
+        <ImageVerticalAlignment>Top</ImageVerticalAlignment>
+      </ButtonStyle>
+      <LabelText>NewButton</LabelText>
+      <Actions>
+        <Action Action="CloseWindow" />
+      </Actions>
+    </Control>
+  </WindowControls>
+  <AutoCloseWindow>false</AutoCloseWindow>
+</Window>

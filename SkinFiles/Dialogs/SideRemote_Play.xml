@@ -3,7 +3,7 @@
   <Name>SideRemote_Play</Name>
   <Id>904</Id>
   <Width>520</Width>
-  <Height>576</Height>
+  <Height>676</Height>
   <BorderThickness>2</BorderThickness>
   <CornerRadius>25,25,25,25</CornerRadius>
   <BackgroundBrush x:type="GradientBrush">
@@ -1020,6 +1020,27 @@
           </Actions>
         </Control>
       </GroupControls>
+    </Control>
+    <Control x:type="Button">
+      <Name>NewButton</Name>
+      <Id>36</Id>
+      <Width>485</Width>
+      <Height>100</Height>
+      <PosX>11</PosX>
+      <PosY>556</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle>
+        <EnableLabel>false</EnableLabel>
+        <EnableImage>true</EnableImage>
+      </ButtonStyle>
+      <Image>\Settings\Remote text.png</Image>
+      <LabelText>NewButton</LabelText>
+      <Actions>
+        <Action Action="OpenDialog" Param="904" />
+        <Action Action="OpenDialog" Param="20000" />
+      </Actions>
     </Control>
   </DialogControls>
 </Dialog>

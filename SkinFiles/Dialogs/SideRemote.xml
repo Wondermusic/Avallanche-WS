@@ -251,15 +251,15 @@
     <Control x:type="Button">
       <Name>ShortCutMenu</Name>
       <Id>12</Id>
-      <Width>200</Width>
+      <Width>341</Width>
       <Height>100</Height>
-      <PosX>82</PosX>
-      <PosY>341</PosY>
+      <PosX>9</PosX>
+      <PosY>340</PosY>
       <VisibleCondition />
       <Animations />
       <MediaPortalFocusControls />
       <ButtonStyle StyleId="Clear" />
-      <Image>\Settings\CoolClips_busi0286.jpg</Image>
+      <Image>\Settings\Remote text.png</Image>
       <Actions>
         <Action Action="OpenDialog" Param="903" />
         <Action Action="OpenDialog" Param="20000" />

@@ -1,6 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Language xmlns:x="http://www.w3.org/2001/XMLSchema-instance">
   <LanguageEntries>
+    <LanguageEntry Tag="@Equipment_make">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Hersteller" />
+        <LanguageValue Language="English" Value="Manufacturer" />
+        <LanguageValue Language="Francais" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Exposure_time">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Belichtung" />
+        <LanguageValue Language="English" Value="Exposure Time" />
+        <LanguageValue Language="Francais" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@F-stop">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Blende" />
+        <LanguageValue Language="English" Value="F-Stop" />
+        <LanguageValue Language="Francais" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Date_taken">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Foto Datum" />
+        <LanguageValue Language="English" Value="Date taken" />
+        <LanguageValue Language="Francais" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Shutter_Speed">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Verschlusszeit" />
+        <LanguageValue Language="English" Value="Shutter speed" />
+        <LanguageValue Language="Francais" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Compensation">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="EV+-" />
+        <LanguageValue Language="English" Value="Compensation" />
+        <LanguageValue Language="Francais" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Metering_Mode">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Fokustyp" />
+        <LanguageValue Language="English" Value="Metering Mode" />
+        <LanguageValue Language="Francais" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Flash">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Blitz" />
+        <LanguageValue Language="English" Value="Flash" />
+        <LanguageValue Language="Francais" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Image_dimension">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Bildgröße:" />
+        <LanguageValue Language="English" Value="Image dimension:" />
+        <LanguageValue Language="Francais" Value="Taille de l'image:" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@CameraModel">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Kamera Model" />
+        <LanguageValue Language="English" Value="Camera Model" />
+        <LanguageValue Language="Francais" Value="" />
+      </Values>
+    </LanguageEntry>
+    <LanguageEntry Tag="@Camera">
+      <Values>
+        <LanguageValue Language="Deutsch" Value="Kamera" />
+        <LanguageValue Language="English" Value="Camera" />
+        <LanguageValue Language="Francais" Value="Caméra" />
+      </Values>
+    </LanguageEntry>
     <LanguageEntry Tag="@settings">
       <Values>
         <LanguageValue Language="Deutsch" Value="Einstellungen" />

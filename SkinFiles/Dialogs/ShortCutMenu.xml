@@ -42,7 +42,7 @@
       <Image>\BG\Guide.jpg</Image>
       <LabelText>EPG</LabelText>
       <Actions>
-        <Action Action="MediaPortalWindow" Param="600" />
+        <Action Action="OpenWindow" Param="9999" />
         <Action Action="OpenDialog" Param="20000" />
       </Actions>
     </Control>
