@@ -27,7 +27,7 @@
           <Height>530</Height>
           <PosX>20</PosX>
           <PosY>78</PosY>
-          <VisibleCondition>!IsControlVisible(42)</VisibleCondition>
+          <VisibleCondition>!IsControlVisible(27)</VisibleCondition>
           <Animations />
           <MediaPortalFocusControls />
           <GroupStyle />
@@ -368,7 +368,7 @@
           <Height>60</Height>
           <PosX>20</PosX>
           <PosY>635</PosY>
-          <VisibleCondition>!IsControlVisible(62)</VisibleCondition>
+          <VisibleCondition>!IsControlVisible(27)</VisibleCondition>
           <Animations />
           <MediaPortalFocusControls />
           <ButtonStyle>

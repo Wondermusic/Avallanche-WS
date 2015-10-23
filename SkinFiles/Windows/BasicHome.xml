@@ -13,7 +13,8 @@
       <Id>10</Id>
       <Width>1280</Width>
       <Height>720</Height>
-      <VisibleCondition />
+      <VisibleCondition>IsSkinOptionEnabled(ClearArts) || IsSkinOptionEnabled(NoClearArts)</VisibleCondition>
+      <IsWindowOpenVisible>false</IsWindowOpenVisible>
       <Animations />
       <MediaPortalFocusControls />
       <GroupStyle>

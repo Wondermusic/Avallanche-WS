@@ -71,16 +71,36 @@
     <Control x:type="Label">
       <Name>TextArea1</Name>
       <Id>3</Id>
-      <Width>1101</Width>
-      <Height>436</Height>
-      <PosX>86</PosX>
+      <Width>787</Width>
+      <Height>98</Height>
+      <PosX>400</PosX>
       <PosY>172</PosY>
       <VisibleCondition />
       <Animations />
       <MediaPortalFocusControls />
       <LabelStyle StyleId="Avalon 42 White" />
-      <LabelText>#xfactor2.currentNotifyLabel</LabelText>
+      <LabelText>#TV.View.title</LabelText>
       <IsVertical>true</IsVertical>
+      <IsScrollingEnabled>false</IsScrollingEnabled>
+      <ScrollDelay>2</ScrollDelay>
+      <ScrollSpeed>5</ScrollSpeed>
+      <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+      <ScrollSeperator>-----------------------------------</ScrollSeperator>
+    </Control>
+    <Control x:type="Label">
+      <Name>TextArea2</Name>
+      <Id>6</Id>
+      <Width>787</Width>
+      <Height>98</Height>
+      <PosX>400</PosX>
+      <PosY>300</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <LabelStyle StyleId="Avalon 42 White" />
+      <LabelText>#TV.View.start+ - +#TV.View.stop</LabelText>
+      <IsVertical>true</IsVertical>
+      <IsScrollingEnabled>false</IsScrollingEnabled>
       <ScrollDelay>2</ScrollDelay>
       <ScrollSpeed>5</ScrollSpeed>
       <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
@@ -89,15 +109,15 @@
     <Control x:type="Image">
       <Name>Image</Name>
       <Id>4</Id>
-      <Width>203</Width>
-      <Height>181</Height>
-      <PosX>993</PosX>
-      <PosY>446</PosY>
+      <Width>250</Width>
+      <Height>250</Height>
+      <PosX>103</PosX>
+      <PosY>180</PosY>
       <VisibleCondition />
       <Animations />
       <MediaPortalFocusControls />
       <ImageStyle StyleId="Logo_Image" />
-      <Image>#thumb</Image>
+      <Image>#Dialog.Image5</Image>
       <ImageStretch>Uniform</ImageStretch>
       <CoverCornerRadius>0,0,0,0</CoverCornerRadius>
     </Control>
